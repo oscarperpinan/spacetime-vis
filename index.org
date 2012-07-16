@@ -31,7 +31,7 @@ This website publishes the code and main graphics of each chapter.
 
 * Time Series
 
-- *Data*: [[file:code/dataTime.R][View Code]]
+- *Data*: [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/dataTime.R][View Code]]
 
 - *Time on the horizontal axis*: [[file:code/timeHorizontalAxis.R][View Code]]
 
@@ -41,14 +41,14 @@ This website publishes the code and main graphics of each chapter.
 | [[file:images/navarraRadiation.svg][file:images/navarraSVG_captura.png]]                     | [[file:images/unemployUSAThemeRiver.pdf][file:images/unemployUSAThemeRiver.png]] |
 
 
-- *Time as a conditioning or grouping variable*: [[file:code/timeGroupFactor.R][View Code]]
+- *Time as a conditioning or grouping variable*: [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeGroupFactor.R][View Code]]
 
 | [[file:images/aranjuezSplom.pdf][file:images/aranjuezSplom.png]]           | [[file:images/aranjuezSplomHexbin.pdf][file:images/aranjuezSplomHexbin.png]] |
 |----------------------------------------------------------------------------+------------------------------------------------------------------------------|
 | [[file:images/aranjuezHexbinplot.pdf][file:images/aranjuezHexbinplot.png]] | [[file:images/aranjuezOuterStrips.pdf][file:images/aranjuezOuterStrips.png]] |
 
 
-- *Time as a complementary variable*: [[file:code/timeComplementary.R][View Code]]
+- *Time as a complementary variable*: [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeComplementary.R][View Code]]
 
 | [[file:images/googleVis.html][file:images/googleVis.png]] | [[file:images/CO2_capitaDL.pdf][file:images/CO2_capitaDL.png]] |
 |-----------------------------------------------------------+----------------------------------------------------------------|
