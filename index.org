@@ -8,7 +8,6 @@
 #+LINK_UP:
 #+LINK_HOME:
 #+STYLE:    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
-#+ATTR_HTML: width="200"
 
 #+BEGIN_CENTER
 [[https://github.com/oscarperpinan/spacetime-vis][View the Project on GitHub]]
@@ -20,20 +19,26 @@ This project is maintained by [[http://procomun.wordpress.com/][Oscar Perpiñán
 
 * Welcome!
 
-This is the accompanying website of the book "Displaying time
-series, spatial and space-time data with R: stories of space and
-time" to be published with [[http://www.taylorandfrancis.com/books/series/CRCTHERSER/][Chapman&Hall/CRC]]. This book will
-provide methods to display time series, spatial and space-time
-data using R. The code of each method will be detailed and
-commented through practical examples with real data.
+This is the accompanying website of the book "Displaying time series,
+spatial and space-time data with R: stories of space and time" to be
+published with
+[[http://www.taylorandfrancis.com/books/series/CRCTHERSER/][Chapman&Hall/CRC]]. This
+book will provide methods to display time series, spatial and
+space-time data using R. The code of each method will be detailed and
+commented through practical examples with real data. This website
+publishes the code and main graphics of each chapter.
 
-This website publishes the code and main graphics of each chapter.
+-----
 
 * Time Series
 
-- *Data*: [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/dataTime.R][View Code]]
+** Data 
 
-- *Time on the horizontal axis*: [[file:code/timeHorizontalAxis.R][View Code]]
+[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/dataTime.R][View Code]]
+
+** Time on the horizontal axis 
+
+[[file:code/timeHorizontalAxis.R][View Code]] (click on each image for a PDF or interactive graphic)
 
 | [[file:images/aranjuezXblocks.pdf][file:images/aranjuezXblocks.png]]   | [[file:images/navarraHorizonplot.pdf][file:images/navarraHorizonplot.png]]       |
 |                                                                                              |                                                                                  |
@@ -41,23 +46,31 @@ This website publishes the code and main graphics of each chapter.
 | [[file:images/navarraRadiation.svg][file:images/navarraSVG_captura.png]]                     | [[file:images/unemployUSAThemeRiver.pdf][file:images/unemployUSAThemeRiver.png]] |
 
 
-- *Time as a conditioning or grouping variable*: [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeGroupFactor.R][View Code]]
+** Time as a conditioning or grouping variable
+
+[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeGroupFactor.R][View Code]] (click on each image for a PDF or interactive graphic)
 
 | [[file:images/aranjuezSplom.pdf][file:images/aranjuezSplom.png]]           | [[file:images/aranjuezSplomHexbin.pdf][file:images/aranjuezSplomHexbin.png]] |
 |----------------------------------------------------------------------------+------------------------------------------------------------------------------|
 | [[file:images/aranjuezHexbinplot.pdf][file:images/aranjuezHexbinplot.png]] | [[file:images/aranjuezOuterStrips.pdf][file:images/aranjuezOuterStrips.png]] |
 
 
-- *Time as a complementary variable*: [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeComplementary.R][View Code]]
+** Time as a complementary variable
+
+[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeComplementary.R][View Code]] (click on each image for a PDF or interactive graphic)
 
 | [[file:images/googleVis.html][file:images/googleVis.png]] | [[file:images/CO2_capitaDL.pdf][file:images/CO2_capitaDL.png]] |
 |-----------------------------------------------------------+----------------------------------------------------------------|
 | [[file:images/CO2points.pdf][file:images/CO2points.png]]  | [[file:images/bubbles.svg][file:images/bubbles.png]]           |
 
 
+-----
+
 * Spatial Data
 
 Coming soon ...
+
+-----
 
 * Space-Time Data
 
