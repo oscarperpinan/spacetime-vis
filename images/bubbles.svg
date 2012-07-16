@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="674px"
+     height="673.863656884876px"
+     version="1.0"><g transform="translate(0, 673.863656884876)  scale(1, -1)">
+  <g id="gridSVG"  fill="none" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="1.33784800601956px" font-size="16.11px" font-family="Helvetica, Arial, FreeSans, Liberation Sans, Nimbus Sans L, sans-serif" opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity="1" fill-opacity="0">
+    <g id="plot_01.background"  >
+    <rect id="plot_01.background.1" x="0" y="0" width="674" height="673.86"  fill="none" stroke="none" stroke-opacity="0" fill-opacity="0" />
+    </g>
+    <g id="plot_01.toplevel.vp.1"  font-size="16.05px">
+      <g id="plot_01.xlab.vp.1"  >
+        <g id="plot_01.xlab"  >
+        <g id="plot_01.xlab.1"  stroke-width=".1" transform="translate(371.86, 22.04) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" opacity="1" stroke="rgb(0,0,0)" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="16.05px" font-weight="normal" font-style="normal" >
+<tspan dy="5.98" x="0">CO2.capita</tspan></text>
+</g>
+</g>
+        </g>
+      </g>
+      <g id="plot_01.ylab.vp.1"  >
+        <g id="plot_01.ylab"  >
+        <g id="plot_01.ylab.1"  stroke-width=".1" transform="translate(14.01, 358.78) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" transform="rotate(-90)" text-anchor="middle" opacity="1" stroke="rgb(0,0,0)" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="16.05px" font-weight="normal" font-style="normal" >
+<tspan dy="5.98" x="0">GNI.capita</tspan></text>
+</g>
+</g>
+        </g>
+      </g>
+      <g id="plot_01.figure.vp.1"  >
+      </g>
+    <defs>
+      <clipPath id="plot_01.panel.1.1.vp.1.clipPath">
+        <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+      </clipPath>
+    </defs>
+    <g id="plot_01.panel.1.1.vp.1"  clip-path="url(#plot_01.panel.1.1.vp.1.clipPath)" >
+    </g>
+    <g id="plot_01.strip.1.1.off.vp.1"  >
+    </g>
+    <g id="plot_01.strip.left.1.1.off.vp.1"  >
+      <g id="plot_01.ticks.left.panel.1.1"  >
+      <polyline id="plot_01.ticks.left.panel.1.1.1" points="85.77,80.9 78.19,80.9"  stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1.33784800601956px" stroke-opacity="1" fill="none" />
+      <polyline id="plot_01.ticks.left.panel.1.1.2" points="85.77,169.73 78.19,169.73"  stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1.33784800601956px" stroke-opacity="1" fill="none" />
+      <polyline id="plot_01.ticks.left.panel.1.1.3" points="85.77,258.57 78.19,258.57"  stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1.33784800601956px" stroke-opacity="1" fill="none" />
+      <polyline id="plot_01.ticks.left.panel.1.1.4" points="85.77,347.4 78.19,347.4"  stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1.33784800601956px" stroke-opacity="1" fill="none" />
+      <polyline id="plot_01.ticks.left.panel.1.1.5" points="85.77,436.24 78.19,436.24"  stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1.33784800601956px" stroke-opacity="1" fill="none" />
+      <polyline id="plot_01.ticks.left.panel.1.1.6" points="85.77,525.08 78.19,525.08"  stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1.33784800601956px" stroke-opacity="1" fill="none" />
+      <polyline id="plot_01.ticks.left.panel.1.1.7" points="85.77,613.91 78.19,613.91"  stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1.33784800601956px" stroke-opacity="1" fill="none" />
+      </g>
+      <g id="plot_01.ticklabels.left.panel.1.1"  >
+      <g id="plot_01.ticklabels.left.panel.1.1.1"  stroke-width=".1" transform="translate(70.6, 80.9) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="12.84px" font-weight="normal" font-style="normal" >
+<tspan dy="4.49" x="0">0</tspan></text>
+</g>
+</g>
+      <g id="plot_01.ticklabels.left.panel.1.1.2"  stroke-width=".1" transform="translate(70.6, 169.73) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="12.84px" font-weight="normal" font-style="normal" >
+<tspan dy="4.49" x="0">10000</tspan></text>
+</g>
+</g>
+      <g id="plot_01.ticklabels.left.panel.1.1.3"  stroke-width=".1" transform="translate(70.6, 258.57) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="12.84px" font-weight="normal" font-style="normal" >
+<tspan dy="4.49" x="0">20000</tspan></text>
+</g>
+</g>
+      <g id="plot_01.ticklabels.left.panel.1.1.4"  stroke-width=".1" transform="translate(70.6, 347.4) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="12.84px" font-weight="normal" font-style="normal" >
+<tspan dy="4.49" x="0">30000</tspan></text>
+</g>
+</g>
+      <g id="plot_01.ticklabels.left.panel.1.1.5"  stroke-width=".1" transform="translate(70.6, 436.24) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="12.84px" font-weight="normal" font-style="normal" >
+<tspan dy="4.49" x="0">40000</tspan></text>
+</g>
+</g>
+      <g id="plot_01.ticklabels.left.panel.1.1.6"  stroke-width=".1" transform="translate(70.6, 525.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="12.84px" font-weight="normal" font-style="normal" >
+<tspan dy="4.49" x="0">50000</tspan></text>
+</g>
+</g>
+      <g id="plot_01.ticklabels.left.panel.1.1.7"  stroke-width=".1" transform="translate(70.6, 613.91) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="12.84px" font-weight="normal" font-style="normal" >
+<tspan dy="4.49" x="0">60000</tspan></text>
+</g>
+</g>
+      </g>
+    </g>
+    <g id="plot_01.panel.1.1.off.vp.1"  >
+      <g id="plot_01.ticks.bottom.panel.1.1"  >
+      <polyline id="plot_01.ticks.bottom.panel.1.1.1" points="221.29,67.77 221.29,60.18"  stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1.33784800601956px" stroke-opacity="1" fill="none" />
+      <polyline id="plot_01.ticks.bottom.panel.1.1.2" points="362.54,67.77 362.54,60.18"  stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1.33784800601956px" stroke-opacity="1" fill="none" />
+      <polyline id="plot_01.ticks.bottom.panel.1.1.3" points="503.79,67.77 503.79,60.18"  stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1.33784800601956px" stroke-opacity="1" fill="none" />
+      <polyline id="plot_01.ticks.bottom.panel.1.1.4" points="645.04,67.77 645.04,60.18"  stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1.33784800601956px" stroke-opacity="1" fill="none" />
+      </g>
+      <g id="plot_01.ticklabels.bottom.panel.1.1"  >
+      <g id="plot_01.ticklabels.bottom.panel.1.1.1"  stroke-width=".1" transform="translate(221.29, 52.6) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="12.84px" font-weight="normal" font-style="normal" >
+<tspan dy="8.97" x="0">5</tspan></text>
+</g>
+</g>
+      <g id="plot_01.ticklabels.bottom.panel.1.1.2"  stroke-width=".1" transform="translate(362.54, 52.6) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="12.84px" font-weight="normal" font-style="normal" >
+<tspan dy="8.97" x="0">10</tspan></text>
+</g>
+</g>
+      <g id="plot_01.ticklabels.bottom.panel.1.1.3"  stroke-width=".1" transform="translate(503.79, 52.6) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="12.84px" font-weight="normal" font-style="normal" >
+<tspan dy="8.97" x="0">15</tspan></text>
+</g>
+</g>
+      <g id="plot_01.ticklabels.bottom.panel.1.1.4"  stroke-width=".1" transform="translate(645.04, 52.6) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="12.84px" font-weight="normal" font-style="normal" >
+<tspan dy="8.97" x="0">20</tspan></text>
+</g>
+</g>
+      </g>
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.2.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.2"  clip-path="url(#plot_01.panel.1.1.vp.2.clipPath)" >
+  <animate xlink:href="#plot_01.points.panel.1.1.1" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="364.61;387.28;411.81;453.35;441.91;374.08;434.49;421.49;380.5" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.2" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="249.99;258.12;254.39;256.22;256.09;255.73;250.27;245.7;245.95" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.3" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="365.97;373.6;364.6;366.07;363.69;357.37;358.46;350.37;350.69" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.4" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="317.1;322.05;320.87;325.38;328.14;331.08;326.56;327.92;325.94" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.5" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="324.15;337.22;313.03;343.83;342.52;338.9;348.29;349.54;376.22" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.6" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="286.63;286.66;295.11;295.99;304.64;310.12;304.18;305.54;284.23" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.7" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="631.94;614.36;614.13;612.86;616.84;614.93;602.17;603.48;587.36" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.8" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="156.22;157.5;161.54;179.26;195.3;205.5;218.26;225.62;230" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.9" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="111.84;111.78;111.87;112.78;113.91;115;116.77;118.84;121.38" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.10" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="133.5;134.32;132.85;130.55;132.45;133.19;133.02;134.86;138.03" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.1" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="307.25;316.22;325.91;324.4;348.2;354.96;378.05;402.3;420.96" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.2" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="308.85;320.75;328.13;325.46;334.26;346.96;364.91;380.27;389.51" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.3" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="307.34;315.42;321.38;330.61;346.78;360.46;384.98;402.22;414.83" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.4" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="243.65;257.59;271.72;279.8;291.62;294.01;313.82;320.13;334.97" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.5" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="397.6;410.57;411.1;422.91;458.89;506.86;559.63;575.36;623.33" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.6" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="268.79;278.29;291.44;298.19;308.32;320.67;345.89;360.64;367.3" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.7" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="397.95;404.79;410.21;422.03;442.28;464.4;486.7;496.65;501.27" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.8" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="101.69;103.64;106.04;109.15;112.79;117.23;123.1;130.47;136.24" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.9" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="94.22;95.02;95.56;96.89;98.4;100.35;102.57;105.06;106.39" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.10" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="141.48;142.28;144.06;145.57;150.46;154.37;159.16;165.91;171.16" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.1" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="9.45;9.87;10.27;11.52;10.33;8.16;9.12;8.05;6.73" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.2" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="5.74;5.71;5.37;5.51;5.33;5.07;4.62;4.26;4.14" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.3" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="9.46;9.37;8.84;8.6;8.15;7.6;7.07;6.48;6.22" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.4" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="11.07;10.45;9.59;9.3;8.86;8.79;7.84;7.63;7.09" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.5" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="5.76;5.91;5.36;5.88;5.27;4.63;4.25;4.11;4.12" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.6" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="8.26;7.8;7.62;7.44;7.38;7.16;6.3;5.96;5.25" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.7" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="13.41;12.68;12.37;11.88;11.34;10.71;9.96;9.6;9.2" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.8" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="27.47;25.4;24.27;26.45;27.3;25.99;24.75;22.29;20.61" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.9" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="17.94;16.91;16.34;15.43;14.55;13.5;12.76;12.09;12.19" repeatCount="indefinite" fill="freeze" />
+  <animate xlink:href="#plot_01.points.panel.1.1.10" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="6.5;6.46;6.11;5.73;5.53;5.33;5;4.78;4.75" repeatCount="indefinite" fill="freeze" />
+      <a xlink:href="http://en.wikipedia.org/Brazil">
+      <g id="plot_01.points.panel.1.1"  >
+        <a xlink:href="http://en.wikipedia.org/wiki/Finland">
+        <circle id="plot_01.points.panel.1.1.1" cx="364.61" cy="307.25" r="9.45"  stroke="rgb(166,86,40)" fill="rgb(166,86,40)" stroke-width="2.67569601203913px" stroke-opacity="1" fill-opacity="0.5" />
+        </a>
+        <a xlink:href="http://en.wikipedia.org/wiki/France">
+        <circle id="plot_01.points.panel.1.1.2" cx="249.99" cy="308.85" r="5.74"  stroke="rgb(255,127,0)" fill="rgb(255,127,0)" stroke-width="2.67569601203913px" stroke-opacity="1" fill-opacity="0.5" />
+        </a>
+        <a xlink:href="http://en.wikipedia.org/wiki/Germany">
+        <circle id="plot_01.points.panel.1.1.3" cx="365.97" cy="307.34" r="9.46"  stroke="rgb(247,129,191)" fill="rgb(247,129,191)" stroke-width="2.67569601203913px" stroke-opacity="1" fill-opacity="0.5" />
+        </a>
+        <a xlink:href="http://en.wikipedia.org/wiki/Greece">
+        <circle id="plot_01.points.panel.1.1.4" cx="317.1" cy="243.65" r="11.07"  stroke="rgb(153,153,153)" fill="rgb(153,153,153)" stroke-width="2.67569601203913px" stroke-opacity="1" fill-opacity="0.5" />
+        </a>
+        <a xlink:href="http://en.wikipedia.org/wiki/Norway">
+        <circle id="plot_01.points.panel.1.1.5" cx="324.15" cy="397.6" r="5.76"  stroke="rgb(228,26,28)" fill="rgb(228,26,28)" stroke-width="2.67569601203913px" stroke-opacity="1" fill-opacity="0.5" />
+        </a>
+        <a xlink:href="http://en.wikipedia.org/wiki/Spain">
+        <circle id="plot_01.points.panel.1.1.6" cx="286.63" cy="268.79" r="8.26"  stroke="rgb(255,255,51)" fill="rgb(255,255,51)" stroke-width="2.67569601203913px" stroke-opacity="1" fill-opacity="0.5" />
+        </a>
+        <a xlink:href="http://en.wikipedia.org/wiki/United States">
+        <circle id="plot_01.points.panel.1.1.7" cx="631.94" cy="397.95" r="13.41"  stroke="rgb(228,26,28)" fill="rgb(228,26,28)" stroke-width="2.67569601203913px" stroke-opacity="1" fill-opacity="0.5" />
+        </a>
+        <a xlink:href="http://en.wikipedia.org/wiki/China">
+        <circle id="plot_01.points.panel.1.1.8" cx="156.22" cy="101.69" r="27.47"  stroke="rgb(55,126,184)" fill="rgb(55,126,184)" stroke-width="2.67569601203913px" stroke-opacity="1" fill-opacity="0.5" />
+        </a>
+        <a xlink:href="http://en.wikipedia.org/wiki/India">
+        <circle id="plot_01.points.panel.1.1.9" cx="111.84" cy="94.22" r="17.94"  stroke="rgb(77,175,74)" fill="rgb(77,175,74)" stroke-width="2.67569601203913px" stroke-opacity="1" fill-opacity="0.5" />
+        </a>
+        <a xlink:href="http://en.wikipedia.org/wiki/Brazil">
+        <circle id="plot_01.points.panel.1.1.10" cx="133.5" cy="141.48" r="6.5"  stroke="rgb(152,78,163)" fill="rgb(152,78,163)" stroke-width="2.67569601203913px" stroke-opacity="1" fill-opacity="0.5" />
+        </a>
+      </g>
+      </a>
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.1" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="364.61,322.37;387.28,332.02;411.81,342.34;453.35,342.83;441.91,364.73;374.08,368.02;434.49,392.64;421.49,415.18;380.5,431.72" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.2" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="249.99,318.04;258.12,329.89;254.39,336.73;256.22,334.28;256.09,342.78;255.73,355.07;250.27,372.3;245.7,387.1;245.95,396.14" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.3" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="365.97,322.48;373.6,330.42;364.6,335.52;366.07,344.38;363.69,359.82;357.37,372.62;358.46,396.3;350.37,412.59;350.69,424.78" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.4" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="317.1,261.36;322.05,274.31;320.87,287.07;325.38,294.68;328.14,305.8;331.08,308.08;326.56,326.37;327.92,332.33;325.94,346.31" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.5" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="324.15,406.81;337.22,420.03;313.03,419.67;343.83,432.32;342.52,467.32;338.9,514.28;348.29,566.43;349.54,581.94;376.22,629.91" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.6" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="286.63,282;286.66,290.77;295.11,303.63;295.99,310.09;304.64,320.12;310.12,332.13;304.18,355.97;305.54,370.18;284.23,375.7" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.7" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="631.94,419.41;614.36,425.09;614.13,430;612.86,441.04;616.84,460.43;614.93,481.54;602.17,502.63;603.48,512.01;587.36,515.98" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.8" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="156.22,145.63;157.5,144.28;161.54,144.87;179.26,151.47;195.3,156.48;205.5,158.82;218.26,162.69;225.62,166.13;230,169.21" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.9" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="111.84,122.92;111.78,122.08;111.87,121.7;112.78,121.57;113.91,121.68;115,121.95;116.77,122.98;118.84,124.41;121.38,125.9" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.10" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="133.5,151.89;134.32,152.62;132.85,153.83;130.55,154.73;132.45,159.31;133.19,162.89;133.02,167.16;134.86,173.56;138.03,178.76" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.1" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="364.61,322.37;387.28,332.02;411.81,342.34;453.35,342.83;441.91,364.73;374.08,368.02;434.49,392.64;421.49,415.18;380.5,431.72" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.2" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="249.99,318.04;258.12,329.89;254.39,336.73;256.22,334.28;256.09,342.78;255.73,355.07;250.27,372.3;245.7,387.1;245.95,396.14" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.3" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="365.97,322.48;373.6,330.42;364.6,335.52;366.07,344.38;363.69,359.82;357.37,372.62;358.46,396.3;350.37,412.59;350.69,424.78" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.4" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="317.1,261.36;322.05,274.31;320.87,287.07;325.38,294.68;328.14,305.8;331.08,308.08;326.56,326.37;327.92,332.33;325.94,346.31" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.5" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="324.15,406.81;337.22,420.03;313.03,419.67;343.83,432.32;342.52,467.32;338.9,514.28;348.29,566.43;349.54,581.94;376.22,629.91" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.6" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="286.63,282;286.66,290.77;295.11,303.63;295.99,310.09;304.64,320.12;310.12,332.13;304.18,355.97;305.54,370.18;284.23,375.7" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.7" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="631.94,419.41;614.36,425.09;614.13,430;612.86,441.04;616.84,460.43;614.93,481.54;602.17,502.63;603.48,512.01;587.36,515.98" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.8" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="156.22,145.63;157.5,144.28;161.54,144.87;179.26,151.47;195.3,156.48;205.5,158.82;218.26,162.69;225.62,166.13;230,169.21" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.9" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="111.84,122.92;111.78,122.08;111.87,121.7;112.78,121.57;113.91,121.68;115,121.95;116.77,122.98;118.84,124.41;121.38,125.9" repeatCount="indefinite" fill="freeze" />
+  <animateTransform xlink:href="#plot_01.labels.panel.1.1.10" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="133.5,151.89;134.32,152.62;132.85,153.83;130.55,154.73;132.45,159.31;133.19,162.89;133.02,167.16;134.86,173.56;138.03,178.76" repeatCount="indefinite" fill="freeze" />
+    <g id="plot_01.labels.panel.1.1"  >
+    <g id="plot_01.labels.panel.1.1.1"  stroke-width=".1" transform="translate(364.61, 322.37) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(166,86,40)" stroke-opacity="1" fill="rgb(166,86,40)" fill-opacity="1" font-size="14.95px" >
+<tspan dy="5.48" x="0">Finland</tspan></text>
+</g>
+</g>
+    <g id="plot_01.labels.panel.1.1.2"  stroke-width=".1" transform="translate(249.99, 318.04) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(255,127,0)" stroke-opacity="1" fill="rgb(255,127,0)" fill-opacity="1" font-size="8.79px" >
+<tspan dy="2.99" x="0">France</tspan></text>
+</g>
+</g>
+    <g id="plot_01.labels.panel.1.1.3"  stroke-width=".1" transform="translate(365.97, 322.48) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(247,129,191)" stroke-opacity="1" fill="rgb(247,129,191)" fill-opacity="1" font-size="14.95px" >
+<tspan dy="5.48" x="0">Germany</tspan></text>
+</g>
+</g>
+    <g id="plot_01.labels.panel.1.1.4"  stroke-width=".1" transform="translate(317.1, 261.36) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(153,153,153)" stroke-opacity="1" fill="rgb(153,153,153)" fill-opacity="1" font-size="17.22px" >
+<tspan dy="6.48" x="0">Greece</tspan></text>
+</g>
+</g>
+    <g id="plot_01.labels.panel.1.1.5"  stroke-width=".1" transform="translate(324.15, 406.81) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(228,26,28)" stroke-opacity="1" fill="rgb(228,26,28)" fill-opacity="1" font-size="8.79px" >
+<tspan dy="2.99" x="0">Norway</tspan></text>
+</g>
+</g>
+    <g id="plot_01.labels.panel.1.1.6"  stroke-width=".1" transform="translate(286.63, 282) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(255,255,51)" stroke-opacity="1" fill="rgb(255,255,51)" fill-opacity="1" font-size="12.26px" >
+<tspan dy="4.49" x="0">Spain</tspan></text>
+</g>
+</g>
+    <g id="plot_01.labels.panel.1.1.7"  stroke-width=".1" transform="translate(631.94, 419.41) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(228,26,28)" stroke-opacity="1" fill="rgb(228,26,28)" fill-opacity="1" font-size="17.22px" >
+<tspan dy="6.48" x="0">United States</tspan></text>
+</g>
+</g>
+    <g id="plot_01.labels.panel.1.1.8"  stroke-width=".1" transform="translate(156.22, 145.63) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(55,126,184)" stroke-opacity="1" fill="rgb(55,126,184)" fill-opacity="1" font-size="22.7px" >
+<tspan dy="8.47" x="0">China</tspan></text>
+</g>
+</g>
+    <g id="plot_01.labels.panel.1.1.9"  stroke-width=".1" transform="translate(111.84, 122.92) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(77,175,74)" stroke-opacity="1" fill="rgb(77,175,74)" fill-opacity="1" font-size="19.22px" >
+<tspan dy="6.98" x="0">India</tspan></text>
+</g>
+</g>
+    <g id="plot_01.labels.panel.1.1.10"  stroke-width=".1" transform="translate(133.5, 151.89) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(152,78,163)" stroke-opacity="1" fill="rgb(152,78,163)" fill-opacity="1" font-size="12.26px" >
+<tspan dy="4.49" x="0">Brazil</tspan></text>
+</g>
+</g>
+    </g>
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.2"  >
+    <g id="plot_01.border.panel.1.1"  >
+    <rect id="plot_01.border.panel.1.1.1" x="85.77" y="67.77" width="572.18" height="582.01"  stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="1.33784800601956px" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" />
+    </g>
+  </g>
+  <g id="plot_01..1"  >
+  </g>
+</g>
+<animate xlink:href="#year.1" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.2" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.3" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.4" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.5" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.6" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.7" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.8" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.9" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible" repeatCount="indefinite" fill="freeze" />
+  <g id="year" visibility="hidden" >
+  <g id="year.1"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2000</tspan></text>
+</g>
+</g>
+  <g id="year.2"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2001</tspan></text>
+</g>
+</g>
+  <g id="year.3"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2002</tspan></text>
+</g>
+</g>
+  <g id="year.4"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2003</tspan></text>
+</g>
+</g>
+  <g id="year.5"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2004</tspan></text>
+</g>
+</g>
+  <g id="year.6"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2005</tspan></text>
+</g>
+</g>
+  <g id="year.7"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2006</tspan></text>
+</g>
+</g>
+  <g id="year.8"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2007</tspan></text>
+</g>
+</g>
+  <g id="year.9"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2008</tspan></text>
+</g>
+</g>
+  </g>
+  <g id="plot_01.toplevel.vp.2"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.2"  >
+    </g>
+    <g id="plot_01.ylab.vp.2"  >
+    </g>
+    <g id="plot_01.figure.vp.2"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.3.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.3"  clip-path="url(#plot_01.panel.1.1.vp.3.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.2"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.2"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.3"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.4.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.4"  clip-path="url(#plot_01.panel.1.1.vp.4.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.4"  >
+  </g>
+  <g id="plot_01..2"  >
+  </g>
+</g>
+<animate xlink:href="#year.1" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.2" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.3" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.4" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.5" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.6" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.7" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.8" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.9" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible" repeatCount="indefinite" fill="freeze" />
+  <g id="year" visibility="hidden" >
+  <g id="year.1"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2000</tspan></text>
+</g>
+</g>
+  <g id="year.2"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2001</tspan></text>
+</g>
+</g>
+  <g id="year.3"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2002</tspan></text>
+</g>
+</g>
+  <g id="year.4"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2003</tspan></text>
+</g>
+</g>
+  <g id="year.5"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2004</tspan></text>
+</g>
+</g>
+  <g id="year.6"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2005</tspan></text>
+</g>
+</g>
+  <g id="year.7"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2006</tspan></text>
+</g>
+</g>
+  <g id="year.8"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2007</tspan></text>
+</g>
+</g>
+  <g id="year.9"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2008</tspan></text>
+</g>
+</g>
+  </g>
+  <g id="plot_01.toplevel.vp.3"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.3"  >
+    </g>
+    <g id="plot_01.ylab.vp.3"  >
+    </g>
+    <g id="plot_01.figure.vp.3"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.5.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.5"  clip-path="url(#plot_01.panel.1.1.vp.5.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.3"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.3"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.5"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.6.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.6"  clip-path="url(#plot_01.panel.1.1.vp.6.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.6"  >
+  </g>
+  <g id="plot_01..3"  >
+  </g>
+</g>
+  <g id="plot_01.toplevel.vp.4"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.4"  >
+    </g>
+    <g id="plot_01.ylab.vp.4"  >
+    </g>
+    <g id="plot_01.figure.vp.4"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.7.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.7"  clip-path="url(#plot_01.panel.1.1.vp.7.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.4"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.4"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.7"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.8.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.8"  clip-path="url(#plot_01.panel.1.1.vp.8.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.8"  >
+  </g>
+  <g id="plot_01..4"  >
+  </g>
+</g>
+<animate xlink:href="#year.1" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.2" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.3" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.4" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.5" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.6" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.7" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.8" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.9" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible" repeatCount="indefinite" fill="freeze" />
+  <g id="year" visibility="hidden" >
+  <g id="year.1"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2000</tspan></text>
+</g>
+</g>
+  <g id="year.2"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2001</tspan></text>
+</g>
+</g>
+  <g id="year.3"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2002</tspan></text>
+</g>
+</g>
+  <g id="year.4"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2003</tspan></text>
+</g>
+</g>
+  <g id="year.5"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2004</tspan></text>
+</g>
+</g>
+  <g id="year.6"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2005</tspan></text>
+</g>
+</g>
+  <g id="year.7"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2006</tspan></text>
+</g>
+</g>
+  <g id="year.8"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2007</tspan></text>
+</g>
+</g>
+  <g id="year.9"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2008</tspan></text>
+</g>
+</g>
+  </g>
+  <g id="plot_01.toplevel.vp.5"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.5"  >
+    </g>
+    <g id="plot_01.ylab.vp.5"  >
+    </g>
+    <g id="plot_01.figure.vp.5"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.9.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.9"  clip-path="url(#plot_01.panel.1.1.vp.9.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.5"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.5"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.9"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.10.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.10"  clip-path="url(#plot_01.panel.1.1.vp.10.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.10"  >
+  </g>
+  <g id="plot_01..5"  >
+  </g>
+</g>
+  <g id="plot_01.toplevel.vp.6"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.6"  >
+    </g>
+    <g id="plot_01.ylab.vp.6"  >
+    </g>
+    <g id="plot_01.figure.vp.6"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.11.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.11"  clip-path="url(#plot_01.panel.1.1.vp.11.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.6"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.6"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.11"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.12.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.12"  clip-path="url(#plot_01.panel.1.1.vp.12.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.12"  >
+  </g>
+  <g id="plot_01..6"  >
+  </g>
+</g>
+  <g id="plot_01.toplevel.vp.7"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.7"  >
+    </g>
+    <g id="plot_01.ylab.vp.7"  >
+    </g>
+    <g id="plot_01.figure.vp.7"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.13.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.13"  clip-path="url(#plot_01.panel.1.1.vp.13.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.7"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.7"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.13"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.14.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.14"  clip-path="url(#plot_01.panel.1.1.vp.14.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.14"  >
+  </g>
+  <g id="plot_01..7"  >
+  </g>
+</g>
+  <g id="plot_01.toplevel.vp.8"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.8"  >
+    </g>
+    <g id="plot_01.ylab.vp.8"  >
+    </g>
+    <g id="plot_01.figure.vp.8"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.15.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.15"  clip-path="url(#plot_01.panel.1.1.vp.15.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.8"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.8"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.15"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.16.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.16"  clip-path="url(#plot_01.panel.1.1.vp.16.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.16"  >
+  </g>
+  <g id="plot_01..8"  >
+  </g>
+</g>
+<animate xlink:href="#year.1" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.2" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.3" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.4" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.5" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.6" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.7" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.8" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.9" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible" repeatCount="indefinite" fill="freeze" />
+  <g id="year" visibility="hidden" >
+  <g id="year.1"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2000</tspan></text>
+</g>
+</g>
+  <g id="year.2"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2001</tspan></text>
+</g>
+</g>
+  <g id="year.3"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2002</tspan></text>
+</g>
+</g>
+  <g id="year.4"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2003</tspan></text>
+</g>
+</g>
+  <g id="year.5"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2004</tspan></text>
+</g>
+</g>
+  <g id="year.6"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2005</tspan></text>
+</g>
+</g>
+  <g id="year.7"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2006</tspan></text>
+</g>
+</g>
+  <g id="year.8"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2007</tspan></text>
+</g>
+</g>
+  <g id="year.9"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2008</tspan></text>
+</g>
+</g>
+  </g>
+  <g id="plot_01.toplevel.vp.9"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.9"  >
+    </g>
+    <g id="plot_01.ylab.vp.9"  >
+    </g>
+    <g id="plot_01.figure.vp.9"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.17.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.17"  clip-path="url(#plot_01.panel.1.1.vp.17.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.9"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.9"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.17"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.18.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.18"  clip-path="url(#plot_01.panel.1.1.vp.18.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.18"  >
+  </g>
+  <g id="plot_01..9"  >
+  </g>
+</g>
+  <g id="plot_01.toplevel.vp.10"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.10"  >
+    </g>
+    <g id="plot_01.ylab.vp.10"  >
+    </g>
+    <g id="plot_01.figure.vp.10"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.19.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.19"  clip-path="url(#plot_01.panel.1.1.vp.19.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.10"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.10"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.19"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.20.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.20"  clip-path="url(#plot_01.panel.1.1.vp.20.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.20"  >
+  </g>
+  <g id="plot_01..10"  >
+  </g>
+</g>
+  <g id="plot_01.toplevel.vp.11"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.11"  >
+    </g>
+    <g id="plot_01.ylab.vp.11"  >
+    </g>
+    <g id="plot_01.figure.vp.11"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.21.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.21"  clip-path="url(#plot_01.panel.1.1.vp.21.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.11"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.11"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.21"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.22.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.22"  clip-path="url(#plot_01.panel.1.1.vp.22.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.22"  >
+  </g>
+  <g id="plot_01..11"  >
+  </g>
+</g>
+  <g id="plot_01.toplevel.vp.12"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.12"  >
+    </g>
+    <g id="plot_01.ylab.vp.12"  >
+    </g>
+    <g id="plot_01.figure.vp.12"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.23.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.23"  clip-path="url(#plot_01.panel.1.1.vp.23.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.12"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.12"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.23"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.24.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.24"  clip-path="url(#plot_01.panel.1.1.vp.24.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.24"  >
+  </g>
+  <g id="plot_01..12"  >
+  </g>
+</g>
+  <g id="plot_01.toplevel.vp.13"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.13"  >
+    </g>
+    <g id="plot_01.ylab.vp.13"  >
+    </g>
+    <g id="plot_01.figure.vp.13"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.25.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.25"  clip-path="url(#plot_01.panel.1.1.vp.25.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.13"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.13"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.25"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.26.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.26"  clip-path="url(#plot_01.panel.1.1.vp.26.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.26"  >
+  </g>
+  <g id="plot_01..13"  >
+  </g>
+</g>
+  <g id="plot_01.toplevel.vp.14"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.14"  >
+    </g>
+    <g id="plot_01.ylab.vp.14"  >
+    </g>
+    <g id="plot_01.figure.vp.14"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.27.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.27"  clip-path="url(#plot_01.panel.1.1.vp.27.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.14"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.14"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.27"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.28.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.28"  clip-path="url(#plot_01.panel.1.1.vp.28.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.28"  >
+  </g>
+  <g id="plot_01..14"  >
+  </g>
+</g>
+  <g id="plot_01.toplevel.vp.15"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.15"  >
+    </g>
+    <g id="plot_01.ylab.vp.15"  >
+    </g>
+    <g id="plot_01.figure.vp.15"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.29.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.29"  clip-path="url(#plot_01.panel.1.1.vp.29.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.15"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.15"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.29"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.30.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.30"  clip-path="url(#plot_01.panel.1.1.vp.30.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.30"  >
+  </g>
+  <g id="plot_01..15"  >
+  </g>
+</g>
+  <g id="plot_01.toplevel.vp.16"  font-size="16.05px">
+    <g id="plot_01.xlab.vp.16"  >
+    </g>
+    <g id="plot_01.ylab.vp.16"  >
+    </g>
+    <g id="plot_01.figure.vp.16"  >
+    </g>
+  <defs>
+    <clipPath id="plot_01.panel.1.1.vp.31.clipPath">
+      <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+    </clipPath>
+  </defs>
+  <g id="plot_01.panel.1.1.vp.31"  clip-path="url(#plot_01.panel.1.1.vp.31.clipPath)" >
+  </g>
+  <g id="plot_01.strip.1.1.off.vp.16"  >
+  </g>
+  <g id="plot_01.strip.left.1.1.off.vp.16"  >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.31"  >
+  </g>
+<defs>
+  <clipPath id="plot_01.panel.1.1.vp.32.clipPath">
+    <rect x="85.7702031602709" y="67.7688487584649" width="572.175620767494" height="582.013544018059" style="fill: none; stroke: none;" />
+  </clipPath>
+</defs>
+  <g id="plot_01.panel.1.1.vp.32"  clip-path="url(#plot_01.panel.1.1.vp.32.clipPath)" >
+  </g>
+  <g id="plot_01.panel.1.1.off.vp.32"  >
+  </g>
+  <g id="plot_01..16"  >
+  </g>
+</g>
+<animate xlink:href="#year.1" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.2" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.3" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.4" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.5" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.6" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.7" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.8" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden" repeatCount="indefinite" fill="freeze" />
+<animate xlink:href="#year.9" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible" repeatCount="indefinite" fill="freeze" />
+  <g id="year" visibility="hidden" >
+  <g id="year.1"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2000</tspan></text>
+</g>
+</g>
+  <g id="year.2"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2001</tspan></text>
+</g>
+</g>
+  <g id="year.3"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2002</tspan></text>
+</g>
+</g>
+  <g id="year.4"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2003</tspan></text>
+</g>
+</g>
+  <g id="year.5"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2004</tspan></text>
+</g>
+</g>
+  <g id="year.6"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2005</tspan></text>
+</g>
+</g>
+  <g id="year.7"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2006</tspan></text>
+</g>
+</g>
+  <g id="year.8"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2007</tspan></text>
+</g>
+</g>
+  <g id="year.9"  stroke-width=".1" transform="translate(606.6, 101.08) ">
+<g transform="scale(1, -1)">
+<text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="32.22px" >
+<tspan dy="11.46" x="0">2008</tspan></text>
+</g>
+</g>
+  </g>
+</g>
+</g>
+</svg>

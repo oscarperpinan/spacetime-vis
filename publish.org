@@ -1,0 +1,53 @@
+#+AUTHOR:    Oscar Perpiñán Lamigueiro
+#+EMAIL:     oscar.perpinan@upm.es
+#+DATE:      2012-02-24 vie
+#+TITLE:     Displaying time series, spatial and space-time data with R: stories of space and time
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_UP:
+#+LINK_HOME:
+#+STYLE:    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+#+STYLE:    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" />
+
+#+BEGIN_CENTER
+[[https://github.com/oscarperpinan/spacetime-viz][View the Project on GitHub]]
+#+END_CENTER
+
+-----
+
+* Welcome!
+
+This is the accompanying website of the book "Displaying time
+series, spatial and space-time data with R: stories of space and
+time" to be published with [[http://www.taylorandfrancis.com/books/series/CRCTHERSER/][Chapman&Hall/CRC]]. This book will
+provide methods to display time series, spatial and space-time
+data using R. The code of each method will be detailed and
+commented through practical examples with real data.
+
+This website publishes the code and main graphics of each chapter.
+
+* Time Series
+
+Coming soon...
+
+| [[file:images/abr.1970.levelplot.raster.panel.1.1.png][1970]] | [[file:images/abr.1970.levelplot.raster.panel.1.1.png][1970]] | [[file:images/abr.1970.levelplot.raster.panel.1.1.png][1970]] | [[file:images/aranjuezSplom.png]] | [[file:images/abr.1970.levelplot.raster.panel.1.1.png]] |
+|------+------+------+-----------------------------------------------------+-----------------------------------------------------|
+| [[file:images/abr.1970.levelplot.raster.panel.1.1.png]]     |  [[file:images/aranjuezOuterStrips.png]]    |      |   [[file:images/abr.1970.levelplot.raster.panel.1.1.png]]                                                  |                                                     |
+
+
+* Spatial Data
+
+Coming soon ...
+
+* Space-Time Data
+
+Coming soon...
+
+Y ahora enlazo a otra: [[file:link.org][enlace a otra]].
+
+-----
+
+#+BEGIN_CENTER
+This project is maintained by [[http://procomun.wordpress.com/][Oscar Perpiñán]].
+#+END_CENTER
