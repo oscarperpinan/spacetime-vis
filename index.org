@@ -38,7 +38,7 @@ publishes the code and main graphics of each chapter.
 
 ** Time on the horizontal axis 
 
-[[file:code/timeHorizontalAxis.R][View Code]] (click on each image for a PDF or interactive graphic)
+[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeHorizontalAxis.R][View Code]] (click on each image for a PDF or interactive graphic)
 
 | [[file:images/aranjuezXblocks.pdf][file:images/aranjuezXblocks.png]]   | [[file:images/navarraHorizonplot.pdf][file:images/navarraHorizonplot.png]]       |
 |                                                                                              |                                                                                  |
