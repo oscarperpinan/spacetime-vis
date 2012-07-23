@@ -28,7 +28,7 @@ est=3 ##aranjuez
 start='01/01/2004'
 end='31/12/2011'
 
-URL = paste("http://www.marm.es/siar/exportador.asp?T=DD&P=", 
+URL = paste("http://www.magrama.gob.es/siar/exportador.asp?T=DD&P=", 
   prov, "&E=", est, "&I=", start, "&F=", end, sep = "")
 
 library(zoo)
@@ -89,9 +89,12 @@ save(navarra, file='data/navarra.RData')
 
 unemployUSA <- read.csv('data/unemployUSA.csv')
 nms <- unemployUSA$Series.ID
-annualCols <- 14 + 13*(0:12) ##columns of annual summaries
+##columns of annual summaries
+annualCols <- 14 + 13*(0:12)
+## Transpose. Remove annual summaries
 unemployUSA <- as.data.frame(t(unemployUSA[,-c(1, annualCols)]))
-names(unemployUSA) <- nms
+## First 7 characters can be suppressed
+names(unemployUSA) <- substring(nms, 7)
 head(unemployUSA)
 
 library(zoo)
@@ -119,7 +122,8 @@ CO2data <- reshape(CO2data,
                    idvar=c('Country.Name','Year'),
                    timevar='Indicator.Name', direction='wide')
   
-names(CO2data)[3:6] <- c('CO2.PPP', 'CO2.capita', 'GNI.PPP', 'GNI.capita')
+names(CO2data)[3:6] <- c('CO2.PPP', 'CO2.capita',
+                         'GNI.PPP', 'GNI.capita')
 
 isNA <- apply(is.na(CO2data), 1, any)
 CO2data <- CO2data[!isNA, ]

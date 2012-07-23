@@ -25,7 +25,9 @@ setwd('~/Dropbox/chapman/book/')
 load('data/aranjuez.RData')
 
 pdf(file="figs/aranjuezSplom.pdf")
+## Red-Blue palette with black added (12 colors)
 colors <- c(brewer.pal(n=11, 'RdBu'), '#000000')
+## Rearrange according to months (darkest for summer)
 colors <- colors[c(6:1, 12:7)]
 
 splom(~as.data.frame(aranjuez),
@@ -38,12 +40,16 @@ splom(~as.data.frame(aranjuez),
 
 dev.off()
 
+trellis.focus('panel', 1, 1)
+idx <- panel.link.splom(pch=13, cex=0.6, col='green')
+aranjuez[idx,]
+
 pdf(file="figs/aranjuezSplomHexbin.pdf")
 library(hexbin)
 
 splom(~as.data.frame(aranjuez),
            panel=panel.hexbinplot, xlab='',
-           colramp=BTC,##function(n)BTC(n, beg=250, end=5),
+           colramp=BTC,
            diag.panel = function(x, ...){
              yrng <- current.panel.limits()$ylim
              d <- density(x, na.rm=TRUE)
@@ -59,10 +65,6 @@ splom(~as.data.frame(aranjuez),
            )
 
 dev.off()
-
-trellis.focus('panel', 1, 1)
-idx <- panel.link.splom(pch=13, cex=0.6, col='green')
-aranjuez[idx,]
 
 aranjuezDF <- data.frame(aranjuez,
                          month=format(index(aranjuez), '%m'))
@@ -85,6 +87,8 @@ hexbinplot(Radiation~Temperature|Statistic, data=aranjuezRshp,
 dev.off()
 
 pdf(file="figs/aranjuezOuterStrips.pdf")
+library(latticeExtra)
+
 useOuterStrips(xyplot(Temperature~Radiation|month*Statistic,
                       data=aranjuezRshp,
                       between=list(x=0), 

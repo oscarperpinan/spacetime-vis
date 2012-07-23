@@ -32,19 +32,21 @@ print(pgvis, 'html', file='figs/googleVis.html')
 library(RColorBrewer)
 
 nCountries <- nlevels(CO2data$Country.Name)
-pal <- rep(brewer.pal(n=9, 'Set1'),
-           length = nCountries)
+pal <- brewer.pal(n=5, 'Set1')
+pal <- rep(pal, length = nCountries)
 
 ## Rank of average values of CO2 per capita
 CO2mean <- aggregate(CO2.capita ~ Country.Name, data=CO2data, FUN=mean)
 palOrdered <- pal[rank(CO2mean$CO2.capita)]
 
+pdf(file="figs/hclust.pdf")
 CO2capita <- subset(CO2, Indicator.Code=='EN.ATM.CO2E.PC')
 hCO2 <- hclust(dist(CO2capita[, -c(1:4)]))
 
-pdf(file="figs/hclust.pdf")
+oldpar <- par(mar=c(0, 2, 0, 0) + .1)
 plot(hCO2, labels=CO2capita$Country.Name,
      xlab='', ylab='', sub='', main='')
+par(oldpar)
 dev.off()
 
 idx <- match(levels(CO2data$Country.Name), 
@@ -95,29 +97,28 @@ dev.off()
 
 library(classInt)
 z <- CO2data$CO2.PPP
-intervals <- classIntervals(z, n=7, style='fisher')
+intervals <- classIntervals(z, n=4, style='fisher')
+
 nInt <- length(intervals$brks) - 1
+cex.key <- seq(0.5, 1.8, length=nInt)
 
 idx <- findCols(intervals)
-  
+CO2data$cexPoints <- cex.key[idx]
+
 op <- options(digits=2)
-tab <- classInt:::tableClassIntervals(cols = idx, brks = intervals$brks,
-                                      under = "under", over = "over", between = "-", 
-                                      cutlabels = TRUE,
-                                      intervalClosure = "left",
-                                      dataPrecision = NULL)
+## Use whatever pal you wish. It will not be used in the following code
+intervalTab <- findColours(intervals, pal=pal)
+## The names attribute stores the intervals strings
+tab <- names(attr(intervalTab, 'table'))
 options(op)
 
-size <- c(0.3, 2)
-pwr.size <- 1
-rval <- seq(1, 0, length=nInt)
-cex.key <- size[2] - diff(size)*rval^pwr.size 
-CO2data$cexPoints <- cex.key[idx]
-  
 key <- list(space='right',
             title='CO2.PPP', cex.title=1,
-            text=list(labels=names(tab), cex=0.85),
-            points=list(col='black', pch=19, cex=cex.key, alpha=0.7))
+            ## Labels of the key are the intervals strings
+            text=list(labels=tab, cex=0.85),
+            ## Points sizes are defined with cex.key
+            points=list(col='black', pch=19,
+              cex=cex.key, alpha=0.7))
 
 pdf(file="figs/CO2points.pdf")
 xyplot(GNI.capita~CO2.capita|Year, data=CO2data,
@@ -127,80 +128,72 @@ xyplot(GNI.capita~CO2.capita|Year, data=CO2data,
          panel.text(x, y, ...,
                     labels=groups[subscripts],
                     col=palOrdered[groups[subscripts]],
-                    pos=3, cex=sqrt(CO2data$cexPoints[subscripts]))
-         panel.points(x, y, col=palOrdered[groups[subscripts]],
+                    pos=3, cex=0.8*sqrt(CO2data$cexPoints[subscripts]))
+         panel.points(x, y,
+                      col=palOrdered[groups[subscripts]],
                       cex=CO2data$cexPoints[subscripts])
-       })
-  
-  
-
-dev.off()
-
-pdf(file="figs/CO2bubbles.pdf")
-xyplot(GNI.capita~CO2.capita|Year, data=CO2data,
-       groups=Country.Name, aspect=1,
-       strip=strip.custom(strip.levels=c(TRUE, TRUE)),
-       panel=function(x, y, ..., subscripts, groups) {
-         color <- palOrdered[groups[subscripts]]
-         radius <- CO2data$CO2.PPP[subscripts]
-         cex <- sqrt(CO2data$cex[subscripts])
-         grid.text(label=groups[subscripts],
-                   unit(x, 'native'),
-                   unit(y, 'native') + radius * unit(.15, 'inch'),
-                   gp=gpar(col=color, cex=cex))
-         grid.circle(x, y, default.units='native',
-                     r=radius * unit(.1, 'inch'),
-                     gp=gpar(col=color,
-                       fill=adjustcolor(color, alpha=.5),
-                       lwd=1))
-       })
+       })  
 dev.off()
 
 library(gridSVG)
 
 xyplot(GNI.capita ~ CO2.capita, data=CO2data,
        subset=Year==2000, groups=Country.Name,
+       ## The limits of the graphic are defined
+       ## with the entire dataset
        xlim=extendrange(CO2data$CO2.capita),
        ylim=extendrange(CO2data$GNI.capita),
        panel=function(x, y, ..., subscripts, groups) {
          color <- palOrdered[groups[subscripts]]
          radius <- CO2data$CO2.PPP[subscripts]
-         cex <- sqrt(CO2data$cex[subscripts])
+         ## Size of labels
+         cex <- 1.1*sqrt(radius)
+         ## Bubbles
          grid.circle(x, y, default.units="native",
                      r=radius*unit(.25, "inch"),
                      name=trellis.grobname("points", type="panel"),
                      gp=gpar(col=color,
+                       ## Fill color ligther than border
                        fill=adjustcolor(color, alpha=.5),
                        lwd=2))
+         ## Country labels
          grid.text(label=groups[subscripts],
-                   unit(x, 'native'),
-                   unit(y, 'native') + radius*unit(.4, 'inch'),
+                   x=unit(x, 'native'),
+                   ## Labels above each bubble
+                   y=unit(y, 'native') + 1.5 * radius *unit(.25, 'inch'),
                    name=trellis.grobname('labels', type='panel'),
                    gp=gpar(col=color, cex=cex))
        })
+
+## Duration in seconds of the animation
+duration <- 20
 
 nCountries <- nlevels(CO2data$Country.Name)
 years <- unique(CO2data$Year)
 nYears <- length(years)
 
+## Intermediate positions of the bubbles
 x_points <- animUnit(unit(CO2data$CO2.capita, 'native'),
                      id=rep(seq_len(nCountries), nYears))
 y_points <- animUnit(unit(CO2data$GNI.capita, 'native'),
                      id=rep(seq_len(nCountries), nYears))
-y_labels <- animUnit(unit(CO2data$GNI.capita, 'native') + CO2data$CO2.PPP * unit(.4, 'inch'),
+## Intermediate positions of the labels
+y_labels <- animUnit(unit(CO2data$GNI.capita, 'native') +
+                     1.5 * CO2data$CO2.PPP * unit(.25, 'inch'),
                      id=rep(seq_len(nCountries), nYears))
+## Intermediate sizes of the bubbles
 size <- animUnit(CO2data$CO2.PPP * unit(.25, 'inch'),
                      id=rep(seq_len(nCountries), nYears))
 
 grid.animate(trellis.grobname("points", type="panel", row=1, col=1),
-             duration=20,
+             duration=duration,
              x=x_points,
              y=y_points,
              r=size,
              rep=TRUE)
 
 grid.animate(trellis.grobname("labels", type="panel", row=1, col=1),
-             duration=20,
+             duration=duration,
              x=x_points,
              y=y_labels,
              rep=TRUE)
@@ -209,6 +202,7 @@ countries <- unique(CO2data$Country.Name)
 URL <- paste('http://en.wikipedia.org/wiki/', countries, sep='')
 grid.hyperlink(trellis.grobname('points', type='panel', row=1, col=1),
                URL, group=FALSE)
+
 visibility <- matrix("hidden", nrow=nYears, ncol=nYears)
 diag(visibility) <- "visible"
 yearText <- animateGrob(garnishGrob(textGrob(years, .9, .15,
