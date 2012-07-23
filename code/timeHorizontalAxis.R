@@ -26,6 +26,10 @@ load('data/aranjuez.RData')
 load('data/navarra.RData')
 load('data/unemployUSA.RData')
 
+##################################################################
+## Time graph of different meteorological variables
+##################################################################
+
 pdf(file="figs/aranjuez.pdf")
 library(lattice)
 xyplot(aranjuez, layout=c(1, ncol(aranjuez)))
@@ -58,6 +62,10 @@ xyplot(aranjuez, layout=c(1, ncol(aranjuez)), strip=FALSE,
 
 dev.off()
 
+##################################################################
+## Time series of variables with the same scale
+##################################################################
+
 pdf(file="figs/navarra.pdf")
 avRad <- zoo(rowMeans(navarra, na.rm=1), index(navarra))
 pNavarra <- xyplot(navarra - avRad,
@@ -65,6 +73,10 @@ pNavarra <- xyplot(navarra - avRad,
                    lwd=0.5, alpha=0.3, col='midnightblue') 
 pNavarra
 dev.off()
+
+##################################################################
+## Aspect ratio and rate of change
+##################################################################
 
 pdf(file="figs/navarraBanking.pdf")
 xyplot(navarra - avRad,
@@ -74,6 +86,10 @@ xyplot(navarra - avRad,
        lwd=0.5, alpha=0.3, col='midnightblue')
 dev.off()
 
+##################################################################
+## The horizon graph
+##################################################################
+
 pdf(file="figs/navarraHorizonplot.pdf")
 library(latticeExtra)
 
@@ -81,6 +97,10 @@ horizonplot(navarra-avRad,
             layout=c(1, ncol(navarra)),
             origin=0, colorkey=TRUE)
 dev.off()
+
+##################################################################
+## Interaction with gridSVG
+##################################################################
 
 library(gridSVG)
 ## grobs in the graphical output
@@ -111,6 +131,10 @@ for (id in unique(IDs)){
 grid.script(filename="highlight.js")
 
 gridToSVG('figs/navarraRadiation.svg')
+
+##################################################################
+## Stacked graphs
+##################################################################
 
 pdf(file="~/Dropbox/chapman/book/figs/unemployUSAxyplot.pdf")
 xyplot(unemployUSA, superpose=TRUE, par.settings=custom.theme,

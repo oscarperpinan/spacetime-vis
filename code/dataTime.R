@@ -23,6 +23,14 @@
 
 setwd('~/Dropbox/chapman/book/')
 
+##################################################################
+## SIAR
+##################################################################
+
+##################################################################
+## Daily data of different meteorological variables 
+##################################################################
+
 prov=28 ##madrid
 est=3 ##aranjuez
 start='01/01/2004'
@@ -58,6 +66,10 @@ aranjuez <- zoo(aranjuezClean, index(aranjuez))
 
 save(aranjuez, file='data/aranjuez.RData')
 
+##################################################################
+## Solar radiation measurements from different locations
+##################################################################
+
 library(zoo)
   
 SIAR <- read.csv('http://solar.r-forge.r-project.org/data/SIAR.csv')
@@ -87,6 +99,10 @@ navarra <- do.call(cbind, navarra[!err])
 
 save(navarra, file='data/navarra.RData')
 
+##################################################################
+## Unemployment in the United States
+##################################################################
+
 unemployUSA <- read.csv('data/unemployUSA.csv')
 nms <- unemployUSA$Series.ID
 ##columns of annual summaries
@@ -107,6 +123,10 @@ isNA <- apply(is.na(unemployUSA), 1, any)
 unemployUSA <- unemployUSA[!isNA,]
 
 save(unemployUSA, file='data/unemployUSA.RData')
+
+##################################################################
+## Gross National Income and $CO_2$ emissions
+##################################################################
 
 CO2 <- read.csv('data/CO2_GNI_BM.csv')
 head(CO2)

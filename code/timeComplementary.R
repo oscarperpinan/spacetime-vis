@@ -29,6 +29,10 @@ pgvis <- gvisMotionChart(CO2data, idvar='Country.Name', timevar='Year')
 
 print(pgvis, 'html', file='figs/googleVis.html')
 
+##################################################################
+## Choosing colors
+##################################################################
+
 library(RColorBrewer)
 
 nCountries <- nlevels(CO2data$Country.Name)
@@ -82,6 +86,10 @@ pCO2.capita <- pCO2.capita +
     glayer_(panel.text(..., labels=CO2data$Year[subscripts],
                        pos=2, cex=0.5, col='gray'))
 
+##################################################################
+## Positioning labels
+##################################################################
+
 pdf(file="figs/CO2_capita.pdf")
 pCO2.capita +
   glayer(panel.text(x[9], y[9],
@@ -94,6 +102,10 @@ pdf(file="figs/CO2_capitaDL.pdf")
 library(directlabels)
 direct.label(pCO2.capita, method='extreme.grid')
 dev.off()
+
+##################################################################
+## A panel for each year and bubbles with variable radius
+##################################################################
 
 library(classInt)
 z <- CO2data$CO2.PPP
@@ -134,6 +146,10 @@ xyplot(GNI.capita~CO2.capita|Year, data=CO2data,
                       cex=CO2data$cexPoints[subscripts])
        })  
 dev.off()
+
+##################################################################
+## Travelling bubbles
+##################################################################
 
 library(gridSVG)
 

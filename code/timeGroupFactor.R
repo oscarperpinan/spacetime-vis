@@ -24,6 +24,10 @@
 setwd('~/Dropbox/chapman/book/')
 load('data/aranjuez.RData')
 
+##################################################################
+## Scatterplot matrix: time as a grouping variable 
+##################################################################
+
 pdf(file="figs/aranjuezSplom.pdf")
 ## Red-Blue palette with black added (12 colors)
 colors <- c(brewer.pal(n=11, 'RdBu'), '#000000')
@@ -43,6 +47,10 @@ dev.off()
 trellis.focus('panel', 1, 1)
 idx <- panel.link.splom(pch=13, cex=0.6, col='green')
 aranjuez[idx,]
+
+##################################################################
+## Hexagonal binning
+##################################################################
 
 pdf(file="figs/aranjuezSplomHexbin.pdf")
 library(hexbin)
@@ -85,6 +93,10 @@ hexbinplot(Radiation~Temperature|Statistic, data=aranjuezRshp,
            }
            )
 dev.off()
+
+##################################################################
+## Scatterplot with time as a conditioning variable
+##################################################################
 
 pdf(file="figs/aranjuezOuterStrips.pdf")
 library(latticeExtra)
