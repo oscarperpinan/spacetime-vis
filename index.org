@@ -1,13 +1,12 @@
 #+AUTHOR:    Oscar Perpiñán Lamigueiro
-#+EMAIL:     oscar.perpinan@upm.es
-#+DATE:      2012-02-24 vie
+#+EMAIL:     oscar.perpinan@gmail.com
 #+TITLE:     Displaying time series, spatial and space-time data with R: stories of space and time
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+LINK_UP:
 #+LINK_HOME:
-#+STYLE:    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+#+STYLE:    <link rel="stylesheet" type="text/css" href="stylesheets/stylesMain.css" />
 
 #+BEGIN_CENTER
 [[https://github.com/oscarperpinan/spacetime-vis][View the Project on GitHub]]
@@ -15,78 +14,22 @@
 This project is maintained by [[http://procomun.wordpress.com/][Oscar Perpiñán]].
 #+END_CENTER
 
------
-
-* Welcome!
-
-This is the accompanying website of the book "Displaying time series,
-spatial and space-time data with R: stories of space and time" to be
-published with
-[[http://www.taylorandfrancis.com/books/series/CRCTHERSER/][Chapman&Hall/CRC]]. This
-book will provide methods to display time series, spatial and
-space-time data using R. The code of each method will be detailed and
+This is the accompanying website of the book "Displaying time
+series, spatial and space-time data with R: stories of space and
+time" to be published with [[http://www.taylorandfrancis.com/books/series/CRCTHERSER/][Chapman&Hall/CRC]]. This book will
+provide methods to display time series, spatial and space-time
+data using R. The code of each method will be detailed and
 commented through practical examples with real data. This website
 publishes the code and main graphics of each chapter.
 
------
+##-----
 
-* Time Series
+#+BEGIN_CENTER
+| [[file:timeseries.org][Time Series]]                     | [[file:spatial.org][Spatial Data]]                       | [[file:spacetime.org][Space-Time Data]]           |
+| [[file:timeseries.org][file:images/aranjuezXblocks.png]] | [[file:spatial.org][file:images/popLandClass_small.png]] | [[file:spacetime.org][file:images/hovmoller.png]] |
+#+END_CENTER
 
-** Data 
-
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/dataTime.R][View Code]]
-
-** Time on the horizontal axis 
-
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeHorizontalAxis.R][View Code]] (click on each image for a PDF or interactive graphic)
-
-| [[file:images/aranjuezXblocks.pdf][file:images/aranjuezXblocks.png]]    | [[file:images/navarraHorizonplot.pdf][file:images/navarraHorizonplot.png]]    |
-|                                    |                                       |
-|------------------------------------+---------------------------------------|
-| [[file:images/navarraRadiation.svg][file:images/navarraSVG_captura.png]] | [[file:images/unemployUSAThemeRiver.pdf][file:images/unemployUSAThemeRiver.png]] |
-
-
-** Time as a conditioning or grouping variable
-
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeGroupFactor.R][View Code]] (click on each image for a PDF or interactive graphic)
-
-| [[file:images/aranjuezSplom.pdf][file:images/aranjuezSplom.png]]      | [[file:images/aranjuezSplomHexbin.pdf][file:images/aranjuezSplomHexbin.png]] |
-|------------------------------------+-------------------------------------|
-| [[file:images/aranjuezHexbinplot.pdf][file:images/aranjuezHexbinplot.png]] | [[file:images/aranjuezOuterStrips.pdf][file:images/aranjuezOuterStrips.png]] |
-
-
-** Time as a complementary variable
-
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeComplementary.R][View Code]] (click on each image for a PDF or interactive graphic)
-
-| [[file:images/googleVis.html][file:images/googleVis.png]] | [[file:images/CO2_capitaDL.pdf][file:images/CO2_capitaDL.png]] |
-|---------------------------+------------------------------|
-| [[file:images/CO2points.pdf][file:images/CO2points.png]] | [[file:images/bubbles.svg][file:images/bubbles.png]]      |
-
-
------
-
-* Spatial Data
-
-** Data
-
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/dataSpatial.R][View Code]]
-
-** Reference and physical maps
-
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/referenceMaps.R][View Code]]
-
-** Thematic maps
-
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/thematicMaps.R][View Code]]
-
------
-
-* Space-Time Data
-
-Coming soon...
-
------
+##-----
 
 #+BEGIN_CENTER
 This page has been generated with [[http://orgmode.org/][org-mode]].
