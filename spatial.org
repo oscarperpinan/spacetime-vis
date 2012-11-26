@@ -30,7 +30,7 @@
 |------------------------------------+--------------------------------------|
 | [[file:images/landClass.pdf][file:images/landClass.png]]          | [[file:images/populationNASA.pdf][file:images/populationNASA.png]]       |
 |------------------------------------+--------------------------------------|
-| [[file:images/popLandClass.png][file:images/popLandClass_small.png]] | [[file:images/airMadrid.svg][file:images/airMadrid.png]]            |
+| [[file:images/popLandClass.png][file:images/popLandClass_small.png]] | [[file:airMadrid.html][file:images/airMadrid.png]]            |
 |                                    |                                      |
 
 -----
