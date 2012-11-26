@@ -21,10 +21,8 @@
 ## 02111-1307, USA.
 ####################################################################
 
+## Set folder to where the local copy of github repository can be found
 setwd('~/Dropbox/chapman/book/')
-## TODO: eliminar!!
-source('~/Dropbox/R/label/pointLabel.R')
-source('~/Dropbox/R/label/lineLabel.R')
 
 ##################################################################
 ## Reference and Physical Maps
@@ -94,10 +92,6 @@ unzip('dem_gal.7z')
 demGalicia <- raster('dem_gal.asc')
 setwd(old)
 
-library(raster)
-
-demGalicia <- raster('~/Datos/DEM_Galicia/dem_gal.asc')
-
 cedeiraSP <- as_sp(cedeira, 'points')
 projCedeira <- projection(cedeiraSP)
 ##extCedeira <- bbox(cedeiraSP) 
@@ -113,7 +107,7 @@ hsCedeira <- hillShade(slope=slope, aspect=aspect,
                        angle=20, direction=30)
 
 pdf(file="figs/cedeiraOsmar.pdf")
-library(maptools)
+library(maptools) ##0.8-21 install.packages("maptools", repos="http://R-Forge.R-project.org")
 library(latticeExtra)
 library(colorspace)
 library(rasterVis)
@@ -161,7 +155,7 @@ dev.off()
 
 library(raster)
 library(rasterVis)
-library(maptools)
+library(maptools) ## 0.8-21 install.packages("maptools", repos="http://R-Forge.R-project.org")
 library(latticeExtra)
 library(colorspace)
 
@@ -216,37 +210,6 @@ inBrazil <- which(sapply(intersectBrazil, function(x)!is.null(x)))
 ## Extract rivers from the world database
 brazilRiv <- worlRiv[inBrazil,]
 ## and specially the famous Amazonas River
-amazonas <- brazilRiv[brazilRiv$name=='Amazonas',]
-
-proj <- CRS(' +proj=longlat +ellps=WGS84')
-
-brazilAdm <- readShapePoly('~/Datos/BRA_adm/BRA_adm1.shp', proj4string=proj)
-Encoding(levels(brazilAdm$NAME_1)) <- 'latin1'
-
-brazilAlt <- raster('~/Datos/BRA_alt/BRA_alt')
-
-worldSea <- raster('~/Datos/NaturalEarth/OB_LR.tif')
-brazilSea <- crop(worldSea, brazilAlt)
-
-worldRiv <- readShapeLines('~/Datos/NaturalEarth/ne_10m_rivers_lake_centerlines', proj4string = proj)
-worldRiv<- worldRiv[worldRiv$featurecla=='River',]
-
-extentLine <- function(line){
-  bb <- bbox(line)
-  e <- extent(c(bb[1,1], bb[1,2], bb[2,1], bb[2,2]))
-  e
-}
-
-extBrazil <- extent(brazilAlt)
-intersectBrazil <- lapply(worldRiv@lines, function(line){
-  extLine <- extentLine(line)
-  int <- intersect(extentLine(line), extBrazil)
-})
-
-inBrazil <- which(sapply(intersectBrazil, function(x)!is.null(x)))
-
-brazilRiv <- worldRiv[inBrazil,]
-
 amazonas <- brazilRiv[brazilRiv$name=='Amazonas',]
 
 ## Locations of labels of each polygon

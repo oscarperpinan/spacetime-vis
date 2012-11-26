@@ -21,6 +21,7 @@
 ## 02111-1307, USA.
 ####################################################################
 
+## Set folder to where the local copy of github repository can be found
 setwd('~/Dropbox/chapman/book/')
 
 ##################################################################
@@ -152,10 +153,6 @@ SISm <- SISmm * daysMonth / 1000 ## kWh/m2
 ## Annual average
 SISav <- sum(SISm)/sum(daysMonth)
 writeRaster(SISav, file='SISav')
-
-library(raster)
-pop <- raster('~/Datos/Nasa/875430rgb-167772161.0.FLOAT.TIFF')
-landClass <- raster('~/Datos/Nasa/241243rgb-167772161.0.TIFF')
 
 library(raster)
 ## http://neo.sci.gsfc.nasa.gov/Search.html?group=64

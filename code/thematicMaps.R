@@ -59,7 +59,7 @@ idxNO2 <- match(airStations$Codigo, NO2agg$codEst)
 airStations <- spCbind(airStations, NO2agg[idxNO2, ])
 
 nClasses <- 5
-intervals <- classIntervals(NO2agg$mean, n=nClasses, style='fisher')
+intervals <- classIntervals(airStations$mean, n=nClasses, style='fisher')
 ## Number of classes is not always the same as the proposed number
 nClasses <- length(intervals$brks) - 1
 
@@ -147,19 +147,6 @@ streetsMadrid <- streets[streets$CMUN=='079',]
 proj4string(streetsMadrid) <- CRS("+proj=utm +zone=30")
 streetsMadrid <- spTransform(streetsMadrid, CRS=CRS("+proj=longlat +ellps=WGS84"))
 
-distritosMadrid <- readShapePoly('~/Datos/nomecalles/Distritos de Madrid/200001331')
-proj4string(distritosMadrid) <- CRS("+proj=utm +zone=30")
-distritosMadrid <- spTransform(distritosMadrid, CRS=CRS("+proj=longlat +ellps=WGS84"))
-
-## streets <- readShapeLines('~/Datos/nomecalles/Callejero_ Ejes de viales/call2011.shp')
-## streetsMadrid <- streets[streets$CMUN=='079',]
-## proj4string(streetsMadrid) <- CRS("+proj=utm +zone=30")
-## streetsMadrid <- spTransform(streetsMadrid, CRS=CRS("+proj=longlat +ellps=WGS84"))
-## writeLinesShape(streetsMadrid, '~/Datos/nomecalles/Callejero_ Ejes de viales/streetsMadrid')
-
-streetsMadrid <- readShapeLines('~/Datos/nomecalles/Callejero_ Ejes de viales/streetsMadrid.shp')
-proj4string(streetsMadrid) <- CRS("+proj=longlat +ellps=WGS84")
-
 png(filename="figs/airMadrid.png",res=600,height=4000,width=4000)
 p <- pCircles +
   layer_({
@@ -171,30 +158,78 @@ p <- pCircles +
 print(p)
 dev.off()
 
+library(XML)
+airStations <- as.data.frame(airStations)
+old <- setwd('images')
+for (i in 1:nrow(airStations)){
+  codEst <- airStations[i, "codEst"]
+  ## Webpage of each station
+  codURL <- as.numeric(substr(codEst, 7, 8))
+  rootURL <- 'http://www.mambiente.munimadrid.es'
+  stationURL <- paste(rootURL,
+                      '/opencms/opencms/calaire/contenidos/estaciones/estacion',
+                      codURL, '.html', sep='')
+  content <- htmlParse(stationURL, encoding='utf8')
+  ## Extracted with http://www.selectorgadget.com/
+  xPath <- '//*[contains(concat( " ", @class, " " ), concat( " ", "imagen_1", " " ))]'
+  imageStation <- getNodeSet(content, xPath)[[1]]
+  imageURL <- xmlAttrs(imageStation)[1]
+  imageURL <- paste(rootURL, imageURL, sep='')
+  download.file(imageURL, destfile=paste(codEst, '.jpg', sep=''))
+}
+setwd(old)
+
 library(gridSVG)
 
-print(pCircles)
-
-dat <- as.data.frame(airStations)
+print(pCircles + layer_(sp.polygons(distritosMadrid, fill='gray97', lwd=0.3)))
 
 for (i in 1:nrow(airStations)){
+  codEst <- airStations[i, "codEst"]
+  ## Webpage of each station
+  codURL <- as.numeric(substr(codEst, 7, 8))
+  rootURL <- 'http://www.mambiente.munimadrid.es'
+  stationURL <- paste(rootURL,
+                      '/opencms/opencms/calaire/contenidos/estaciones/estacion',
+                      codURL, '.html', sep='')
+  grid.hyperlink(idStation, stationURL)
   ## Information to be attached to each line
   stats <- paste(c('Mean', 'Median', 'SD'),
-                 signif(dat[i, c('mean', 'median', 'sd')], 4),
-                 sep=' = ', collapse='; ')
-  
-  nameStation <- as.character(dat[i, "Nombre"])
-  info <- paste(nameStation, stats, sep=': ')
-  idStation <- paste('Station', dat[i, "codEst"], sep='.')
+                 signif(airStations[i, c('mean', 'median', 'sd')], 4),
+                 sep=' = ', collapse='<br />')
+  ## Station photograph 
+  imageURL <- paste('images/', codEst, '.jpg', sep='')
+  imageInfo <- paste("<img src=", imageURL, " width='100' height='100' />", sep='')
+ 
+  ## Text to be included in the tooltip
+  nameStation <- as.character(airStations[i, "Nombre"])
+  info <- paste(nameStation, stats, sep='<br />')
+  ## Tooltip includes the image and the text
+  tooltip <- paste(imageInfo, info, sep='<br />')
   ## attach SVG attributes
-  grid.garnish(idStation, title=info)
-
-  codURL <- as.numeric(substr(dat[i, "codEst"], 7, 8))
-  URL <- paste('http://www.mambiente.munimadrid.es/opencms/opencms/calaire/contenidos/estaciones/estacion', codURL, '.html', sep='')
-  grid.hyperlink(idStation, URL)
+  idStation <- paste('Station', codEst, sep='.')
+  grid.garnish(idStation, title=tooltip)
 }
 
+grid.script(file='http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js')
+grid.script(file='js/jquery.tooltipster.min.js')
+grid.script(file='js/myTooltip.js')
 gridToSVG('figs/airMadrid.svg')
+
+htmlBegin <- '<!DOCTYPE html>
+<html>
+<head>
+<title>Air Quality in Madrid</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/tooltipster.css" />
+</head>
+<body>'
+
+htmlEnd <- '</body>
+</html>'
+
+svgText <- paste(readLines('figs/airMadrid.svg'), collapse='\n')
+
+writeLines(paste(htmlBegin, svgText, htmlEnd, sep='\n'),
+           'airMadrid.html')
 
 ##################################################################
 ## Multivariate choropleth maps
@@ -222,11 +257,6 @@ Encoding(levels(espMap$NOMBRE)) <- "latin1"
 
 provinces <- readShapePoly(fn="spain_provinces_ag_2")
 setwd(old)
-
-espMap <- readShapePoly(fn="~/Datos/mapas_completo_municipal/esp_muni_0109")
-Encoding(levels(espMap$NOMBRE)) <- "latin1"
-
-provinces <- readShapePoly(fn="~/Datos/mapas_completo_municipal/spain_provinces_ag_2")
 
 espPols <- unionSpatialPolygons(espMap, espMap$PROVMUN) ##disolve repeated polygons
 
@@ -469,18 +499,6 @@ pop <- crop(pop, ext)
 pop[pop==99999] <- NA
 
 landClass <- raster('241243rgb-167772161.0.TIFF')
-landClass <- crop(landClass, ext)
-
-library(raster)
-
-
-ext <- extent(65, 135, 5, 55)
-
-pop <- raster('~/Datos/Nasa/875430rgb-167772161.0.FLOAT.TIFF')
-pop <- crop(pop, ext)
-pop[pop==99999] <- NA
-
-landClass <- raster('~/Datos/Nasa/241243rgb-167772161.0.TIFF')
 landClass <- crop(landClass, ext)
 
 landClass[landClass %in% c(0, 254)] <- NA
