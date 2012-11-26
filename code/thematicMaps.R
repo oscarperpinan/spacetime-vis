@@ -21,6 +21,7 @@
 ## 02111-1307, USA.
 ####################################################################
 
+## Set folder to where the local copy of github repository can be found
 setwd('~/Dropbox/chapman/book/')
 
 ##################################################################
@@ -124,7 +125,8 @@ scales <- longlatScales(airStations,
                         xlim = bbExpand(bbox(airStations)[1, ], 0.2),
                         ylim = bbExpand(bbox(airStations)[2, ], 0.1))
 
-pCircles <- xyplot(lat ~ long, data=as.data.frame(airStations),
+airStationsDF <- as.data.frame(airStations)
+pCircles <- xyplot(lat ~ long, data=airStationsDF,
             xlab='', ylab='', main='',
             cex=cex, col=col, radius=cex,
             key=key, identifier = airStations$codEst,
@@ -159,10 +161,10 @@ print(p)
 dev.off()
 
 library(XML)
-airStations <- as.data.frame(airStations)
+
 old <- setwd('images')
-for (i in 1:nrow(airStations)){
-  codEst <- airStations[i, "codEst"]
+for (i in 1:nrow(airStationsDF)){
+  codEst <- airStationsDF[i, "codEst"]
   ## Webpage of each station
   codURL <- as.numeric(substr(codEst, 7, 8))
   rootURL <- 'http://www.mambiente.munimadrid.es'
@@ -183,8 +185,9 @@ library(gridSVG)
 
 print(pCircles + layer_(sp.polygons(distritosMadrid, fill='gray97', lwd=0.3)))
 
-for (i in 1:nrow(airStations)){
-  codEst <- airStations[i, "codEst"]
+for (i in 1:nrow(airStationsDF)){
+  codEst <- airStationsDF[i, "codEst"]
+  idStation <- paste('Station', codEst, sep='.')
   ## Webpage of each station
   codURL <- as.numeric(substr(codEst, 7, 8))
   rootURL <- 'http://www.mambiente.munimadrid.es'
@@ -194,19 +197,17 @@ for (i in 1:nrow(airStations)){
   grid.hyperlink(idStation, stationURL)
   ## Information to be attached to each line
   stats <- paste(c('Mean', 'Median', 'SD'),
-                 signif(airStations[i, c('mean', 'median', 'sd')], 4),
+                 signif(airStationsDF[i, c('mean', 'median', 'sd')], 4),
                  sep=' = ', collapse='<br />')
   ## Station photograph 
   imageURL <- paste('images/', codEst, '.jpg', sep='')
   imageInfo <- paste("<img src=", imageURL, " width='100' height='100' />", sep='')
- 
   ## Text to be included in the tooltip
-  nameStation <- as.character(airStations[i, "Nombre"])
+  nameStation <- as.character(airStationsDF[i, "Nombre"])
   info <- paste(nameStation, stats, sep='<br />')
   ## Tooltip includes the image and the text
   tooltip <- paste(imageInfo, info, sep='<br />')
   ## attach SVG attributes
-  idStation <- paste('Station', codEst, sep='.')
   grid.garnish(idStation, title=tooltip)
 }
 
