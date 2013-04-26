@@ -26,32 +26,109 @@ load('data/aranjuez.RData')
 load('data/navarra.RData')
 load('data/unemployUSA.RData')
 
+library(lattice)
+library(ggplot2)
+library(latticeExtra)
+library(zoo)
+
+myTheme <- custom.theme.2(pch=19, cex=0.7,
+                          region=rev(brewer.pal(9, 'YlOrRd')),
+                          symbol = brewer.pal(n=8, name = "Dark2"))
+myTheme$strip.background$col='transparent'
+myTheme$strip.shingle$col='transparent'
+myTheme$strip.border$col='transparent'
+
+xscale.components.custom <- function(...){
+    ans <- xscale.components.default(...)
+    ans$top=FALSE
+    ans}
+yscale.components.custom <- function(...){
+    ans <- yscale.components.default(...)
+    ans$right=FALSE
+    ans}
+myArgs <- list(as.table=TRUE,
+               between=list(x=0.5, y=0.2),
+               xscale.components = xscale.components.custom,
+               yscale.components = yscale.components.custom)
+defaultArgs <- lattice.options()$default.args
+
+lattice.options(default.theme = myTheme,
+                default.args = modifyList(defaultArgs, myArgs))
+
+library(zoo)
+aemet <- read.zoo('/home/oscar/Dropbox/R/aemet/Albacete.obs..txt', 
+                  sep=';', FUN=as.POSIXct, header=TRUE)
+names(aemet) <- c('D', 'B', 'G')
+
+xyplot(aemet$G)
+
+doy <- function(x)as.numeric(format(x, '%j'))
+hour <- function(x)as.numeric(format(x, '%H'))
+year <- function(x)format(x, '%Y')
+
+
+timeIndex <- index(aemet)
+nYears <- length(unique(year(timeIndex)))
+
+avG <- ave(aemet$G, format(index(aemet), '%j%H%M%S'))
+diffG <- (aemet$G - avG) / avG
+
+pdf(file="figs/stripplot.pdf")
+myTheme <- modifyList(custom.theme(region=brewer.pal(9, 'RdBu')),
+                                   list(
+                                     strip.background=list(col='gray'),
+                                     panel.background=list(col='gray'))
+                      )
+
+levelplot(diffG ~ doy(timeIndex)*hour(timeIndex)|year(timeIndex), data=as.data.frame(diffG),
+          layout=c(1, nYears), strip=FALSE, strip.left=TRUE,
+          par.settings=myTheme)
+
+dev.off()
+
 ##################################################################
 ## Time graph of different meteorological variables
 ##################################################################
 
 pdf(file="figs/aranjuez.pdf")
 library(lattice)
+library(zoo)
+## The layout argument is used to display the variables with
+## parallel panels arranged in rows.
 xyplot(aranjuez, layout=c(1, ncol(aranjuez)))
 
 dev.off()
 
+pdf(file="figs/aranjuezGG.pdf")
+library(ggplot2)
+autoplot(aranjuez) + facet_free()
+dev.off()
+
 pdf(file="figs/aranjuezXblocks.pdf")
+library(latticeExtra)
+
+## Auxiliary function to extract the year value of a POSIXct time
+## index
 Year <- function(x)format(x, "%Y")
 
 xyplot(aranjuez, layout=c(1, ncol(aranjuez)), strip=FALSE,
        scales=list(y=list(cex=0.6, rot=0)),
        panel=function(x, y, ...){
+         ## Alternation of years
          panel.xblocks(x, Year,
                        col = c("lightgray", "white"),
                        border = "darkgray")
+         ## Values under the average highlighted with red regions
          panel.xblocks(x, y<mean(y, na.rm=TRUE),
                        col = "indianred1",
                        height=unit(0.1, 'npc'))
+         ## Time series
          panel.lines(x, y, col='royalblue4', lwd=0.5, ...)
+         ## Label of each time series
          panel.text(x[1], min(y, na.rm=TRUE),
                     names(aranjuez)[panel.number()],
                     cex=0.6, adj=c(0, 0), srt=90, ...)
+         ## Trianges to point the maxima and minima 
          idxMax <- which.max(y)
          panel.points(x[idxMax], y[idxMax],
                       col='black', fill='lightblue', pch=24)
@@ -59,7 +136,6 @@ xyplot(aranjuez, layout=c(1, ncol(aranjuez)), strip=FALSE,
          panel.points(x[idxMin], y[idxMin],
                       col='black', fill='lightblue', pch=25)
        })
-
 dev.off()
 
 ##################################################################
@@ -139,7 +215,15 @@ gridToSVG('figs/navarraRadiation.svg')
 pdf(file="~/Dropbox/chapman/book/figs/unemployUSAxyplot.pdf")
 xyplot(unemployUSA, superpose=TRUE, par.settings=custom.theme,
        auto.key=list(space='right'))
+dev.off()
 
+pdf(file="~/Dropbox/chapman/book/figs/unemployUSAgeomArea.pdf")
+unemployUSAmelt <- fortify.zoo(unemployUSA, melt=TRUE)
+## ggplot2 does not understand the yearmon class
+unemployUSAmelt$Index <- as.Date(unemployUSAmelt$Index)
+
+ggplot() +
+  geom_area(data=unemployUSAmelt, aes(x=Index, y=Value, fill=Series))
 dev.off()
 
 panel.flow <- function(x, y, groups, origin, ...){
@@ -153,7 +237,7 @@ panel.flow <- function(x, y, groups, origin, ...){
   ## them to position labels.
   idxMaxes <- apply(yWide, 2, which.max)
 
-  ##Origin calculated following Havre.Hetzler.ea2002
+  ##Origin calculated following Havr.eHetzler.ea2002
   if (origin=='themeRiver') origin= -1/2*rowSums(yWide)
   else origin=0 
   yWide <- cbind(origin=origin, yWide)
@@ -217,19 +301,6 @@ panel.flow <- function(x, y, groups, origin, ...){
   }
 }
 
-library(colorspace)
-
-nCols <- ncol(unemployUSA)
-pal <- rainbow_hcl(nCols, c=70, l=75, start=30, end=300)
-myTheme <- custom.theme(fill=pal, lwd=0.2)
-
-pdf(file="figs/ThemeRiverError.pdf")
-xyplot(unemployUSA, superpose=TRUE, auto.key=FALSE,
-       panel=panel.flow, origin='themeRiver',
-       par.settings=myTheme, cex=0.4, offset=0,
-       scales=list(y=list(draw=FALSE)))
-dev.off()
-
 prepanel.flow <- function(x, y, groups, origin,...){
   dat <- data.frame(x=x, y=y, groups=groups)
   nVars <- nlevels(groups)
@@ -247,11 +318,17 @@ prepanel.flow <- function(x, y, groups, origin,...){
 }
 
 pdf(file="figs/unemployUSAThemeRiver.pdf")
+library(colorspace)
+## We will use a qualitative palette from colorspace
+nCols <- ncol(unemployUSA)
+pal <- rainbow_hcl(nCols, c=70, l=75, start=30, end=300)
+myTheme <- custom.theme(fill=pal, lwd=0.2)
+
 sep2008 <- as.numeric(as.yearmon('2008-09'))
 
 xyplot(unemployUSA, superpose=TRUE, auto.key=FALSE,
        panel=panel.flow, prepanel=prepanel.flow,
        origin='themeRiver', scales=list(y=list(draw=FALSE)),
        par.settings=myTheme) +
-  layer(panel.abline(v=sep2008, col='gray', lwd=0.7))
+    layer(panel.abline(v=sep2008, col='gray', lwd=0.7))
 dev.off()

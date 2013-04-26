@@ -31,31 +31,24 @@ setwd('~/Dropbox/chapman/book/')
 ## Daily data of different meteorological variables 
 ##################################################################
 
-prov=28 ##madrid
-est=3 ##aranjuez
-start='01/01/2004'
-end='31/12/2011'
-
-URL = paste("http://www.magrama.gob.es/siar/exportador.asp?T=DD&P=", 
-  prov, "&E=", est, "&I=", start, "&F=", end, sep = "")
-
 library(zoo)
 
-aranjuez <- read.zoo(URL, index.column = 1,
-                     format = "%d/%m/%Y", 
-                     header = TRUE, skip = 1, fill = TRUE,
-                     dec = ",", as.is = TRUE)
+aranjuez <- read.zoo("data/aranjuez.gz",
+                     index.column = 3, format = "%d/%m/%Y",
+                     fileEncoding = 'UTF-16LE',
+                     header = TRUE, fill = TRUE,
+                     sep = ';', dec = ",", as.is = TRUE)
+aranjuez <- aranjuez[, -c(1:4)]
 
-aranjuezClean <- aranjuez[, c(1, 2, 4, 6, 7, 11, 13, 16, 17, 18)]
+names(aranjuez) <- c('TempAvg', 'TempMax', 'TempMin',
+                     'HumidAvg', 'HumidMax',
+                     'WindAvg', 'WindMax',
+                     'Radiation', 'Rain', 'ET')
 
-names(aranjuezClean) <- c('TempAvg', 'TempMax', 'TempMin',
-                          'HumidAvg', 'HumidMax',
-                          'WindAvg', 'WindMax',
-                          'Rain', 'Radiation', 'ET')
 
-summary(aranjuezClean)
+summary(aranjuez)
 
-aranjuezClean <- within(as.data.frame(aranjuezClean),{
+aranjuezClean <- within(as.data.frame(aranjuez),{
   TempMin[TempMin>40] <- NA
   HumidMax[HumidMax>100] <- NA
   WindAvg[WindAvg>10] <- NA
@@ -69,35 +62,6 @@ save(aranjuez, file='data/aranjuez.RData')
 ##################################################################
 ## Solar radiation measurements from different locations
 ##################################################################
-
-library(zoo)
-  
-SIAR <- read.csv('http://solar.r-forge.r-project.org/data/SIAR.csv')
-table(SIAR$Provincia)
-  
-prov=31 ##navarra
-navarraSIAR <- subset(SIAR, Provincia=='Navarra')
-start='01/01/2011'
-end='31/12/2011'
-
-navarra <- lapply(navarraSIAR$N_Estacion, FUN=function(i){
-  URL = paste("http://www.marm.es/siar/exportador.asp?T=DD&P=", 
-    prov, "&E=", i, "&I=", start, "&F=", end, sep = "")
-  dat <- try(read.zoo(URL, index.column = 1,
-                      format = "%d/%m/%Y", 
-                      header = TRUE, skip = 1, fill = TRUE,
-                      dec = ",", as.is = TRUE))
-  if (class(dat)=='try-error') NULL else dat$Radiacion
-})
-
-names(navarra) <- make.names(abbreviate(navarraSIAR$Estacion))
-  
-## Which stations are not accesible?
-err <- sapply(navarra, is.null)
-
-navarra <- do.call(cbind, navarra[!err])
-
-save(navarra, file='data/navarra.RData')
 
 ##################################################################
 ## Unemployment in the United States

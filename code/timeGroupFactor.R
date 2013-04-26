@@ -24,11 +24,40 @@
 setwd('~/Dropbox/chapman/book/')
 load('data/aranjuez.RData')
 
+library(lattice)
+library(ggplot2)
+library(latticeExtra)
+library(zoo)
+
+myTheme <- custom.theme.2(pch=19, cex=0.7,
+                          region=rev(brewer.pal(9, 'YlOrRd')),
+                          symbol = brewer.pal(n=8, name = "Dark2"))
+myTheme$strip.background$col='transparent'
+myTheme$strip.shingle$col='transparent'
+myTheme$strip.border$col='transparent'
+
+xscale.components.custom <- function(...){
+    ans <- xscale.components.default(...)
+    ans$top=FALSE
+    ans}
+yscale.components.custom <- function(...){
+    ans <- yscale.components.default(...)
+    ans$right=FALSE
+    ans}
+myArgs <- list(as.table=TRUE,
+               between=list(x=0.5, y=0.2),
+               xscale.components = xscale.components.custom,
+               yscale.components = yscale.components.custom)
+defaultArgs <- lattice.options()$default.args
+
+lattice.options(default.theme = myTheme,
+                default.args = modifyList(defaultArgs, myArgs))
+
 ##################################################################
 ## Scatterplot matrix: time as a grouping variable 
 ##################################################################
 
-pdf(file="figs/aranjuezSplom.pdf")
+png(filename="figs/aranjuezSplom.png",res=600,height=4000,width=4000)
 ## Red-Blue palette with black added (12 colors)
 colors <- c(brewer.pal(n=11, 'RdBu'), '#000000')
 ## Rearrange according to months (darkest for summer)
@@ -41,7 +70,6 @@ splom(~as.data.frame(aranjuez),
       pscale=0, varname.cex=0.7, xlab='',
       par.settings=custom.theme(symbol=colors,
         pch=19), cex=0.3, alpha=0.1)
-
 dev.off()
 
 trellis.focus('panel', 1, 1)
@@ -86,31 +114,39 @@ head(aranjuezRshp)
 
 pdf(file="figs/aranjuezHexbinplot.pdf")
 hexbinplot(Radiation~Temperature|Statistic, data=aranjuezRshp,
-           layout=c(1, 3), colramp=BTC, 
-           panel=function(x, y, xlim,...){
-             panel.hexbinplot(x, y, ...)
-             panel.loess(x, y, ..., col = 'red')
-           }
-           )
+           layout=c(1, 3), colramp=BTC) +
+    layer(panel.loess(..., col = 'red'))
+dev.off()
+
+pdf(file="figs/aranjuezGGhexbin.pdf")
+ggplot(data=aranjuezRshp, aes(Temperature, Radiation)) +
+    stat_binhex(ncol=1) + 
+    stat_smooth(se=FALSE, method='loess', col='red') +
+    facet_wrap(~Statistic, ncol=1) +
+    theme_bw()
 dev.off()
 
 ##################################################################
 ## Scatterplot with time as a conditioning variable
 ##################################################################
 
-pdf(file="figs/aranjuezOuterStrips.pdf")
-library(latticeExtra)
+pdf(file="figs/aranjuezFacetGrid.pdf")
+ggplot(data=aranjuezRshp, aes(Radiation, Temperature)) +
+    facet_grid(Statistic ~ month) +
+    geom_point(col='skyblue4', pch=19, cex=0.5, alpha=0.3) +
+    geom_rug() +
+    stat_smooth(se=FALSE, method='loess', col='indianred1', lwd=1.2) +
+    theme_bw()
+dev.off()
 
-useOuterStrips(xyplot(Temperature~Radiation|month*Statistic,
+pdf(file="figs/aranjuezOuterStrips.pdf")
+useOuterStrips(xyplot(Temperature ~ Radiation | month * Statistic,
                       data=aranjuezRshp,
-                      between=list(x=0), 
-                      panel=function(...){
-                        panel.xyplot(...,
-                                     col='skyblue4', pch=19,
-                                     cex=0.5, alpha=0.3)
-                        panel.rug(..., col.line='indianred1',
-                                  end=0.05, alpha=0.6)
-                        panel.loess(..., col='indianred1', lwd=1.5)
-                        }))
-  
+                      between=list(x=0),
+                      col='skyblue4', pch=19,
+                      cex=0.5, alpha=0.3)) +
+    layer({
+        panel.rug(..., col.line='indianred1', end=0.05, alpha=0.6)
+        panel.loess(..., col='indianred1', lwd=1.5, alpha=1)
+    })
 dev.off()

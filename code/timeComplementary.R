@@ -24,10 +24,51 @@
 setwd('~/Dropbox/chapman/book/')
 load('data/CO2.RData')
 
+library(lattice)
+library(ggplot2)
+library(latticeExtra)
+library(zoo)
+
+myTheme <- custom.theme.2(pch=19, cex=0.7,
+                          region=rev(brewer.pal(9, 'YlOrRd')),
+                          symbol = brewer.pal(n=8, name = "Dark2"))
+myTheme$strip.background$col='transparent'
+myTheme$strip.shingle$col='transparent'
+myTheme$strip.border$col='transparent'
+
+xscale.components.custom <- function(...){
+    ans <- xscale.components.default(...)
+    ans$top=FALSE
+    ans}
+yscale.components.custom <- function(...){
+    ans <- yscale.components.default(...)
+    ans$right=FALSE
+    ans}
+myArgs <- list(as.table=TRUE,
+               between=list(x=0.5, y=0.2),
+               xscale.components = xscale.components.custom,
+               yscale.components = yscale.components.custom)
+defaultArgs <- lattice.options()$default.args
+
+lattice.options(default.theme = myTheme,
+                default.args = modifyList(defaultArgs, myArgs))
+
 library(googleVis)
 pgvis <- gvisMotionChart(CO2data, idvar='Country.Name', timevar='Year')
 
 print(pgvis, 'html', file='figs/googleVis.html')
+
+pdf(file="figs/CO2_GNI.pdf")
+xyplot(GNI.capita  ~ CO2.capita, data=CO2data,
+       xlab="CO2 emissions (metric tons per capita)",
+       ylab="GNI per capita, PPP (current international $)",
+       groups=Country.Name, type='b')
+dev.off()
+
+ggplot(data=CO2data, aes(x=CO2.capita, y=GNI.capita, color=Country.Name)) +
+    xlab("CO2 emissions (metric tons per capita)") +
+    ylab("GNI per capita, PPP (current international $)") +
+    geom_point() + geom_path() + theme_bw()
 
 ##################################################################
 ## Choosing colors
@@ -57,7 +98,8 @@ idx <- match(levels(CO2data$Country.Name),
              CO2capita$Country.Name[hCO2$order])
 palOrdered <- pal[idx]
 
-myTheme <- custom.theme(pch=19, cex=0.6, symbol=palOrdered)
+## simpleTheme encapsulates the palette in a new theme for xyplot
+myTheme <- simpleTheme(pch=19, cex=0.6, col=palOrdered)
 
 pCO2.capita <- xyplot(GNI.capita  ~ CO2.capita,
                       xlab="CO2 emissions (metric tons per capita)",
@@ -65,6 +107,14 @@ pCO2.capita <- xyplot(GNI.capita  ~ CO2.capita,
                       groups=Country.Name, data=CO2data,
                       par.settings=myTheme,
                       type='b')
+
+gCO2.capita <- ggplot(data=CO2data, aes(x=CO2.capita, y=GNI.capita,
+                      color=Country.Name)) +
+    geom_point() + geom_path() +
+    scale_color_manual(values=palOrdered, guide=FALSE) +
+    xlab('CO2 emissions (metric tons per capita)') +
+    ylab('GNI per capita, PPP (current international $)') +
+    theme_bw()
 
 xyplot(GNI.capita  ~ CO2.capita,
        xlab="CO2 emissions (metric tons per capita)",
@@ -80,22 +130,26 @@ xyplot(GNI.capita  ~ CO2.capita,
        }
        )
 
-library(latticeExtra)
-
 pCO2.capita <- pCO2.capita +
     glayer_(panel.text(..., labels=CO2data$Year[subscripts],
                        pos=2, cex=0.5, col='gray'))
+
+gCO2.capita <- gCO2.capita + geom_text(aes(label=Year), colour='gray',
+                                       size=2.5, hjust=0, vjust=0)
 
 ##################################################################
 ## Positioning labels
 ##################################################################
 
 pdf(file="figs/CO2_capita.pdf")
+library(maptools)  
+## group.value provides the country name; group.number is the
+## index of each country to choose the color from the palette.
 pCO2.capita +
-  glayer(panel.text(x[9], y[9],
-                    labels= group.value,
-                    col=palOrdered[group.number],
-                    pos=4, offset=0.7, cex=0.7))
+    glayer(panel.pointLabel(x[9], y[9],
+                            labels= group.value,
+                            col=palOrdered[group.number],
+                            cex=0.7))
 dev.off()
 
 pdf(file="figs/CO2_capitaDL.pdf")
@@ -103,9 +157,35 @@ library(directlabels)
 direct.label(pCO2.capita, method='extreme.grid')
 dev.off()
 
+direct.label(gCO2.capita, method='extreme.grid')
+
 ##################################################################
-## A panel for each year and bubbles with variable radius
+## A panel for each year
 ##################################################################
+
+pdf(file="figs/CO2_capita_panel.pdf")
+xyplot(GNI.capita  ~ CO2.capita | factor(Year), data=CO2data,
+       xlab="CO2 emissions (metric tons per capita)",
+       ylab="GNI per capita, PPP (current international $)",
+       groups=Country.Name, type='b',
+       auto.key=list(space='right'))
+dev.off()
+
+ggplot(data=CO2data, aes(x=CO2.capita, y=GNI.capita, colour=Country.Name)) +
+    facet_wrap(~ Year) + geom_point(pch=19) + 
+    xlab('CO2 emissions (metric tons per capita)') +
+    ylab('GNI per capita, PPP (current international $)') +
+    theme_bw()
+
+pdf(file="figs/CO2_capita_panel_labels.pdf")
+xyplot(GNI.capita  ~ CO2.capita | factor(Year), data=CO2data,
+       xlab="CO2 emissions (metric tons per capita)",
+       ylab="GNI per capita, PPP (current international $)",
+       groups=Country.Name, type='b',
+       par.settings=myTheme) + 
+    glayer(panel.pointLabel(x, y, labels=group.value,
+                            col=palOrdered[group.number], cex=0.7))
+dev.off()
 
 library(classInt)
 z <- CO2data$CO2.PPP
@@ -117,34 +197,33 @@ cex.key <- seq(0.5, 1.8, length=nInt)
 idx <- findCols(intervals)
 CO2data$cexPoints <- cex.key[idx]
 
+pdf(file="figs/CO2pointsGG.pdf")
+ggplot(data=CO2data, aes(x=CO2.capita, y=GNI.capita, colour=Country.Name)) +
+    facet_wrap(~ Year) + geom_point(aes(size=cexPoints), pch=19) +
+    xlab('CO2 emissions (metric tons per capita)') +
+    ylab('GNI per capita, PPP (current international $)') +
+    theme_bw()
+dev.off()
+
+pdf(file="figs/CO2points.pdf")
 op <- options(digits=2)
-## Use whatever pal you wish. It will not be used in the following code
-intervalTab <- findColours(intervals, pal=pal)
-## The names attribute stores the intervals strings
-tab <- names(attr(intervalTab, 'table'))
+tab <- print(intervals)
 options(op)
 
 key <- list(space='right',
             title='CO2.PPP', cex.title=1,
             ## Labels of the key are the intervals strings
-            text=list(labels=tab, cex=0.85),
+            text=list(labels=names(tab), cex=0.85),
             ## Points sizes are defined with cex.key
             points=list(col='black', pch=19,
               cex=cex.key, alpha=0.7))
 
-pdf(file="figs/CO2points.pdf")
-xyplot(GNI.capita~CO2.capita|Year, data=CO2data,
+
+xyplot(GNI.capita~CO2.capita|factor(Year), data=CO2data,
        groups=Country.Name, key=key, alpha=0.7,
-       strip=strip.custom(strip.levels=c(TRUE, TRUE)),
-       panel=function(x, y, cex.values,..., subscripts, groups){
-         panel.text(x, y, ...,
-                    labels=groups[subscripts],
-                    col=palOrdered[groups[subscripts]],
-                    pos=3, cex=0.8*sqrt(CO2data$cexPoints[subscripts]))
-         panel.points(x, y,
-                      col=palOrdered[groups[subscripts]],
-                      cex=CO2data$cexPoints[subscripts])
-       })  
+       col=palOrdered, cex=CO2data$cexPoints) +
+    glayer(panel.pointLabel(x, y, labels=group.value,
+                            col=palOrdered[group.number], cex=0.7))
 dev.off()
 
 ##################################################################

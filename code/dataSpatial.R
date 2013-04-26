@@ -25,10 +25,6 @@
 setwd('~/Dropbox/chapman/book/')
 
 ##################################################################
-## Spatial Data
-##################################################################
-
-##################################################################
 ## Air Quality in Madrid
 ##################################################################
 
@@ -89,6 +85,7 @@ datos11 <- lapply(rawData, function(x){
   dat <- substr(x, 19, nchar(x))
   ## "N" used for impossible days (31st April)
   idxN <- gregexpr('N', dat)[[1]]
+  if (idxN==-1) idxN <- numeric(0)
   nZeroDays <- length(idxN)
   day <- seq(1, 31-nZeroDays)
   ## Substitute V and N with ";" to split data from different days
@@ -101,7 +98,6 @@ datos11 <- lapply(rawData, function(x){
                     dat)
   })
 datos11 <- do.call(rbind, datos11)
-
 write.csv2(datos11, 'data/airQuality.csv')
 
 ##################################################################
@@ -127,8 +123,8 @@ pcMax <- Max/census * 100
 
 ## Province-Municipality code. sprintf formats a number with leading zeros.
 PROVMUN <- with(dat2011, paste(sprintf('%02d', Código.de.Provincia),
-                                            sprintf('%03d', Código.de.Municipio),
-                                            sep=""))
+                               sprintf('%03d', Código.de.Municipio),
+                               sep=""))
 
 votes2011 <- data.frame(PROVMUN, whichMax, Max, pcMax)
 write.csv(votes2011, 'data/votes2011.csv', row.names=FALSE)

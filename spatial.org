@@ -1,37 +1,45 @@
 #+AUTHOR:    Oscar Perpiñán Lamigueiro
 #+EMAIL:     oscar.perpinan@gmail.com
-#+TITLE:     Displaying time series, spatial and space-time data with R: stories of space and time
+#+TITLE:     Spatial Data - Displaying time series, spatial and space-time data with R
 #+LANGUAGE:  en
-#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+LINK_UP: index.html
 #+LINK_HOME: index.html
 #+STYLE:    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
 
-* Spatial Data
+* Thematic maps
 
-** Data
+[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/thematicMaps.R][View Code]] (click on each image for a PDF or interactive graphic)
 
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/dataSpatial.R][View Code]]
+| [[file:images/whichMax.pdf][file:images/whichMax.png]]             | [[file:images/mapLegends.pdf][file:images/mapLegends.png]]         |
+|--------------------------------------+------------------------------------|
+| [[file:images/divPalSISav_classInt.pdf][file:images/divPalSISav_classInt.png]] | [[file:images/landClass.pdf][file:images/landClass.png]]          |
+|--------------------------------------+------------------------------------|
+| [[file:images/populationNASA.pdf][file:images/populationNASA.png]]       | [[file:images/popLandClass.png][file:images/popLandClass_small.png]] |
+|--------------------------------------+------------------------------------|
+| [[file:images/airMadrid_stamen.pdf][file:images/airMadrid_stamen.png]]     | [[file:airMadrid.html][file:images/airMadrid.png]]          |
+|--------------------------------------+------------------------------------|
+| [[file:images/airMadrid_krige.png]]      |                                    |
 
-
-** Reference and physical maps
+* Reference and physical maps
 
 [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/referenceMaps.R][View Code]] (click on each image for a PDF or interactive graphic)
 
 | [[file:images/cedeiraOsmar.pdf][file:images/cedeiraOsmar.png]] |  [[file:images/brazil.pdf][file:images/brazil.png]] |
 
+* Vector fields
 
-** Thematic maps
+[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/vector.R][View Code]] (click on each image for a PDF or interactive graphic)
 
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/thematicMaps.R][View Code]] (click on each image for a PDF or interactive graphic)
-
-| [[file:images/mapLegends.pdf][file:images/mapLegends.jpg]]         | [[file:images/divPalSISav_classInt.pdf][file:images/divPalSISav_classInt.png]] |
-|------------------------------------+--------------------------------------|
-| [[file:images/landClass.pdf][file:images/landClass.png]]          | [[file:images/populationNASA.pdf][file:images/populationNASA.png]]       |
-|------------------------------------+--------------------------------------|
-| [[file:images/popLandClass.png][file:images/popLandClass_small.png]] | [[file:airMadrid.html][file:images/airMadrid.png]]            |
-|                                    |                                      |
+| [[file:images/vectorplot.pdf][file:images/vectorplot.png]] | [[file:images/streamplot.pdf][file:images/streamplot.png]] |
 
 -----
 
+* Data
+
+[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/dataSpatial.R][View Code]]
+
+
+
+-----
