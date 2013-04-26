@@ -10,29 +10,41 @@
 
 * Thematic maps
 
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/thematicMaps.R][View Code]] (click on each image for a PDF or interactive graphic)
+** Choropleth maps
+
+[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/choropleth.R][View Code]] (click on each image for a PDF or interactive graphic)
 
 | [[file:images/whichMax.pdf][file:images/whichMax.png]]             | [[file:images/mapLegends.pdf][file:images/mapLegends.png]]         |
-|--------------------------------------+------------------------------------|
+
+** Raster maps
+
+[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/raster.R][View Code]] (click on each image for a PDF or interactive graphic)
+
+
 | [[file:images/divPalSISav_classInt.pdf][file:images/divPalSISav_classInt.png]] | [[file:images/landClass.pdf][file:images/landClass.png]]          |
 |--------------------------------------+------------------------------------|
 | [[file:images/populationNASA.pdf][file:images/populationNASA.png]]       | [[file:images/popLandClass.png][file:images/popLandClass_small.png]] |
-|--------------------------------------+------------------------------------|
+
+** Proportional symbol mapping
+
+[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/bubble.R][View Code]] (click on each image for a PDF or interactive graphic)
+
+
 | [[file:images/airMadrid_stamen.pdf][file:images/airMadrid_stamen.png]]     | [[file:airMadrid.html][file:images/airMadrid.png]]          |
 |--------------------------------------+------------------------------------|
 | [[file:images/airMadrid_krige.png]]      |                                    |
 
-* Reference and physical maps
-
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/referenceMaps.R][View Code]] (click on each image for a PDF or interactive graphic)
-
-| [[file:images/cedeiraOsmar.pdf][file:images/cedeiraOsmar.png]] |  [[file:images/brazil.pdf][file:images/brazil.png]] |
-
-* Vector fields
+** Vector fields
 
 [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/vector.R][View Code]] (click on each image for a PDF or interactive graphic)
 
 | [[file:images/vectorplot.pdf][file:images/vectorplot.png]] | [[file:images/streamplot.pdf][file:images/streamplot.png]] |
+
+
+* Reference and physical maps
+
+| [[file:images/cedeiraOsmar.pdf][file:images/cedeiraOsmar.png]] | [[file:images/brazil.pdf][file:images/brazil.png]] |
+| [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/osmar.R][View Code]]                    | [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/physical.R][View Code]]              |
 
 -----
 
