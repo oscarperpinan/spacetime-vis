@@ -24,41 +24,93 @@
 ## Set folder to where the local copy of github repository can be found
 setwd('~/Dropbox/chapman/book/')
 
+library(lattice)
+library(ggplot2)
+library(latticeExtra)
+
+myTheme <- custom.theme.2(pch=19, cex=0.7,
+                          region=rev(brewer.pal(9, 'YlOrRd')),
+                          symbol = brewer.pal(n=8, name = "Dark2"))
+myTheme$strip.background$col='transparent'
+myTheme$strip.shingle$col='transparent'
+myTheme$strip.border$col='transparent'
+
+xscale.components.custom <- function(...){
+    ans <- xscale.components.default(...)
+    ans$top=FALSE
+    ans}
+yscale.components.custom <- function(...){
+    ans <- yscale.components.default(...)
+    ans$right=FALSE
+    ans}
+myArgs <- list(as.table=TRUE,
+               between=list(x=0.5, y=0.2),
+               xscale.components = xscale.components.custom,
+               yscale.components = yscale.components.custom)
+defaultArgs <- lattice.options()$default.args
+
+lattice.options(default.theme = myTheme,
+                default.args = modifyList(defaultArgs, myArgs))
+
+##################################################################
+## Data and spatial information
+##################################################################
+
 library(sp)
 
+## Spatial location of stations
 airStations <- read.csv2('data/airStations.csv')
-
+## rownames are used as the ID of the Spatial object
+rownames(airStations) <- airStations$Codigo
 coordinates(airStations) <- ~ long + lat
 proj4string(airStations) <- CRS("+proj=longlat +ellps=WGS84")
-
+## Measurements data
 airQuality <- read.csv2('data/airQuality.csv')
-
+## Only interested in NO2 
 NO2 <- airQuality[airQuality$codParam==8, ]
 
-splitNO2 <- split(NO2, NO2$codEst)
-listNO2 <- lapply(splitNO2, FUN=function(l){
-  tt <- with(l, as.POSIXct(paste(year, month, day, sep='-')))
-  zoo(l$dat, tt)
-  })
-## cbind.zoo merges the list of zoo's including all the time
-## indexes in the output (all=TRUE)
-NO2zoo <- do.call(cbind, listNO2)
-
-xyplot(NO2zoo,
-       lwd=0.4, col='black', alpha=0.3,
-       superpose=TRUE,
-       auto.key=FALSE)
-
+library(zoo)
 library(spacetime)
 
-NO2st <- STFDF(airStations, index(NO2zoo),
-               data.frame(vals=c(t(NO2zoo))))
+NO2$time <- with(NO2, ISOdate(year, month, day))
+NO2wide <- reshape(NO2[,c('codEst', 'dat', 'time')],
+                   idvar='time', timevar='codEst',
+                   direction='wide')
+NO2zoo <- zoo(NO2wide[,-1], NO2wide$time)
 
-stplot(NO2st[, 1:10], cuts=5, col.regions=airPal)
+dats <- data.frame(vals=as.vector(t(NO2zoo)))
+NO2st <- STFDF(airStations, index(NO2zoo), dats)
+
+##################################################################
+## Graphics with spacetime
+##################################################################
+
+pdf(file="figs/NO2STxy.pdf")
+airPal <- colorRampPalette(c('springgreen1', 'sienna3', 'gray5'))(5)
+
+stplot(NO2st[, 1:12], cuts=5, col.regions=airPal, edge.col='black')
+dev.off()
+
+pdf(file="figs/NO2hovmoller.pdf")
+stplot(NO2st, mode='xt', col.regions=colorRampPalette(airPal)(15),
+       scales=list(x=list(rot=45)), xlab='')
+dev.off()
+
+pdf(file="figs/NO2zoo.pdf")
+stplot(NO2st, mode='ts', xlab='',
+       lwd=0.4, col='black', alpha=0.3,
+       auto.key=FALSE)
+dev.off()
+
+##################################################################
+## Animation
+##################################################################
 
 library(gridSVG)
-## Initial display
+## Initial parameters
 start <- NO2st[,1]
+## values will be encoded as size of circles,
+## so we need to scale them
 startVals <- start$vals/5000
 
 nStations <- nrow(airStations)
@@ -76,10 +128,31 @@ panel.circlesplot <- function(x, y, cex, col='gray',
               name=name)
   }
 
-spplot(start, panel=panel.circlesplot,
-       cex=startVals,
-       scales=list(draw=TRUE), auto.key=FALSE)
- 
+pStart <- spplot(start, panel=panel.circlesplot,
+                 cex=startVals,
+                 scales=list(draw=TRUE), auto.key=FALSE)
+pStart
+
+## Color to distinguish between weekdays ('green')
+## and weekend ('blue')
+isWeekend <- function(x) {format(x, '%w') %in% c(0, 6)}
+color <- ifelse(isWeekend(days), 'blue', 'green')
+colorAnim <- animValue(rep(color, each=nStations),
+                       id=rep(seq_len(nStations), nDays))
+
+## Intermediate sizes of the circles
+vals <- NO2st$vals/5000
+vals[is.na(vals)] <- 0
+radius <- animUnit(unit(vals, 'native'),
+                       id=rep(seq_len(nStations), nDays))                     
+
+## Animation of circles including sizes and colors
+grid.animate('stationsCircles',
+             duration=duration,
+             r=radius,
+             fill=colorAnim,
+             rep=TRUE)
+
 ## Progress bar
 prettyDays <- pretty(days, 12)
 ## Width of the progress bar
@@ -103,28 +176,6 @@ grid.rect(.025, .01, width=0,
 grid.animate('pbar', duration=duration,
              width=seq(0, pbWidth, length=duration),
              rep=TRUE)
-
-
-## Color to distinguish between weekdays ('green')
-## and weekend ('blue')
-isWeekend <- function(x) {format(x, '%w') %in% c(0, 6)}
-color <- ifelse(isWeekend(days), 'blue', 'green')
-colorAnim <- animValue(rep(color, each=nStations),
-                       id=rep(seq_len(nStations), nDays))
-
-## Intermediate sizes of the circles
-vals <- NO2st$vals/5000
-vals[is.na(vals)] <- 0
-radius <- animUnit(unit(vals, 'native'),
-                       id=rep(seq_len(nStations), nDays))                     
-
-## Animation of circles including sizes and colors
-grid.animate('stationsCircles',
-             duration=duration,
-             r=radius,
-             fill=colorAnim,
-             rep=TRUE)
-
 ## Pause animations when mouse is over the progress bar
 grid.garnish('bgbar',
              onmouseover='document.rootElement.pauseAnimations()',
@@ -132,24 +183,20 @@ grid.garnish('bgbar',
 
 gridToSVG('figs/NO2pb.svg')
 
-p1 <- spplot(start, panel=panel.circlesplot,
-            cex=startVals,
-            scales=list(draw=TRUE), auto.key=FALSE)
-
-
+## Time series with average value of the set of stations
 NO2mean <- zoo(rowMeans(NO2zoo, na.rm=TRUE), index(NO2zoo))
-
-p2 <- xyplot(NO2mean, xlab='', identifier='timePlot') +
-  layer({
-    grid.points(0, .5, size=unit(.5, 'char'),
+## Time series plot with position highlighted
+pTimeSeries <- xyplot(NO2mean, xlab='', identifier='timePlot') +
+    layer({
+        grid.points(0, .5, size=unit(.5, 'char'),
                     default.units='npc',
                     gp=gpar(fill='gray'),
                     name='locator')
-    grid.segments(0, 0, 0, 1, name='vLine')
+        grid.segments(0, 0, 0, 1, name='vLine')
     })
 
-print(p1, position=c(0, .2, 1, 1), more=TRUE)
-print(p2, position=c(.1, 0, .9, .25))
+print(pStart, position=c(0, .2, 1, 1), more=TRUE)
+print(pTimeSeries, position=c(.1, 0, .9, .25))
 
 grid.animate('locator',
              x=unit(as.numeric(index(NO2zoo)), 'native'),
@@ -168,7 +215,7 @@ grid.animate('stationsCircles',
              fill=colorAnim,
              rep=TRUE)
 
-## Pause animations when mouse is over the progress bar
+## Pause animations when mouse is over the time series plot
 grid.garnish('timePlot', grep=TRUE,
              onmouseover='document.rootElement.pauseAnimations()',
              onmouseout='document.rootElement.unpauseAnimations()')
