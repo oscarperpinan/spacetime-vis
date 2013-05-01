@@ -10,16 +10,9 @@
 	       :org-export-html-style-include-default nil
 	       :html-preamble nil
 	       :html-postamble nil)
-     
               ("images"
                :base-directory "images/"
                :base-extension "jpg\\|gif\\|png"
                :publishing-directory "image/"
                :publishing-function org-publish-attachment)
-     
-              ("other"
-               :base-directory "code/"
-               :base-extension "R"
-               :publishing-directory "code/"
-               :publishing-function org-publish-attachment)
-              ("website" :components ("orgfiles" "images" "other"))))
+              ("website" :components ("orgfiles" "images"))))

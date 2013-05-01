@@ -8,6 +8,24 @@
 #+LINK_HOME: index.html
 #+STYLE:    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
 
-* Space-Time Data
+* Raster data
 
-Coming soon...
+
+[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/rasterST.R][View Code]] (click on each image for a PDF or interactive graphic)
+
+| [[file:images/SISdm.pdf][file:images/SISdm.png]]               | [[file:images/SISdm_splom.pdf][file:images/SISdm_splom.png]]       |
+|-------------------------------------+-----------------------------------|
+| [[file:images/SISdm_den.pdf][file:images/SISdm_den.png]]           | [[file:images/SISdm_histogram.pdf][file:images/SISdm_histogram.png]]   |
+|-------------------------------------+-----------------------------------|
+| [[file:images/SISdm_hovmoller_lat.pdf][file:images/SISdm_hovmoller_lat.png]] | [[file:images/SISdm_horizonplot.pdf][file:images/SISdm_horizonplot.png]] |
+
+
+* Spatial point data
+
+
+[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/pointsST.R][View Code]] (click on each image for a PDF or interactive graphic)
+
+| [[file:images/NO2STxy.pdf][file:images/NO2STxy.png]] | [[file:images/NO2hovmoller.pdf][file:images/NO2hovmoller.png]] |
+|-------------------------+------------------------------|
+| [[file:images/vLine.svg][file:images/vLine.png]]   | [[file:images/NO2pb.svg][file:images/NO2pb.png]]        |
+
