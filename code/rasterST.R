@@ -21,35 +21,11 @@
 ## 02111-1307, USA.
 ####################################################################
 
-## Set folder to where the local copy of github repository can be found
-setwd('~/Dropbox/chapman/book/')
-
-library(lattice)
-library(latticeExtra)
-
-myTheme <- custom.theme.2(pch=19, cex=0.7,
-                          region=rev(brewer.pal(9, 'YlOrRd')),
-                          symbol = brewer.pal(n=8, name = "Dark2"))
-myTheme$strip.background$col='transparent'
-myTheme$strip.shingle$col='transparent'
-myTheme$strip.border$col='transparent'
-
-xscale.components.custom <- function(...){
-    ans <- xscale.components.default(...)
-    ans$top=FALSE
-    ans}
-yscale.components.custom <- function(...){
-    ans <- yscale.components.default(...)
-    ans$right=FALSE
-    ans}
-myArgs <- list(as.table=TRUE,
-               between=list(x=0.5, y=0.2),
-               xscale.components = xscale.components.custom,
-               yscale.components = yscale.components.custom)
-defaultArgs <- lattice.options()$default.args
-
-lattice.options(default.theme = myTheme,
-                default.args = modifyList(defaultArgs, myArgs))
+##################################################################
+## Initial configuration
+##################################################################
+## Clone or download the repository and set the working directory
+## with setwd to the folder where the repository is located.
 
 ##################################################################
 ## Introduction
@@ -57,6 +33,7 @@ lattice.options(default.theme = myTheme,
 
 library(raster)
 library(zoo)
+library(rasterVis)
 
 SISdm <- brick('data/SISgal')
 
@@ -69,7 +46,6 @@ names(SISdm) <- format(timeIndex, '%a_%Y%m%d')
 ##################################################################
 
 pdf(file="figs/SISdm.pdf")
-library(rasterVis)
 levelplot(SISdm, layers=1:12, panel=panel.levelplot.raster)
 dev.off()
 
@@ -87,27 +63,12 @@ pdf(file="figs/SISdm_histogram.pdf")
 histogram(SISdm, FUN=as.yearmon)
 dev.off()
 
-pdf(file="figs/SISdm_den.pdf")
-densityplot(SISdm, FUN=as.yearmon)
+pdf(file="figs/SISdm_boxplot.pdf")
+bwplot(SISdm, FUN=as.yearmon)
 dev.off()
 
-pdf(file="figs/SISdm_splom.pdf")
+png(filename="figs/SISmm_splom.png",res=600,height=4000,width=4000)
 splom(SISmm, xlab='', plot.loess=TRUE)
-dev.off()
-
-##################################################################
-## Time series
-##################################################################
-
-pdf(file="figs/SISmm_xyplot.pdf")
-xyplot(SISdm)
-dev.off()
-
-SISav <- mean(SISdm)
-SISdif <- setZ(SISdm - SISav, getZ(SISdm))
-
-pdf(file="figs/SISdm_horizonplot.pdf")
-horizonplot(SISdif, digits=1)
 dev.off()
 
 ##################################################################
@@ -115,12 +76,17 @@ dev.off()
 ##################################################################
 
 pdf(file="figs/SISdm_hovmoller_lat.pdf")
-hovmoller(SISdif, par.settings=RdBuTheme())
-
+hovmoller(SISdm, par.settings=BTCTheme())
 dev.off()
 
-pdf(file="figs/SISdm_hovmoller_lon.pdf")
-hovmoller(SISdif, dirXY=x, par.settings=RdBuTheme())
+pdf(file="figs/SISmm_xyplot.pdf")
+xyplot(SISdm, digits=1, col='black', lwd=0.2, alpha=0.6)
+dev.off()
+
+pdf(file="figs/SISdm_horizonplot.pdf")
+horizonplot(SISdm, digits=1,
+            col.regions=rev(brewer.pal(n=6, 'PuOr')),
+            xlab='', ylab='Latitude')
 dev.off()
 
 ##################################################################
@@ -137,26 +103,43 @@ names(cft) <- format(timeIndex, 'D%d_H%H')
 
 library(maptools)
 library(rgdal)
-projLL <- CRS('+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0')
-spainBoundaries <- readShapePoly('~/Datos/ESP_adm/ESP_adm1',
-                                 proj4string=projLL)
-spainBoundaries <- spTransform(spainBoundaries, CRS(projection(cft)))
+library(maps)
+library(mapdata)
 
+
+projLL <- CRS('+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0')
+cftLL <- projectExtent(cft, projLL)
+cftExt <- as.vector(bbox(cftLL))
+boundaries <- map('worldHires',
+                  xlim=cftExt[c(1,3)], ylim=cftExt[c(2,4)],
+                  plot=FALSE)
+boundaries <- map2SpatialLines(boundaries, proj4string=projLL)
+boundaries <- spTransform(boundaries, CRS(projLCC2d))
+
+## create a collection of graphic files from each layer of the RasterBrick
 tmp <- tempdir()
 trellis.device(png, file=paste0(tmp, '/Rplot%02d.png'),
                       res=300, width=1500, height=1500)
 cloudTheme <- rasterTheme(region=brewer.pal(n=9, 'Blues'))
 levelplot(cft, layout=c(1, 1), par.settings=cloudTheme) +
-    layer(sp.polygons(spainBoundaries, lwd=0.6, fill='transparent'))
+    layer(sp.lines(boundaries, lwd=0.6))
+dev.off()
+
+pdf(file="figs/cft.pdf")
+old <- setwd(tmp)
+cftTemp <- writeRaster(cft, 'cft', overwrite=TRUE)
+levelplot(cftTemp, layers=25:48, layout=c(6, 4),
+          par.settings=cloudTheme,
+          names.attr=paste0(sprintf('%02d', 1:24), 'h'),
+          panel=panel.levelplot.raster) +
+    layer(sp.lines(boundaries, lwd=0.6))
+setwd(old)    
 dev.off()
 
 old <- setwd(tmp)
-##convertCMD <- 'convert Rplot*.png -morph 3 morph%05d.jpg'
-##system(convertCMD)
-##movieCMD <- 'ffmpeg -r 10 -b 500000 -i morph%05d.jpg output.mp4'
+## Create a movie with ffmpeg using 6 frames per second a bitrate of 300kbs
 movieCMD <- 'ffmpeg -r 6 -b 300k -i Rplot%02d.png output.mp4'
 system(movieCMD)
-##file.remove(dir(pattern='morph'))
 file.remove(dir(pattern='Rplot'))
-file.copy('output.mp4', paste0(old, 'figs/cft.mp4'), overwrite=TRUE)
+file.copy('output.mp4', paste0(old, '/figs/cft.mp4'), overwrite=TRUE)
 setwd(old)

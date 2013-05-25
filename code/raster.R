@@ -21,8 +21,11 @@
 ## 02111-1307, USA.
 ####################################################################
 
-## Set folder to where the local copy of github repository can be found
-setwd('~/Dropbox/chapman/book/')
+##################################################################
+## Initial configuration
+##################################################################
+## Clone or download the repository and set the working directory
+## with setwd to the folder where the repository is located.
 
 library(lattice)
 library(ggplot2)
@@ -57,7 +60,7 @@ lattice.options(default.theme = myTheme,
 ##################################################################
 
 ##################################################################
-## Diverging palettes
+## Quantitative data
 ##################################################################
 
 pdf(file="figs/leveplotSISavOrig.pdf")
@@ -66,6 +69,40 @@ library(rasterVis)
 SISav <- raster('data/SISav')
 levelplot(SISav)
 dev.off()
+
+old <- setwd(tempdir())
+download.file('http://www.diva-gis.org/data/msk_alt/ESP_msk_alt.zip', 'ESP_msk_alt.zip')
+unzip('ESP_msk_alt.zip', exdir='.')
+
+DEM <- raster('ESP_alt')
+
+
+slope <- terrain(DEM, 'slope')
+aspect <- terrain(DEM, 'aspect')
+hs <- hillShade(slope=slope, aspect=aspect,
+                angle=20, direction=30)
+setwd(old)
+
+## hillShade theme: gray colors and semitransparency
+hsTheme <- modifyList(GrTheme(), list(regions=list(alpha=0.3)))
+
+library(maps)
+library(mapdata)
+
+ext <- as.vector(extent(SISav))
+boundaries <- map('worldHires',
+                  xlim=ext[1:2], ylim=ext[3:4],
+                  plot=FALSE)
+boundaries <- map2SpatialLines(boundaries,
+                               proj4string=CRS(projection(SISav)))
+
+levelplot(SISav, par.settings=sunTheme) +
+    levelplot(hs, par.settings=hsTheme) +
+    layer(sp.lines(boundaries, lwd=0.5))
+
+##################################################################
+## Diverging palettes
+##################################################################
 
 meanRad <- cellStats(SISav, 'mean')
 SISav <- SISav - meanRad

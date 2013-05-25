@@ -3,7 +3,7 @@
 ## Source code for the book: "Displaying time series, spatial and
 ## space-time data with R: stories of space and time"
 
-## Copyright (C) 2012 Oscar Perpiñán Lamigueiro
+## Copyright (C) 2013-2012 Oscar Perpiñán Lamigueiro
 
 ## This program is free software you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published
@@ -21,8 +21,11 @@
 ## 02111-1307, USA.
 ####################################################################
 
-## Set folder to where the local copy of github repository can be found
-setwd('~/Dropbox/chapman/book/')
+##################################################################
+## Initial configuration
+##################################################################
+## Clone or download the repository and set the working directory
+## with setwd to the folder where the repository is located.
 
 ##################################################################
 ## Air Quality in Madrid

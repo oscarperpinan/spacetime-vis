@@ -115,3 +115,11 @@ CO2data <- CO2data[!isNA, ]
 head(CO2data)
 
 save(CO2data, CO2, file='data/CO2.RData')
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{figs/mapaSIAR_crop}
+  \caption{Meteorological stations of the SIAR network. The color key
+    indicates the altitude (meters).}
+  \label{fig:SIAR_map}
+\end{figure}

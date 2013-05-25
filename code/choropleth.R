@@ -21,8 +21,11 @@
 ## 02111-1307, USA.
 ####################################################################
 
-## Set folder to where the local copy of github repository can be found
-setwd('~/Dropbox/chapman/book/')
+##################################################################
+## Initial configuration
+##################################################################
+## Clone or download the repository and set the working directory
+## with setwd to the folder where the repository is located.
 
 library(lattice)
 library(ggplot2)

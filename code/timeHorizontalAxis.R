@@ -3,7 +3,7 @@
 ## Source code for the book: "Displaying time series, spatial and
 ## space-time data with R: stories of space and time"
 
-## Copyright (C) 2012 Oscar Perpiñán Lamigueiro
+## Copyright (C) 2013-2012 Oscar Perpiñán Lamigueiro
 
 ## This program is free software you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published
@@ -21,7 +21,12 @@
 ## 02111-1307, USA.
 ####################################################################
 
-setwd('~/Dropbox/chapman/book/')
+##################################################################
+## Initial configuration
+##################################################################
+## Clone or download the repository and set the working directory
+## with setwd to the folder where the repository is located.
+
 load('data/aranjuez.RData')
 load('data/navarra.RData')
 load('data/unemployUSA.RData')
@@ -54,37 +59,6 @@ defaultArgs <- lattice.options()$default.args
 
 lattice.options(default.theme = myTheme,
                 default.args = modifyList(defaultArgs, myArgs))
-
-library(zoo)
-aemet <- read.zoo('/home/oscar/Dropbox/R/aemet/Albacete.obs..txt', 
-                  sep=';', FUN=as.POSIXct, header=TRUE)
-names(aemet) <- c('D', 'B', 'G')
-
-xyplot(aemet$G)
-
-doy <- function(x)as.numeric(format(x, '%j'))
-hour <- function(x)as.numeric(format(x, '%H'))
-year <- function(x)format(x, '%Y')
-
-
-timeIndex <- index(aemet)
-nYears <- length(unique(year(timeIndex)))
-
-avG <- ave(aemet$G, format(index(aemet), '%j%H%M%S'))
-diffG <- (aemet$G - avG) / avG
-
-pdf(file="figs/stripplot.pdf")
-myTheme <- modifyList(custom.theme(region=brewer.pal(9, 'RdBu')),
-                                   list(
-                                     strip.background=list(col='gray'),
-                                     panel.background=list(col='gray'))
-                      )
-
-levelplot(diffG ~ doy(timeIndex)*hour(timeIndex)|year(timeIndex), data=as.data.frame(diffG),
-          layout=c(1, nYears), strip=FALSE, strip.left=TRUE,
-          par.settings=myTheme)
-
-dev.off()
 
 ##################################################################
 ## Time graph of different meteorological variables
@@ -207,6 +181,37 @@ for (id in unique(IDs)){
 grid.script(filename="highlight.js")
 
 gridToSVG('figs/navarraRadiation.svg')
+
+library(zoo)
+aemet <- read.zoo('/home/oscar/Dropbox/R/aemet/Albacete.obs..txt', 
+                  sep=';', FUN=as.POSIXct, header=TRUE)
+names(aemet) <- c('D', 'B', 'G')
+
+xyplot(aemet$G)
+
+doy <- function(x)as.numeric(format(x, '%j'))
+hour <- function(x)as.numeric(format(x, '%H'))
+year <- function(x)format(x, '%Y')
+
+
+timeIndex <- index(aemet)
+nYears <- length(unique(year(timeIndex)))
+
+avG <- ave(aemet$G, format(index(aemet), '%j%H%M%S'))
+diffG <- (aemet$G - avG) / avG
+
+pdf(file="figs/stripplot.pdf")
+myTheme <- modifyList(custom.theme(region=brewer.pal(9, 'RdBu')),
+                                   list(
+                                     strip.background=list(col='gray'),
+                                     panel.background=list(col='gray'))
+                      )
+
+levelplot(diffG ~ doy(timeIndex)*hour(timeIndex)|year(timeIndex), data=as.data.frame(diffG),
+          layout=c(1, nYears), strip=FALSE, strip.left=TRUE,
+          par.settings=myTheme)
+
+dev.off()
 
 ##################################################################
 ## Stacked graphs
