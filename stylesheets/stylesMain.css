@@ -2,7 +2,7 @@
 
 body {
   padding:50px;
-  font:14px/1.5 Palatino, Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:16px/1.5 Palatino, Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight:400;
 }
 
@@ -117,5 +117,51 @@ footer {
   float:left;
   position:fixed;
   bottom:50px;
+}
+
+.wrapper {
+    overflow: hidden;
+    margin: 10px;
+}
+
+.outline-2 {
+    float: left;
+    position: relative;
+    width: 33.33%;
+    padding-bottom: 34%;
+}
+
+.outline-text-2 {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+}
+
+.outline-text-2 img {
+    width: 90%;
+    border:1px solid #08298A;
+}
+
+.outline-text-2 img:hover {
+    border:2px solid #610B0B;
+}
+
+
+@media only screen and (max-width : 480px) {
+      /* Smartphone view: 1 tile */
+    .outline-2 {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+    /* Tablet view: 2 tiles */
+    .outline-2 {
+        width: 50%;
+        padding-bottom: 50%;
+    }
 }
 

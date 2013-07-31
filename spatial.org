@@ -2,56 +2,66 @@
 #+EMAIL:     oscar.perpinan@gmail.com
 #+TITLE:     Spatial Data - Displaying time series, spatial and space-time data with R
 #+LANGUAGE:  en
-#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+OPTIONS:   H:3 num:nil toc:1 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+LINK_UP: index.html
 #+LINK_HOME: index.html
 #+STYLE:    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+#+BIND: org-export-html-postamble nil
 
-* Thematic maps
+* Choropleth maps
 
-** Choropleth maps
+[[file:images/whichMax.pdf][file:images/whichMax.png]]  
 
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/choropleth.R][View Code]] (click on each image for a PDF or interactive graphic)
+[[file:images/mapLegends.pdf][file:images/mapLegends.png]]
 
-| [[file:images/whichMax.pdf][file:images/whichMax.png]]             | [[file:images/mapLegends.pdf][file:images/mapLegends.png]]         |
+**  [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/choropleth.R][Code]]
 
-** Raster maps
+* Raster maps
 
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/raster.R][View Code]] (click on each image for a PDF or interactive graphic)
+[[file:images/divPalSISav_classInt.pdf][file:images/divPalSISav_classInt.png]] 
 
+[[file:images/landClass.pdf][file:images/landClass.png]]        
 
-| [[file:images/divPalSISav_classInt.pdf][file:images/divPalSISav_classInt.png]] | [[file:images/landClass.pdf][file:images/landClass.png]]          |
-|--------------------------------------+------------------------------------|
-| [[file:images/populationNASA.pdf][file:images/populationNASA.png]]       | [[file:images/popLandClass.png][file:images/popLandClass_small.png]] |
+[[file:images/populationNASA.pdf][file:images/populationNASA.png]] 
 
-** Proportional symbol mapping
+[[file:images/popLandClass.png][file:images/popLandClass_small.png]] 
 
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/bubble.R][View Code]] (click on each image for a PDF or interactive graphic)
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/raster.R][Code]] 
 
+* Proportional symbol mapping
 
-| [[file:images/airMadrid_stamen.pdf][file:images/airMadrid_stamen.png]]     | [[file:airMadrid.html][file:images/airMadrid.png]]          |
-|--------------------------------------+------------------------------------|
-| [[file:images/airMadrid_krige.png]]      |                                    |
+[[file:images/airMadrid_stamen.pdf][file:images/airMadrid_stamen.png]] 
 
-** Vector fields
+[[file:airMadrid.html][file:images/airMadrid.png]]        
 
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/vector.R][View Code]] (click on each image for a PDF or interactive graphic)
+[[file:images/airMadrid_krige.png]] 
 
-| [[file:images/vectorplot.pdf][file:images/vectorplot.png]] | [[file:images/streamplot.pdf][file:images/streamplot.png]] |
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/bubble.R][Code]]
 
 
-* Reference and physical maps
+* Vector fields
 
-| [[file:images/cedeiraOsmar.pdf][file:images/cedeiraOsmar.png]] | [[file:images/brazil.pdf][file:images/brazil.png]] |
-| [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/osmar.R][View Code]]                    | [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/physical.R][View Code]]              |
+[[file:images/vectorplot.pdf][file:images/vectorplot.png]] 
+
+[[file:images/streamplot.pdf][file:images/streamplot.png]] 
+
+
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/vector.R][Code]]
+
+* Reference maps
+
+[[file:images/cedeiraOsmar.pdf][file:images/cedeiraOsmar.png]] 
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/osmar.R][Code]]            
+
+* Physical maps
+
+[[file:images/brazil.pdf][file:images/brazil.png]]  
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/physical.R][Code]]
 
 -----
 
 * Data
-
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/dataSpatial.R][View Code]]
-
-
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/dataSpatial.R][Code]]
 
 -----

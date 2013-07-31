@@ -2,33 +2,44 @@
 #+EMAIL:     oscar.perpinan@gmail.com
 #+TITLE:     Spatio-temporal data - Displaying time series, spatial and space-time data with R
 #+LANGUAGE:  en
-#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+OPTIONS:   H:3 num:nil toc:1 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+LINK_UP: index.html
 #+LINK_HOME: index.html
 #+STYLE:    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+#+BIND: org-export-html-postamble nil
+
 
 * Raster data
 
+[[file:images/SISdm.pdf][file:images/SISdm.png]] 
 
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/rasterST.R][View Code]] (click on each image for a PDF or interactive graphic)
+[[file:images/SISdm_splom.pdf][file:images/SISdm_splom.png]]     
 
-| [[file:images/SISdm.pdf][file:images/SISdm.png]]               | [[file:images/SISdm_splom.pdf][file:images/SISdm_splom.png]]       |
-|-------------------------------------+-----------------------------------|
-| [[file:images/SISdm_den.pdf][file:images/SISdm_den.png]]           | [[file:images/SISdm_histogram.pdf][file:images/SISdm_histogram.png]]   |
-|-------------------------------------+-----------------------------------|
-| [[file:images/SISdm_hovmoller_lat.pdf][file:images/SISdm_hovmoller_lat.png]] | [[file:images/SISdm_horizonplot.pdf][file:images/SISdm_horizonplot.png]] |
+[[file:images/SISdm_den.pdf][file:images/SISdm_den.png]]       
+
+[[file:images/SISdm_histogram.pdf][file:images/SISdm_histogram.png]] 
+
+[[file:images/SISdm_hovmoller_lat.pdf][file:images/SISdm_hovmoller_lat.png]] 
+
+[[file:images/SISdm_horizonplot.pdf][file:images/SISdm_horizonplot.png]] 
 
 #+BEGIN_HTML
   <iframe src="http://player.vimeo.com/video/65227780" width="500" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/65227780">Cloud Cover (WRF - Meteogalicia)</a>.</p>
 #+END_HTML
 
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/rasterST.R][Code]]
+
+
 * Spatial point data
 
+[[file:images/NO2STxy.pdf][file:images/NO2STxy.png]] 
 
-[[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/pointsST.R][View Code]] (click on each image for a PDF or interactive graphic)
+[[file:images/NO2hovmoller.pdf][file:images/NO2hovmoller.png]] 
 
-| [[file:images/NO2STxy.pdf][file:images/NO2STxy.png]] | [[file:images/NO2hovmoller.pdf][file:images/NO2hovmoller.png]] |
-|-------------------------+------------------------------|
-| [[file:images/vLine.svg][file:images/vLine.png]]   | [[file:images/NO2pb.svg][file:images/NO2pb.png]]        |
+[[file:images/vLine.svg][file:images/vLine.png]] 
 
+[[file:images/NO2pb.svg][file:images/NO2pb.png]]   
+
+
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/pointsST.R][Code]]
