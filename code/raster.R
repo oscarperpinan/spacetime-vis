@@ -27,34 +27,6 @@
 ## Clone or download the repository and set the working directory
 ## with setwd to the folder where the repository is located.
 
-library(lattice)
-library(ggplot2)
-library(latticeExtra)
-
-myTheme <- custom.theme.2(pch=19, cex=0.7,
-                          region=rev(brewer.pal(9, 'YlOrRd')),
-                          symbol = brewer.pal(n=8, name = "Dark2"))
-myTheme$strip.background$col='transparent'
-myTheme$strip.shingle$col='transparent'
-myTheme$strip.border$col='transparent'
-
-xscale.components.custom <- function(...){
-    ans <- xscale.components.default(...)
-    ans$top=FALSE
-    ans}
-yscale.components.custom <- function(...){
-    ans <- yscale.components.default(...)
-    ans$right=FALSE
-    ans}
-myArgs <- list(as.table=TRUE,
-               between=list(x=0.5, y=0.2),
-               xscale.components = xscale.components.custom,
-               yscale.components = yscale.components.custom)
-defaultArgs <- lattice.options()$default.args
-
-lattice.options(default.theme = myTheme,
-                default.args = modifyList(defaultArgs, myArgs))
-
 ##################################################################
 ## Raster maps
 ##################################################################
@@ -70,24 +42,9 @@ SISav <- raster('data/SISav')
 levelplot(SISav)
 dev.off()
 
-old <- setwd(tempdir())
-download.file('http://www.diva-gis.org/data/msk_alt/ESP_msk_alt.zip', 'ESP_msk_alt.zip')
-unzip('ESP_msk_alt.zip', exdir='.')
-
-DEM <- raster('ESP_alt')
-
-
-slope <- terrain(DEM, 'slope')
-aspect <- terrain(DEM, 'aspect')
-hs <- hillShade(slope=slope, aspect=aspect,
-                angle=20, direction=30)
-setwd(old)
-
-## hillShade theme: gray colors and semitransparency
-hsTheme <- modifyList(GrTheme(), list(regions=list(alpha=0.3)))
-
 library(maps)
 library(mapdata)
+library(maptools)
 
 ext <- as.vector(extent(SISav))
 boundaries <- map('worldHires',
@@ -96,9 +53,32 @@ boundaries <- map('worldHires',
 boundaries <- map2SpatialLines(boundaries,
                                proj4string=CRS(projection(SISav)))
 
-levelplot(SISav, par.settings=sunTheme) +
-    levelplot(hs, par.settings=hsTheme) +
+pdf(file="figs/leveplotSISavBoundaries.pdf")
+levelplot(SISav) + layer(sp.lines(boundaries, lwd=0.5))
+dev.off()
+
+old <- setwd(tempdir())
+download.file('http://www.diva-gis.org/data/msk_alt/ESP_msk_alt.zip', 'ESP_msk_alt.zip')
+unzip('ESP_msk_alt.zip', exdir='.')
+
+DEM <- raster('ESP_msk_alt')
+
+slope <- terrain(DEM, 'slope')
+aspect <- terrain(DEM, 'aspect')
+hs <- hillShade(slope=slope, aspect=aspect,
+                angle=20, direction=30)
+
+setwd(old)
+
+png(filename="figs/hillShading.png",res=300,height=2000,width=2000)
+## hillShade theme: gray colors and semitransparency
+hsTheme <- modifyList(GrTheme(), list(regions=list(alpha=0.6)))
+
+levelplot(SISav, panel=panel.levelplot.raster,
+          margin=FALSE, colorkey=FALSE) +
+    levelplot(hs, par.settings=hsTheme, maxpixels=1e6) +
     layer(sp.lines(boundaries, lwd=0.5))
+dev.off()
 
 ##################################################################
 ## Diverging palettes
@@ -266,6 +246,7 @@ histogram(~log10(pop)|landClass, data=s,
           scales=list(relation='free'))
 dev.off()
 
+library(colorspace)
 ## at for each sub-levelplot is obtained from the global levelplot
 at <- pPop$legend$bottom$args$key$at
 classes <- rat$classes
@@ -283,7 +264,10 @@ pList <- lapply(1:nClasses, function(i){
   ## the color wheel parts
   cols <- rev(sequential_hcl(16, h = (30 + step*(i-1))%%360))
 
-  pClass <- levelplot(popSub, zscaleLog=10, at=at, maxpixels=3.5e5,
+  pClass <- levelplot(popSub, zscaleLog=10, at=at,
+                      maxpixels=3.5e5,
+                      ## labels only needed in the last legend
+                      colorkey=(if (i==nClasses) TRUE else list(labels=list(labels=rep('', 17)))),
                       col.regions=cols, margin=FALSE)
 })
 
@@ -291,7 +275,7 @@ png(filename="figs/popLandClass.png",res=300,height=2000,width=2000)
 p <- Reduce('+', pList)
 ## Function to add a title to a legend
 addTitle <- function(legend, title){
-  titleGrob <- textGrob(title, gp=gpar(fontsize=8), hjust=1, vjust=1)
+  titleGrob <- textGrob(title, gp=gpar(fontsize=8), hjust=0.5, vjust=1)
   ## retrieve the legend from the trellis object
   legendGrob <- eval(as.call(c(as.symbol(legend$fun), legend$args)))
   ## Layout of the legend WITH the title
@@ -308,8 +292,6 @@ addTitle <- function(legend, title){
 for (i in seq_len(nClasses)){
   ## extract the legend (automatically created by spplot)...
   lg <- pList[[i]]$legend$right
-  ## ...supress labels except from the last legend...
-  lg$args$key$labels$cex=ifelse(i==nClasses, 0.8, 0) 
   ## ... and add the addTitle function to the legend component of each trellis object
   pList[[i]]$legend$right <- list(fun='addTitle',
                                   args=list(legend=lg, title=classes[i]))
@@ -334,6 +316,7 @@ packLegend <- function(legendList){
 
 ## The legend of p will include all the legends
 p$legend$right <- list(fun = 'packLegend',  args = list(legendList = legendList))
+
 
 p
 dev.off()

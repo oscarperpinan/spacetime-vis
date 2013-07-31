@@ -148,6 +148,51 @@ horizonplot(navarra-avRad,
             origin=0, colorkey=TRUE)
 dev.off()
 
+Ta <- aranjuez$TempAvg
+timeIndex <- index(aranjuez)
+longTa <- ave(Ta, format(timeIndex, '%j'))
+diffTa <- (Ta - longTa)
+
+pdf(file="figs/diffTa_xyplot.pdf")
+xyplot(cbind(Ta, longTa, diffTa),
+       col=c('darkgray', 'red', 'midnightblue'),
+       superpose=TRUE, auto.key=list(space='right'),
+       screens=c(rep('Average Temperature', 2), 'Differences'))
+dev.off()
+
+pdf(file="figs/diffTa_horizon.pdf")
+years <- unique(format(timeIndex, '%Y'))
+
+horizonplot(diffTa, cut=list(n=8, overlap=0),
+            colorkey=TRUE, layout=c(1, 8),
+            scales=list(draw=FALSE, y=list(relation='same')),
+            origin=0, strip.left=FALSE) +
+    layer(grid.text(years[panel.number()], x = 0, y = 0.1, 
+                    gp=gpar(cex=0.8),
+                    just = "left"))
+dev.off()
+
+year <- function(x)as.numeric(format(x, '%Y'))
+day <- function(x)as.numeric(format(x, '%d'))
+month <- function(x)as.numeric(format(x, '%m'))
+
+pdf(file="figs/diffTa_levelplot.pdf")
+myTheme <- modifyList(custom.theme(region=brewer.pal(9, 'RdBu')),
+                                   list(
+                                     strip.background=list(col='gray'),
+                                     panel.background=list(col='gray')))
+
+maxZ <- max(abs(diffTa))
+
+levelplot(diffTa ~ day(timeIndex) * year(timeIndex) | factor(month(timeIndex)),
+          at=pretty(c(-maxZ, maxZ), n=8),
+          colorkey=list(height=0.3),
+          layout=c(1, 12), strip=FALSE, strip.left=TRUE,
+          xlab='Day', ylab='Month', 
+          par.settings=myTheme)
+
+dev.off()
+
 ##################################################################
 ## Interaction with gridSVG
 ##################################################################
@@ -181,37 +226,6 @@ for (id in unique(IDs)){
 grid.script(filename="highlight.js")
 
 gridToSVG('figs/navarraRadiation.svg')
-
-library(zoo)
-aemet <- read.zoo('/home/oscar/Dropbox/R/aemet/Albacete.obs..txt', 
-                  sep=';', FUN=as.POSIXct, header=TRUE)
-names(aemet) <- c('D', 'B', 'G')
-
-xyplot(aemet$G)
-
-doy <- function(x)as.numeric(format(x, '%j'))
-hour <- function(x)as.numeric(format(x, '%H'))
-year <- function(x)format(x, '%Y')
-
-
-timeIndex <- index(aemet)
-nYears <- length(unique(year(timeIndex)))
-
-avG <- ave(aemet$G, format(index(aemet), '%j%H%M%S'))
-diffG <- (aemet$G - avG) / avG
-
-pdf(file="figs/stripplot.pdf")
-myTheme <- modifyList(custom.theme(region=brewer.pal(9, 'RdBu')),
-                                   list(
-                                     strip.background=list(col='gray'),
-                                     panel.background=list(col='gray'))
-                      )
-
-levelplot(diffG ~ doy(timeIndex)*hour(timeIndex)|year(timeIndex), data=as.data.frame(diffG),
-          layout=c(1, nYears), strip=FALSE, strip.left=TRUE,
-          par.settings=myTheme)
-
-dev.off()
 
 ##################################################################
 ## Stacked graphs
