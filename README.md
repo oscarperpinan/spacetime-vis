@@ -1,6 +1,6 @@
 Displaying time series, spatial and space-time data with R
 ----
-This is the repository of the code and data from the book [Displaying time series, spatial and space-time data with R](http://www.crcpress.com/product/isbn/9781466565203) to be published with Chapman&Hall/CRC. This book provides methods to display time series, spatial and space-time data using R. 
+This is the repository of the code and data from the book Displaying time series, spatial and space-time data with R to be published with [Chapman&Hall/CRC]((http://www.taylorandfrancis.com/books/series/CRCTHERSER/)). This book provides methods to display time series, spatial and space-time data using R. 
 
 The repository can be download as a [ZIP file](https://github.com/oscarperpinan/spacetime-vis/archive/master.zip) or using `git`:
     
