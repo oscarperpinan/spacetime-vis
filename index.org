@@ -34,7 +34,7 @@ publishes the code and main graphics of each chapter.
 [[file:spatial.org][file:images/popLandClass_small.png]]
 
 * Space-time Data
-[[file:spacetime.org][file:images/hovmoller.png]]
+[[file:spacetime.org][file:images/cft.png]]
 
 
 #+BEGIN_HTML
