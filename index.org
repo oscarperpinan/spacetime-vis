@@ -23,9 +23,16 @@ data using R. The code of each method will be detailed and
 commented through practical examples with real data. This website
 publishes the code and main graphics of each chapter.
 
+<<<<<<< HEAD
 #+BEGIN_HTML
 <div class="wrapper">
 #+END_HTML
+=======
+#+BEGIN_CENTER
+| [[file:timeseries.org][Time Series]]                     | [[file:spatial.org][Spatial Data]]                       | [[file:spacetime.org][Space-Time Data]]     |
+| [[file:timeseries.org][file:images/aranjuezXblocks.png]] | [[file:spatial.org][file:images/popLandClass_small.png]] | [[file:spacetime.org][file:images/cft.png]] |
+#+END_CENTER
+>>>>>>> 2f0202d3ee9ecf09e8233c7dc87a38e952a4bce9
 
 * Time Series
 [[file:timeseries.org][file:images/aranjuezXblocks.png]] 

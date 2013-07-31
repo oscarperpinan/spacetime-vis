@@ -22,7 +22,19 @@
 
 [[file:images/SISdm_hovmoller_lat.pdf][file:images/SISdm_hovmoller_lat.png]] 
 
+<<<<<<< HEAD
 [[file:images/SISdm_horizonplot.pdf][file:images/SISdm_horizonplot.png]] 
+=======
+| [[file:images/SISdm.pdf][file:images/SISdm.png]]               | [[file:images/SISdm_splom.pdf][file:images/SISdm_splom.png]]       |
+|-------------------------------------+-----------------------------------|
+| [[file:images/SISdm_den.pdf][file:images/SISdm_den.png]]           | [[file:images/SISdm_histogram.pdf][file:images/SISdm_histogram.png]]   |
+|-------------------------------------+-----------------------------------|
+| [[file:images/SISdm_hovmoller_lat.pdf][file:images/SISdm_hovmoller_lat.png]] | [[file:images/SISdm_horizonplot.pdf][file:images/SISdm_horizonplot.png]] |
+|-------------------------------------+-----------------------------------|
+| [[file:images/diffTa_levelplot.pdf][file:images/diffTa_levelplot.png]]    | [[file:images/diffTa_xyplot.pdf][file:images/diffTa_xyplot.png]]     |
+|-------------------------------------+-----------------------------------|
+| [[file:images/cft.pdf][file:images/cft.png]]                 |                                   |
+>>>>>>> 2f0202d3ee9ecf09e8233c7dc87a38e952a4bce9
 
 #+BEGIN_HTML
   <iframe src="http://player.vimeo.com/video/65227780" width="500" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/65227780">Cloud Cover (WRF - Meteogalicia)</a>.</p>

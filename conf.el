@@ -13,6 +13,6 @@
               ("images"
                :base-directory "images/"
                :base-extension "jpg\\|gif\\|png"
-               :publishing-directory "image/"
+               :publishing-directory "images/"
                :publishing-function org-publish-attachment)
               ("website" :components ("orgfiles" "images"))))
