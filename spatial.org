@@ -19,19 +19,15 @@
 
 * Raster maps
 
-[[file:images/divPalSISav_classInt.pdf][file:images/divPalSISav_classInt.png]] 
-
-[[file:images/landClass.pdf][file:images/landClass.png]]        
-
-<<<<<<< HEAD
 [[file:images/populationNASA.pdf][file:images/populationNASA.png]] 
-=======
-| [[file:images/hillShading.png][file:images/hillShading_small.png]]  | [[file:images/divPalSISav_classInt.pdf][file:images/divPalSISav_classInt.png]] |
-|------------------------------------+--------------------------------------|
-| [[file:images/landClass.pdf][file:images/landClass.png]]          | [[file:images/populationNASA.pdf][file:images/populationNASA.png]]       |
-|------------------------------------+--------------------------------------|
-| [[file:images/popLandClass.png][file:images/popLandClass_small.png]] |                                      |
->>>>>>> 2f0202d3ee9ecf09e8233c7dc87a38e952a4bce9
+
+[[file:images/hillShading.png][file:images/hillShading_small.png]] 
+
+[[file:images/divPalSISav_classInt.pdf][file:images/divPalSISav_classInt.png]]
+
+[[file:images/landClass.pdf][file:images/landClass.png]] 
+
+[[file:images/populationNASA.pdf][file:images/populationNASA.png]]    
 
 [[file:images/popLandClass.png][file:images/popLandClass_small.png]] 
 
@@ -39,17 +35,11 @@
 
 * Proportional symbol mapping
 
-<<<<<<< HEAD
 [[file:images/airMadrid_stamen.pdf][file:images/airMadrid_stamen.png]] 
-=======
-| [[file:images/airMadrid_stamen.pdf][file:images/airMadrid_stamen.png]]      | [[file:airMadrid.html][file:images/airMadrid_small.png]] |
-|---------------------------------------+---------------------------------|
-| [[file:images/airMadrid_krige.png][file:images/airMadrid_krige_small.png]] |                                 |
->>>>>>> 2f0202d3ee9ecf09e8233c7dc87a38e952a4bce9
 
-[[file:airMadrid.html][file:images/airMadrid.png]]        
+[[file:airMadrid.html][file:images/airMadrid_small.png]]
 
-[[file:images/airMadrid_krige.png]] 
+[[file:images/airMadrid_krige.png][file:images/airMadrid_krige_small.png]]
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/bubble.R][Code]]
 
@@ -63,10 +53,13 @@
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/vector.R][Code]]
 
+
 * Reference maps
 
 [[file:images/cedeiraOsmar.pdf][file:images/cedeiraOsmar.png]] 
+
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/osmar.R][Code]]            
+
 
 * Physical maps
 
@@ -74,6 +67,7 @@
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/physical.R][Code]]
 
 -----
+
 
 * Data
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/dataSpatial.R][Code]]
