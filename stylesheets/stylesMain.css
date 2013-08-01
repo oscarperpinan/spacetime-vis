@@ -150,18 +150,31 @@ footer {
 }
 
 
-@media only screen and (max-width : 480px) {
+@media screen and (max-width : 4480px) {
       /* Smartphone view: 1 tile */
+    .wrapper {
+	margin: 0;
+	width:auto;
+    }
     .outline-2 {
-        width: 100%;
-        padding-bottom: 100%;
+	float:none;
+	position:static;
+        width: auto;
+        padding-bottom: auto;
+    }
+    .outline-text-2 {
+	position: static;
+	left: 1px;
+	right: 1px;
+	top: 1px;
+	bottom: 1px;
     }
 }
-@media only screen and (max-width : 650px) and (min-width : 481px) {
-    /* Tablet view: 2 tiles */
+
+@media screen and (max-width : 480px) {
+      /* 2 tile */
     .outline-2 {
         width: 50%;
         padding-bottom: 50%;
     }
 }
-
