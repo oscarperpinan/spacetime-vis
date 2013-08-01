@@ -12,7 +12,7 @@
 #+BEGIN_CENTER
 [[https://github.com/oscarperpinan/spacetime-vis][View the Project on GitHub]]
 
-This project is maintained by [[http://procomun.wordpress.com/][Oscar Perpiñán]].
+This project is maintained by [[http://oscarperpinan.github.io/][Oscar Perpiñán]].
 #+END_CENTER
 
 This is the accompanying website of the book "Displaying time
