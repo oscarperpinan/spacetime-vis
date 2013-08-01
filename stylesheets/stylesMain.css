@@ -1,8 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,700italic,300,700);
-
 body {
   padding:50px;
-  font:16px/1.5 Palatino, Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:16px/1.5 Palatino, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight:400;
 }
 
@@ -122,6 +120,7 @@ footer {
 .wrapper {
     overflow: hidden;
     margin: 10px;
+    width:auto;
 }
 
 .outline-2 {
@@ -149,13 +148,20 @@ footer {
     border:2px solid #610B0B;
 }
 
-
-@media screen and (max-width : 480px) {
-      /* Smartphone view: 1 tile */
-    .wrapper {
+@media screen and (max-width : 960px) {
+      /* 2 tile */
+    div.wrapper {
 	margin: 0;
 	width:auto;
     }
+    .outline-2 {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+
+@media screen and (max-width : 480px) {
+      /* Smartphone view: 1 tile */
     .outline-2 {
 	float:none;
 	position:static;
@@ -171,10 +177,3 @@ footer {
     }
 }
 
-@media screen and (max-width : 960px) {
-      /* 2 tile */
-    .outline-2 {
-        width: 50%;
-        padding-bottom: 50%;
-    }
-}
