@@ -1,18 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 body {
   padding:50px;
-  font:16px/1.5 Palatino, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight:400;
+  /* font-weight:400; */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font:14px/1.5 Palatino, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style:italic;
-  color:#990000;/* #610B0B; */
-  margin:0 0 20px;
+        font:16px/1.5 Palatino, "Book Antiqua", "URW Palladio L", serif;
+	font-style:italic;
+	color:#990000;/* #610B0B; */
+	margin:0 0 20px;
 }
 
 p, ul, ol, table, pre, dl {
-  margin:20px 0 20px 20px;
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin:20px 0 20px 20px;
 }
 
 h1, h2, h3 {
@@ -81,12 +82,6 @@ dt {
   font-weight:700;
 }
 
-img {
-  width:270px;
-  float:left;
-  margin: 5px 5px 5px 5px;
-  border: .5px solid #D0D0D0;/* #08298A; */
-}
 
 strong {
   color:#222;
@@ -141,7 +136,11 @@ footer {
 
 .outline-text-2 img {
     width: 90%;
-    border:1px solid #08298A;
+    border: 0.1px solid #D0D0D0;/* #08298A; */
+    border-radius:5%;
+    position: absolute;
+    margin:auto;
+    overflow: hidden;
 }
 
 .outline-text-2 img:hover {

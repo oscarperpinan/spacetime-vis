@@ -1,18 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 body {
   padding:50px;
-  font:14px/1.5 Palatino, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight:400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font:14px/1.5 Palatino, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style:italic;
-  color:#990000;/* #610B0B; */
-  margin:0 0 20px;
+    font:16px/1.5 Palatino, "Book Antiqua", "URW Palladio L", serif;
+    font-style:italic;
+    color:#990000;/* #610B0B; */
+    margin:0 0 20px;
 }
 
 p, ul, ol, table, pre, dl {
-  margin:20px 0 20px 20px;
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin:20px 0 20px 20px;
 }
 
 h1, h2, h3 {
@@ -153,6 +153,7 @@ iframe {
 }
 
 @media print, screen and (max-width: 720px) {
+
   body {
     word-wrap:break-word;
   }
