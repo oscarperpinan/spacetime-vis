@@ -1,8 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,700italic,300,700);
-
 body {
   padding:50px;
-  font:14px/1.5 Palatino, Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px/1.5 Palatino, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight:400;
 }
 
@@ -88,13 +86,6 @@ hr {
   margin:0 0 20px;
 }
 
-footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
-}
-
 
 #table-of-contents {
     position: fixed;
@@ -102,6 +93,12 @@ footer {
     width: 25%;
 }
 
+#postamble {
+  float:left;
+  position:fixed;
+  bottom:1%;
+  width:25%;
+}
 
 .outline-2 {
   width:75%;
@@ -124,8 +121,10 @@ footer {
 .outline-text-2 img{
     position: absolute;
     width: 100%;
-    left: 1px;
-    right: 1px;
+    margin:auto;
+    /* margin-right:auto; */
+    /* left: 1px; */
+    /* right: 1px; */
     top: 1px;
     bottom: 1px;
     overflow: hidden;
@@ -135,21 +134,36 @@ footer {
     border:2px solid #610B0B;
 }
 
+iframe {
+    display:block;
+    margin:auto;
+}
 
-/* @media only screen and (max-width : 480px) { */
-/*       /\* Smartphone view: 1 tile *\/ */
-/*     .box { */
-/*         width: 100%; */
-/*         padding-bottom: 100%; */
-/*     } */
-/* } */
-/* @media only screen and (max-width : 650px) and (min-width : 481px) { */
-/*     /\* Tablet view: 2 tiles *\/ */
-/*     .box { */
-/*         width: 50%; */
-/*         padding-bottom: 50%; */
-/*     } */
-/* } */
+@media print, screen and (max-width: 960px) {
+  
+  /* div.wrapper { */
+  /*   width:auto; */
+  /*   margin:0; */
+  /* } */
+  
+  #table-of-contents, .outline-2 {
+    float:none;
+    position:static;
+    width:auto;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+  body {
+    word-wrap:break-word;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  body {
+    padding:15px;
+  }
+}
 
 
 
