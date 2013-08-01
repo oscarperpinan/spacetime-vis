@@ -4,10 +4,8 @@
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:nil toc:1 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
-#+LINK_UP: index.html
-#+LINK_HOME: index.html
 #+STYLE:    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
-#+BIND: org-export-html-postamble nil
+#+BIND: org-export-html-postamble "<p><a href=\"http://oscarperpinan.github.io/spacetime-vis\">HOME</a> <p><a href=\"https://github.com/oscarperpinan/spacetime-vis\">View the Project on GitHub</a></p><p>Maintained by <a href=\"http://oscarperpinan.github.io/\">Oscar Perpiñán</a>.</p>"
 
 
 * Raster data
@@ -31,7 +29,7 @@
 [[file:images/cft.pdf][file:images/cft.png]]                
 
 #+BEGIN_HTML
-  <iframe src="http://player.vimeo.com/video/65227780" width="500" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/65227780">Cloud Cover (WRF - Meteogalicia)</a>.</p>
+  <iframe src="http://player.vimeo.com/video/65227780" width="400" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><a href="http://vimeo.com/65227780"></a>
 #+END_HTML
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/rasterST.R][Code]]
