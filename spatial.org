@@ -34,11 +34,12 @@
 
 * Proportional symbol mapping
 
+
+[[file:images/airMadrid_krige.png][file:images/airMadrid_krige_small.png]]
+
 [[file:images/airMadrid_stamen.pdf][file:images/airMadrid_stamen.png]] 
 
 [[file:airMadrid.html][file:images/airMadrid_small.png]]
-
-[[file:images/airMadrid_krige.png][file:images/airMadrid_krige_small.png]]
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/bubble.R][Code]]
 
