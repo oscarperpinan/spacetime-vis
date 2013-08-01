@@ -150,7 +150,7 @@ footer {
 }
 
 
-@media screen and (max-width : 4480px) {
+@media screen and (max-width : 480px) {
       /* Smartphone view: 1 tile */
     .wrapper {
 	margin: 0;
@@ -171,7 +171,7 @@ footer {
     }
 }
 
-@media screen and (max-width : 480px) {
+@media screen and (max-width : 960px) {
       /* 2 tile */
     .outline-2 {
         width: 50%;
