@@ -34,7 +34,7 @@
 
 * Proportional symbol mapping
 #+BEGIN_HTML
-<script src="https://embed.github.com/view/geojson/gist/oscarperpinan/6634686/airStations.geojson"></script>
+<script src="https://embed.github.com/view/geojson/oscarperpinan/spacetime-vis/master/data/NO2.geojson"></script>
 #+END_HTML
 
 [[file:images/airMadrid_krige.png][file:images/airMadrid_krige_small.png]]
