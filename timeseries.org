@@ -4,7 +4,7 @@
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:nil toc:1 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
-#+STYLE:    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+#+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
 #+BIND: org-export-html-postamble "<p><a href=\"http://oscarperpinan.github.io/spacetime-vis\">HOME</a> <p><a href=\"https://github.com/oscarperpinan/spacetime-vis\">View the Project on GitHub</a></p><p>Maintained by <a href=\"http://oscarperpinan.github.io/\">Oscar Perpiñán</a>.</p>"
 
 * Time on the horizontal axis 

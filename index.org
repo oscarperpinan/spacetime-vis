@@ -6,7 +6,7 @@
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+LINK_UP:
 #+LINK_HOME:
-#+STYLE:    <link rel="stylesheet" type="text/css" href="stylesheets/stylesMain.css" />
+#+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/stylesMain.css" />
 #+BIND: org-export-html-postamble "<div style=\"text-align: center\">This page has been generated with <a href=\"http://orgmode.org/\">org-mode</a>.</div>"
 
 #+BEGIN_CENTER
