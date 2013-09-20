@@ -1,0 +1,54 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 1, "properties": { "Nombre": "Pza. del Carmen", "alt": 657, "codEst": 28079035.0, "mean": 51.0, "median": 46.0, "sd": 18.6 }, "geometry": { "type": "Point", "coordinates": [ -3.70317222222222, 40.419208333333302 ] } }
+,
+{ "type": "Feature", "id": 2, "properties": { "Nombre": "Pza. de España", "alt": 637, "codEst": 28079004.0, "mean": 50.6, "median": 49.0, "sd": 18.3 }, "geometry": { "type": "Point", "coordinates": [ -3.71233333333333, 40.423991666666701 ] } }
+,
+{ "type": "Feature", "id": 3, "properties": { "Nombre": "Barrio del Pilar", "alt": 673, "codEst": 28079039.0, "mean": 49.3, "median": 43.0, "sd": 24.2 }, "geometry": { "type": "Point", "coordinates": [ -3.71154166666667, 40.478227777777803 ] } }
+,
+{ "type": "Feature", "id": 4, "properties": { "Nombre": "Escuelas Aguirre", "alt": 672, "codEst": 28079008.0, "mean": 59.6, "median": 58.0, "sd": 17.7 }, "geometry": { "type": "Point", "coordinates": [ -3.68231944444444, 40.421563888888898 ] } }
+,
+{ "type": "Feature", "id": 5, "properties": { "Nombre": "Cuatro Caminos", "alt": 699, "codEst": 28079038.0, "mean": 54.6, "median": 51.0, "sd": 22.7 }, "geometry": { "type": "Point", "coordinates": [ -3.70712777777778, 40.433333333333302 ] } }
+,
+{ "type": "Feature", "id": 6, "properties": { "Nombre": "Av. Ramón y Cajal", "alt": 708, "codEst": 28079011.0, "mean": 53.6, "median": 51.0, "sd": 21.8 }, "geometry": { "type": "Point", "coordinates": [ -3.67735277777778, 40.451472222222201 ] } }
+,
+{ "type": "Feature", "id": 7, "properties": { "Nombre": "Vallecas", "alt": 677, "codEst": 28079040.0, "mean": 44.2, "median": 41.0, "sd": 20.0 }, "geometry": { "type": "Point", "coordinates": [ -3.65152222222222, 40.38815 ] } }
+,
+{ "type": "Feature", "id": 8, "properties": { "Nombre": "Arturo Soria", "alt": 698, "codEst": 28079016.0, "mean": 44.1, "median": 41.0, "sd": 19.2 }, "geometry": { "type": "Point", "coordinates": [ -3.63923333333333, 40.440047222222198 ] } }
+,
+{ "type": "Feature", "id": 9, "properties": { "Nombre": "Villaverde Alto", "alt": null, "codEst": 28079017.0, "mean": 45.8, "median": 38.0, "sd": 24.9 }, "geometry": { "type": "Point", "coordinates": [ -3.7, 40.3333333333333 ] } }
+,
+{ "type": "Feature", "id": 10, "properties": { "Nombre": "C\/ Farolillo", "alt": 581, "codEst": 28079018.0, "mean": 40.0, "median": 37.0, "sd": 19.8 }, "geometry": { "type": "Point", "coordinates": [ -3.73183333333333, 40.394777777777797 ] } }
+,
+{ "type": "Feature", "id": 11, "properties": { "Nombre": "Moratalaz", "alt": 671, "codEst": 28079036.0, "mean": 47.8, "median": 45.0, "sd": 17.9 }, "geometry": { "type": "Point", "coordinates": [ -3.64529444444444, 40.407955555555603 ] } }
+,
+{ "type": "Feature", "id": 12, "properties": { "Nombre": "Casa de Campo", "alt": 645, "codEst": 28079024.0, "mean": 29.4, "median": 26.0, "sd": 17.2 }, "geometry": { "type": "Point", "coordinates": [ -3.74734444444444, 40.419355555555597 ] } }
+,
+{ "type": "Feature", "id": 13, "properties": { "Nombre": "Barajas", "alt": null, "codEst": 28079027.0, "mean": 40.0, "median": 37.0, "sd": 18.3 }, "geometry": { "type": "Point", "coordinates": [ -3.58002777777778, 40.476927777777803 ] } }
+,
+{ "type": "Feature", "id": 14, "properties": { "Nombre": "Méndez Álvaro", "alt": 609, "codEst": 28079047.0, "mean": 47.6, "median": 44.0, "sd": 20.9 }, "geometry": { "type": "Point", "coordinates": [ -3.68333333333333, 40.383333333333297 ] } }
+,
+{ "type": "Feature", "id": 15, "properties": { "Nombre": "Pº. Castellana", "alt": 676, "codEst": 28079048.0, "mean": 46.6, "median": 45.0, "sd": 18.1 }, "geometry": { "type": "Point", "coordinates": [ -3.69027777777778, 40.439722222222201 ] } }
+,
+{ "type": "Feature", "id": 16, "properties": { "Nombre": "Retiro", "alt": 662, "codEst": 28079049.0, "mean": 36.6, "median": 34.0, "sd": 14.8 }, "geometry": { "type": "Point", "coordinates": [ -3.66666666666667, 40.4 ] } }
+,
+{ "type": "Feature", "id": 17, "properties": { "Nombre": "Pza. Castilla", "alt": 728, "codEst": 28079050.0, "mean": 51.3, "median": 49.0, "sd": 20.1 }, "geometry": { "type": "Point", "coordinates": [ -3.68333333333333, 40.45 ] } }
+,
+{ "type": "Feature", "id": 18, "properties": { "Nombre": "Ensanche Vallecas", "alt": 630, "codEst": 28079054.0, "mean": 39.4, "median": 36.0, "sd": 20.4 }, "geometry": { "type": "Point", "coordinates": [ -3.6, 40.372777777777799 ] } }
+,
+{ "type": "Feature", "id": 19, "properties": { "Nombre": "Urb. Embajada (Barajas)", "alt": 619, "codEst": 28079055.0, "mean": 48.6, "median": 47.0, "sd": 18.8 }, "geometry": { "type": "Point", "coordinates": [ -3.58055555555556, 40.4625 ] } }
+,
+{ "type": "Feature", "id": 20, "properties": { "Nombre": "Pza. Fdez. Ladreda", "alt": 605, "codEst": 28079056.0, "mean": 62.4, "median": 59.0, "sd": 24.4 }, "geometry": { "type": "Point", "coordinates": [ -3.71861111111111, 40.384722222222202 ] } }
+,
+{ "type": "Feature", "id": 21, "properties": { "Nombre": "Sanchinarro", "alt": 700, "codEst": 28079057.0, "mean": 39.7, "median": 35.0, "sd": 21.0 }, "geometry": { "type": "Point", "coordinates": [ -3.65, 40.483333333333299 ] } }
+,
+{ "type": "Feature", "id": 22, "properties": { "Nombre": "El Pardo", "alt": 616, "codEst": 28079058.0, "mean": 22.5, "median": 20.0, "sd": 12.4 }, "geometry": { "type": "Point", "coordinates": [ -3.76666666666667, 40.516666666666701 ] } }
+,
+{ "type": "Feature", "id": 23, "properties": { "Nombre": "Parque Juan Carlos I", "alt": 669, "codEst": 28079059.0, "mean": 28.0, "median": 27.0, "sd": 13.8 }, "geometry": { "type": "Point", "coordinates": [ -3.60888888888889, 40.465 ] } }
+,
+{ "type": "Feature", "id": 24, "properties": { "Nombre": "Tres Olivos", "alt": 715, "codEst": 28079060.0, "mean": 38.8, "median": 35.0, "sd": 20.0 }, "geometry": { "type": "Point", "coordinates": [ -3.68333333333333, 40.5005555555556 ] } }
+
+]
+}
