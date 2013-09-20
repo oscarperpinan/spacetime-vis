@@ -34,6 +34,9 @@
 
 * Proportional symbol mapping
 
+#+BEGIN_HTML
+<script src="https://gist.github.com/oscarperpinan/6634686.js"></script>
+#+END_HTML
 
 [[file:images/airMadrid_krige.png][file:images/airMadrid_krige_small.png]]
 
