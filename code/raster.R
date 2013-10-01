@@ -1,7 +1,6 @@
-
 ##################################################################
 ## Source code for the book: "Displaying time series, spatial and
-## space-time data with R: stories of space and time"
+## space-time data with R"
 
 ## Copyright (C) 2013-2012 Oscar Perpiñán Lamigueiro
 
@@ -56,6 +55,10 @@ boundaries <- map2SpatialLines(boundaries,
 pdf(file="figs/leveplotSISavBoundaries.pdf")
 levelplot(SISav) + layer(sp.lines(boundaries, lwd=0.5))
 dev.off()
+
+##################################################################
+## Hill shading
+##################################################################
 
 old <- setwd(tempdir())
 download.file('http://www.diva-gis.org/data/msk_alt/ESP_msk_alt.zip', 'ESP_msk_alt.zip')
@@ -245,6 +248,10 @@ names(s) <- c('pop', 'landClass')
 histogram(~log10(pop)|landClass, data=s,
           scales=list(relation='free'))
 dev.off()
+
+##################################################################
+## Multivariate legend
+##################################################################
 
 library(colorspace)
 ## at for each sub-levelplot is obtained from the global levelplot

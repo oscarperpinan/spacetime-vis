@@ -1,7 +1,6 @@
-
 ##################################################################
 ## Source code for the book: "Displaying time series, spatial and
-## space-time data with R: stories of space and time"
+## space-time data with R"
 
 ## Copyright (C) 2013-2012 Oscar Perpiñán Lamigueiro
 
@@ -27,83 +26,38 @@
 ## Clone or download the repository and set the working directory
 ## with setwd to the folder where the repository is located.
 
-library(lattice)
-library(ggplot2)
-library(latticeExtra)
-
-myTheme <- custom.theme.2(pch=19, cex=0.7,
-                          region=rev(brewer.pal(9, 'YlOrRd')),
-                          symbol = brewer.pal(n=8, name = "Dark2"))
-myTheme$strip.background$col='transparent'
-myTheme$strip.shingle$col='transparent'
-myTheme$strip.border$col='transparent'
-
-xscale.components.custom <- function(...){
-    ans <- xscale.components.default(...)
-    ans$top=FALSE
-    ans}
-yscale.components.custom <- function(...){
-    ans <- yscale.components.default(...)
-    ans$right=FALSE
-    ans}
-myArgs <- list(as.table=TRUE,
-               between=list(x=0.5, y=0.2),
-               xscale.components = xscale.components.custom,
-               yscale.components = yscale.components.custom)
-defaultArgs <- lattice.options()$default.args
-
-lattice.options(default.theme = myTheme,
-                default.args = modifyList(defaultArgs, myArgs))
+##################################################################
+## Vector fields
+##################################################################
 
 library(raster)
 library(rasterVis)
 
-old <- setwd(tempdir())
-download.file('ftp://tgftp.nws.noaa.gov/SL.us008001/ST.expr/DF.gr2/DC.ndfd/AR.conus/VP.001/ds.wdir.bin', 'windDir.bin')
-download.file('ftp://tgftp.nws.noaa.gov/SL.us008001/ST.expr/DF.gr2/DC.ndfd/AR.conus/VP.001/ds.wspd.bin', 'windSpeed.bin')
-  
-wDir <- raster('windDir.bin')/180*pi
-wSpeed <- raster('windSpeed.bin')
-
-setwd(old)
-
-idxNA <- (wDir == 9999) | (wSpeed == 9999) | (wSpeed <= 0)
-
-wDir[idxNA] <- NA
-wSpeed[idxNA] <- NA
-
-wind <- stack(wSpeed, wDir)
-
-levelplot(wind, layers='windSpeed',
-          par.settings=BTCTheme(),
-          scales=list(draw=FALSE))
-
-library(car)
-
-boxCox <- function(x){
-  lambda <- powerTransform(x~1)
-  res <- bcPower(x, coef(lambda))
-  }
-
-wSpeed[] <- boxCox(wSpeed[])
-
+wDir <- raster('data/wDir')/180*pi
+wSpeed <- raster('data/wSpeed')
 windField <- stack(wSpeed, wDir)
-names(windField) <- c('slope', 'aspect')
+names(windField) <- c('magnitude', 'direction')
+
+##################################################################
+## Arrow plot
+##################################################################
 
 pdf(file="figs/vectorplot.pdf")
 vectorplot(windField, isField=TRUE, par.settings=BTCTheme(),
            colorkey=FALSE, scales=list(draw=FALSE))
-
 dev.off()
+
+##################################################################
+## Stream lines
+##################################################################
 
 pdf(file="figs/streamplot.pdf")
+myTheme <- streamTheme(region=rev(brewer.pal(n=4, name='Greys')),
+                                    symbol=BTC(n=9, beg=20))
 streamplot(windField, isField=TRUE,
-           droplet=list(pc=.2), streamlet=list(L=25),
-           scales=list(draw=FALSE))
-dev.off()
-
-altUSA <- raster('~/Datos/USA_msk_alt/USA1_msk_alt')
-
-pdf(file="figs/altUSA.pdf")
-levelplot(altUSA, par.settings=BTCTheme())
+           par.settings=myTheme,
+           droplet=list(pc=12),
+           streamlet=list(L=5, h=5),
+           scales=list(draw=FALSE),
+           panel=panel.levelplot.raster)
 dev.off()

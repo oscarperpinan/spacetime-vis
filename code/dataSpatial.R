@@ -1,7 +1,6 @@
-
 ##################################################################
 ## Source code for the book: "Displaying time series, spatial and
-## space-time data with R: stories of space and time"
+## space-time data with R"
 
 ## Copyright (C) 2013-2012 Oscar Perpiñán Lamigueiro
 
@@ -40,6 +39,10 @@ codURL <- as.numeric(substr(codEstaciones$Codigo, 7, 8))
 
 ## The information of each measuring station is available at its own webpage, defined by codURL
 URLs <- paste('http://www.mambiente.munimadrid.es/opencms/opencms/calaire/contenidos/estaciones/estacion', codURL, '.html', sep='')
+
+##################################################################
+## Data arrangement
+##################################################################
 
 library(XML)
 library(sp)
@@ -102,6 +105,39 @@ datos11 <- lapply(rawData, function(x){
   })
 datos11 <- do.call(rbind, datos11)
 write.csv2(datos11, 'data/airQuality.csv')
+
+##################################################################
+## Combine data and spatial locations
+##################################################################
+
+library(sp)
+
+## Spatial location of stations
+airStations <- read.csv2('data/airStations.csv')
+coordinates(airStations) <- ~ long + lat
+## Geographical projection
+proj4string(airStations) <- CRS("+proj=longlat +ellps=WGS84")
+
+## Measurements data
+airQuality <- read.csv2('data/airQuality.csv')
+## Only interested in NO2 
+NO2 <- airQuality[airQuality$codParam==8, ]
+
+NO2agg <- aggregate(dat ~ codEst, data=NO2,
+                    FUN = function(x) {
+                        c(mean=signif(mean(x), 3),
+                          median=median(x),
+                          sd=signif(sd(x), 3))
+                        })
+NO2agg <- do.call(cbind, NO2agg)
+NO2agg <- as.data.frame(NO2agg)
+
+library(maptools)
+## Link aggregated data with stations to obtain a SpatialPointsDataFrame.
+## Codigo and codEst are the stations codes
+idxNO2 <- match(airStations$Codigo, NO2agg$codEst)
+NO2sp <- spCbind(airStations[, c('Nombre', 'alt')], NO2agg[idxNO2, ])
+save(NO2sp, file='data/NO2sp.RData')
 
 ##################################################################
 ## Spanish General Elections

@@ -1,7 +1,6 @@
-
 ##################################################################
 ## Source code for the book: "Displaying time series, spatial and
-## space-time data with R: stories of space and time"
+## space-time data with R"
 
 ## Copyright (C) 2013-2012 Oscar Perpiñán Lamigueiro
 
@@ -137,6 +136,10 @@ pdf(file="figs/pcMax.pdf")
 quantPal <- rev(heat_hcl(16))
 spplot(espMapVotes["pcMax"], col='transparent', col.regions=quantPal)
 dev.off()
+
+##################################################################
+## Categorical and quantitative variables combined in a multivariate choropleth map
+##################################################################
 
 classes <- levels(factor(espMapVotes$whichMax))
 nClasses <- length(classes)

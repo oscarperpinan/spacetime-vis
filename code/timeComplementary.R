@@ -1,7 +1,6 @@
-
 ##################################################################
 ## Source code for the book: "Displaying time series, spatial and
-## space-time data with R: stories of space and time"
+## space-time data with R"
 
 ## Copyright (C) 2013-2012 Oscar Perpiñán Lamigueiro
 
@@ -22,41 +21,46 @@
 ####################################################################
 
 ##################################################################
-## Initial configuration
+  ## Initial configuration
+  ##################################################################
+  ## Clone or download the repository and set the working directory
+  ## with setwd to the folder where the repository is located.
+
+  library(lattice)
+  library(ggplot2)
+  library(latticeExtra)
+  library(zoo)
+  
+  myTheme <- custom.theme.2(pch=19, cex=0.7,
+                            region=rev(brewer.pal(9, 'YlOrRd')),
+                            symbol = brewer.pal(n=8, name = "Dark2"))
+  myTheme$strip.background$col='transparent'
+  myTheme$strip.shingle$col='transparent'
+  myTheme$strip.border$col='transparent'
+  
+  xscale.components.custom <- function(...){
+      ans <- xscale.components.default(...)
+      ans$top=FALSE
+      ans}
+  yscale.components.custom <- function(...){
+      ans <- yscale.components.default(...)
+      ans$right=FALSE
+      ans}
+  myArgs <- list(as.table=TRUE,
+                 between=list(x=0.5, y=0.2),
+                 xscale.components = xscale.components.custom,
+                 yscale.components = yscale.components.custom)
+  defaultArgs <- lattice.options()$default.args
+  
+  lattice.options(default.theme = myTheme,
+                  default.args = modifyList(defaultArgs, myArgs))
 ##################################################################
-## Clone or download the repository and set the working directory
-## with setwd to the folder where the repository is located.
+
+##################################################################
+## Polylines
+##################################################################
 
 load('data/CO2.RData')
-
-library(lattice)
-library(ggplot2)
-library(latticeExtra)
-library(zoo)
-
-myTheme <- custom.theme.2(pch=19, cex=0.7,
-                          region=rev(brewer.pal(9, 'YlOrRd')),
-                          symbol = brewer.pal(n=8, name = "Dark2"))
-myTheme$strip.background$col='transparent'
-myTheme$strip.shingle$col='transparent'
-myTheme$strip.border$col='transparent'
-
-xscale.components.custom <- function(...){
-    ans <- xscale.components.default(...)
-    ans$top=FALSE
-    ans}
-yscale.components.custom <- function(...){
-    ans <- yscale.components.default(...)
-    ans$right=FALSE
-    ans}
-myArgs <- list(as.table=TRUE,
-               between=list(x=0.5, y=0.2),
-               xscale.components = xscale.components.custom,
-               yscale.components = yscale.components.custom)
-defaultArgs <- lattice.options()$default.args
-
-lattice.options(default.theme = myTheme,
-                default.args = modifyList(defaultArgs, myArgs))
 
 library(googleVis)
 pgvis <- gvisMotionChart(CO2data, idvar='Country.Name', timevar='Year')
@@ -64,13 +68,16 @@ pgvis <- gvisMotionChart(CO2data, idvar='Country.Name', timevar='Year')
 print(pgvis, 'html', file='figs/googleVis.html')
 
 pdf(file="figs/CO2_GNI.pdf")
+## lattice version
 xyplot(GNI.capita  ~ CO2.capita, data=CO2data,
        xlab="CO2 emissions (metric tons per capita)",
        ylab="GNI per capita, PPP (current international $)",
        groups=Country.Name, type='b')
 dev.off()
 
-ggplot(data=CO2data, aes(x=CO2.capita, y=GNI.capita, color=Country.Name)) +
+## ggplot2 version
+ggplot(data=CO2data, aes(x=CO2.capita, y=GNI.capita,
+           color=Country.Name)) +
     xlab("CO2 emissions (metric tons per capita)") +
     ylab("GNI per capita, PPP (current international $)") +
     geom_point() + geom_path() + theme_bw()
@@ -90,8 +97,9 @@ CO2mean <- aggregate(CO2.capita ~ Country.Name, data=CO2data, FUN=mean)
 palOrdered <- pal[rank(CO2mean$CO2.capita)]
 
 pdf(file="figs/hclust.pdf")
-CO2capita <- subset(CO2, Indicator.Code=='EN.ATM.CO2E.PC')
-hCO2 <- hclust(dist(CO2capita[, -c(1:4)]))
+CO2capita <- CO2data[, c('Country.Name', 'Year', 'CO2.capita')]
+CO2capita <- reshape(CO2capita, idvar='Country.Name', timevar='Year', direction='wide')
+hCO2 <- hclust(dist(CO2capita[, -1]))
 
 oldpar <- par(mar=c(0, 2, 0, 0) + .1)
 plot(hCO2, labels=CO2capita$Country.Name,
@@ -121,6 +129,10 @@ gCO2.capita <- ggplot(data=CO2data, aes(x=CO2.capita, y=GNI.capita,
     ylab('GNI per capita, PPP (current international $)') +
     theme_bw()
 
+##################################################################
+## Labels to show time information
+##################################################################
+
 xyplot(GNI.capita  ~ CO2.capita,
        xlab="CO2 emissions (metric tons per capita)",
        ylab="GNI per capita, PPP (current international $)",
@@ -143,7 +155,7 @@ gCO2.capita <- gCO2.capita + geom_text(aes(label=Year), colour='gray',
                                        size=2.5, hjust=0, vjust=0)
 
 ##################################################################
-## Positioning labels
+## Country names: positioning labels
 ##################################################################
 
 pdf(file="figs/CO2_capita.pdf")
@@ -151,10 +163,11 @@ library(maptools)
 ## group.value provides the country name; group.number is the
 ## index of each country to choose the color from the palette.
 pCO2.capita +
-    glayer(panel.pointLabel(x[9], y[9],
+    glayer(panel.pointLabel(mean(x), mean(y),
                             labels= group.value,
                             col=palOrdered[group.number],
-                            cex=0.7))
+                            cex=.8,
+                            fontface=2, fontfamily='Palatino'))
 dev.off()
 
 pdf(file="figs/CO2_capitaDL.pdf")
@@ -191,6 +204,10 @@ xyplot(GNI.capita  ~ CO2.capita | factor(Year), data=CO2data,
     glayer(panel.pointLabel(x, y, labels=group.value,
                             col=palOrdered[group.number], cex=0.7))
 dev.off()
+
+##################################################################
+## Using variable size to encode an additional variable
+##################################################################
 
 library(classInt)
 z <- CO2data$CO2.PPP
@@ -314,11 +331,4 @@ yearText <- animateGrob(garnishGrob(textGrob(years, .9, .15,
                         rep=TRUE)
 grid.draw(yearText)
 
-gridToSVG("figs/bubbles.svg")
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\textwidth]{figs/googleVis}
-  \caption{Snapshot of a Motion Chart produced with googleVis.}
-  \label{fig:googleVis}
-\end{figure}
+grid.export("figs/bubbles.svg")

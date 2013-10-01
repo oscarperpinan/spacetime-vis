@@ -1,20 +1,19 @@
-
 ##################################################################
 ## Source code for the book: "Displaying time series, spatial and
-## space-time data with R: stories of space and time"
-
+## space-time data with R"
+##
 ## Copyright (C) 2013-2012 Oscar Perpiñán Lamigueiro
-
+##
 ## This program is free software you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published
 ## by the Free Software Foundation; either version 2 of the License,
 ## or (at your option) any later version.
- 
+## 
 ## This program is distributed in the hope that it will be useful, but
 ## WITHOUT ANY WARRANTY; without even the implied warranty of
 ## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 ## General Public License for more details.
- 
+## 
 ## You should have received a copy of the GNU General Public License
 ## along with this program; if not, write to the Free Software
 ## Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
@@ -27,36 +26,12 @@
 ## Clone or download the repository and set the working directory
 ## with setwd to the folder where the repository is located.
 
-library(lattice)
-library(ggplot2)
-library(latticeExtra)
-
-myTheme <- custom.theme.2(pch=19, cex=0.7,
-                          region=rev(brewer.pal(9, 'YlOrRd')),
-                          symbol = brewer.pal(n=8, name = "Dark2"))
-myTheme$strip.background$col='transparent'
-myTheme$strip.shingle$col='transparent'
-myTheme$strip.border$col='transparent'
-
-xscale.components.custom <- function(...){
-    ans <- xscale.components.default(...)
-    ans$top=FALSE
-    ans}
-yscale.components.custom <- function(...){
-    ans <- yscale.components.default(...)
-    ans$right=FALSE
-    ans}
-myArgs <- list(as.table=TRUE,
-               between=list(x=0.5, y=0.2),
-               xscale.components = xscale.components.custom,
-               yscale.components = yscale.components.custom)
-defaultArgs <- lattice.options()$default.args
-
-lattice.options(default.theme = myTheme,
-                default.args = modifyList(defaultArgs, myArgs))
-
 ##################################################################
 ## OpenStreetMap with Hill Shade layers
+##################################################################
+
+##################################################################
+## Retrieving data from OpenStreetMap
 ##################################################################
 
 library('osmar')
@@ -68,7 +43,6 @@ xmax <- -8.0224
 xmin <- -8.0808
 box <- corner_bbox(xmin, ymin, xmax, ymax)
 cedeira <- get_osm(box, source=api, full=TRUE)
-summary(cedeira)
 
 summary(cedeira$nodes)
 
@@ -108,6 +82,10 @@ idxCedeira <- which(nms$v=='Cedeira') ##Main town
 cedeiraCoords <- coordinates(places[idxCedeira,])
 places <- places[-idxCedeira,]
 
+##################################################################
+## Hill Shading
+##################################################################
+
 library(raster)
 ## Galicia DEM
 ## http://ide.unex.es/geonetwork/srv/es/main.search?any=MDE_Galicia
@@ -133,8 +111,12 @@ aspect <- terrain(demCedeira, 'aspect')
 hsCedeira <- hillShade(slope=slope, aspect=aspect,
                        angle=20, direction=30)
 
+##################################################################
+## Overlaying layers of information
+##################################################################
+
 pdf(file="figs/cedeiraOsmar.pdf")
-library(maptools) ##0.8-21 install.packages("maptools", repos="http://R-Forge.R-project.org")
+library(maptools)
 library(latticeExtra)
 library(colorspace)
 library(rasterVis)

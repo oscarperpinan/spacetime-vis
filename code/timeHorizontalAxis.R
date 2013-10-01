@@ -1,7 +1,6 @@
-
 ##################################################################
 ## Source code for the book: "Displaying time series, spatial and
-## space-time data with R: stories of space and time"
+## space-time data with R"
 
 ## Copyright (C) 2013-2012 Oscar Perpiñán Lamigueiro
 
@@ -27,10 +26,7 @@
 ## Clone or download the repository and set the working directory
 ## with setwd to the folder where the repository is located.
 
-load('data/aranjuez.RData')
-load('data/navarra.RData')
-load('data/unemployUSA.RData')
-
+ 
 library(lattice)
 library(ggplot2)
 library(latticeExtra)
@@ -59,26 +55,31 @@ defaultArgs <- lattice.options()$default.args
 
 lattice.options(default.theme = myTheme,
                 default.args = modifyList(defaultArgs, myArgs))
+##################################################################
 
 ##################################################################
 ## Time graph of different meteorological variables
 ##################################################################
 
+load('data/aranjuez.RData')
+
 pdf(file="figs/aranjuez.pdf")
-library(lattice)
 library(zoo)
 ## The layout argument is used to display the variables with
 ## parallel panels arranged in rows.
 xyplot(aranjuez, layout=c(1, ncol(aranjuez)))
-
 dev.off()
 
 pdf(file="figs/aranjuezGG.pdf")
-library(ggplot2)
 autoplot(aranjuez) + facet_free()
 dev.off()
 
+##################################################################
+## Defining a new panel to enhance the time graph
+##################################################################
+
 pdf(file="figs/aranjuezXblocks.pdf")
+library(grid)
 library(latticeExtra)
 
 ## Auxiliary function to extract the year value of a POSIXct time
@@ -116,6 +117,8 @@ dev.off()
 ## Time series of variables with the same scale
 ##################################################################
 
+load('data/navarra.RData')
+
 pdf(file="figs/navarra.pdf")
 avRad <- zoo(rowMeans(navarra, na.rm=1), index(navarra))
 pNavarra <- xyplot(navarra - avRad,
@@ -147,6 +150,10 @@ horizonplot(navarra-avRad,
             layout=c(1, ncol(navarra)),
             origin=0, colorkey=TRUE)
 dev.off()
+
+##################################################################
+## Time graph of the differences between a time series and a reference
+##################################################################
 
 Ta <- aranjuez$TempAvg
 timeIndex <- index(aranjuez)
@@ -225,24 +232,24 @@ for (id in unique(IDs)){
 
 grid.script(filename="highlight.js")
 
-gridToSVG('figs/navarraRadiation.svg')
+grid.export('figs/navarraRadiation.svg')
 
 ##################################################################
 ## Stacked graphs
 ##################################################################
 
-pdf(file="~/Dropbox/chapman/book/figs/unemployUSAxyplot.pdf")
+load('data/unemployUSA.RData')
+
+pdf(file="figs/unemployUSAxyplot.pdf")
 xyplot(unemployUSA, superpose=TRUE, par.settings=custom.theme,
        auto.key=list(space='right'))
 dev.off()
 
-pdf(file="~/Dropbox/chapman/book/figs/unemployUSAgeomArea.pdf")
-unemployUSAmelt <- fortify.zoo(unemployUSA, melt=TRUE)
-## ggplot2 does not understand the yearmon class
-unemployUSAmelt$Index <- as.Date(unemployUSAmelt$Index)
-
-ggplot() +
-  geom_area(data=unemployUSAmelt, aes(x=Index, y=Value, fill=Series))
+pdf(file="figs/unemployUSAgeomArea.pdf")
+library(scales) ## scale_x_yearmon needs scales::pretty_breaks
+autoplot(unemployUSA, facets=NULL, geom='area') +
+    geom_area(aes(fill=Series)) +
+    scale_x_yearmon()  
 dev.off()
 
 panel.flow <- function(x, y, groups, origin, ...){
@@ -351,3 +358,7 @@ xyplot(unemployUSA, superpose=TRUE, auto.key=FALSE,
        par.settings=myTheme) +
     layer(panel.abline(v=sep2008, col='gray', lwd=0.7))
 dev.off()
+
+##################################################################
+## Panel and prepanel functions to implement the ThemeRiver with =xyplot=
+##################################################################

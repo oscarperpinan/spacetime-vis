@@ -1,7 +1,6 @@
-
 ##################################################################
 ## Source code for the book: "Displaying time series, spatial and
-## space-time data with R: stories of space and time"
+## space-time data with R"
 
 ## Copyright (C) 2013-2012 Oscar Perpiñán Lamigueiro
 
@@ -28,7 +27,6 @@
 ## with setwd to the folder where the repository is located.
 
 library(lattice)
-library(ggplot2)
 library(latticeExtra)
 
 myTheme <- custom.theme.2(pch=19, cex=0.7,
@@ -64,7 +62,7 @@ library(sp)
 ## Spatial location of stations
 airStations <- read.csv2('data/airStations.csv')
 ## rownames are used as the ID of the Spatial object
-rownames(airStations) <- airStations$Codigo
+rownames(airStations) <- substring(airStations$Codigo, 7)
 coordinates(airStations) <- ~ long + lat
 proj4string(airStations) <- CRS("+proj=longlat +ellps=WGS84")
 ## Measurements data
@@ -96,17 +94,21 @@ dev.off()
 
 pdf(file="figs/NO2hovmoller.pdf")
 stplot(NO2st, mode='xt', col.regions=colorRampPalette(airPal)(15),
-       scales=list(x=list(rot=45)), xlab='')
+       scales=list(x=list(rot=45)), ylab='', xlab='')
 dev.off()
 
-pdf(file="figs/NO2zoo.pdf")
+png(filename="figs/NO2zoo.png",res=300,height=2000,width=2000)
 stplot(NO2st, mode='ts', xlab='',
-       lwd=0.4, col='black', alpha=0.3,
+       lwd=0.1, col='black', alpha=0.6,
        auto.key=FALSE)
 dev.off()
 
 ##################################################################
 ## Animation
+##################################################################
+
+##################################################################
+## Initial snapshot
 ##################################################################
 
 library(gridSVG)
@@ -122,6 +124,8 @@ nDays <- length(days)
 ## Duration in seconds of the animation
 duration <- nDays*.3
 
+library(grid)
+
 ## Auxiliar panel function to display circles
 panel.circlesplot <- function(x, y, cex, col='gray',
                               name='stationsCircles', ...){
@@ -135,6 +139,10 @@ pStart <- spplot(start, panel=panel.circlesplot,
                  cex=startVals,
                  scales=list(draw=TRUE), auto.key=FALSE)
 pStart
+
+##################################################################
+## Intermediate states to create the animation
+##################################################################
 
 ## Color to distinguish between weekdays ('green')
 ## and weekend ('blue')
@@ -155,6 +163,10 @@ grid.animate('stationsCircles',
              r=radius,
              fill=colorAnim,
              rep=TRUE)
+
+##################################################################
+## Time reference: progress bar
+##################################################################
 
 ## Progress bar
 prettyDays <- pretty(days, 12)
@@ -184,7 +196,11 @@ grid.garnish('bgbar',
              onmouseover='document.rootElement.pauseAnimations()',
              onmouseout='document.rootElement.unpauseAnimations()')
 
-gridToSVG('figs/NO2pb.svg')
+grid.export('figs/NO2pb.svg')
+
+##################################################################
+## Time reference: a time series plot
+##################################################################
 
 ## Time series with average value of the set of stations
 NO2mean <- zoo(rowMeans(NO2zoo, na.rm=TRUE), index(NO2zoo))
@@ -223,4 +239,4 @@ grid.garnish('timePlot', grep=TRUE,
              onmouseover='document.rootElement.pauseAnimations()',
              onmouseout='document.rootElement.unpauseAnimations()')
 
-gridToSVG('figs/vLine.svg')
+grid.export('figs/vLine.svg')

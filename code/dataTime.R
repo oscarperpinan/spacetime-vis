@@ -1,7 +1,6 @@
-
 ##################################################################
 ## Source code for the book: "Displaying time series, spatial and
-## space-time data with R: stories of space and time"
+## space-time data with R"
 
 ## Copyright (C) 2012 Oscar Perpiñán Lamigueiro
 
@@ -20,8 +19,6 @@
 ## Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
 ## 02111-1307, USA.
 ####################################################################
-
-setwd('~/Dropbox/chapman/book/')
 
 ##################################################################
 ## SIAR
@@ -92,34 +89,21 @@ save(unemployUSA, file='data/unemployUSA.RData')
 ## Gross National Income and $CO_2$ emissions
 ##################################################################
 
-CO2 <- read.csv('data/CO2_GNI_BM.csv')
-head(CO2)
-
-CO2data <- reshape(CO2, varying=list(names(CO2)[5:16]),
-                      timevar='Year', v.names='Value',
-                      times=2000:2011,
-                      direction='long')
-head(CO2data)
-
-CO2data <- CO2data[, c(1, 3, 5, 6)]
-CO2data <- reshape(CO2data, 
-                   idvar=c('Country.Name','Year'),
-                   timevar='Indicator.Name', direction='wide')
+library(WDI)
   
-names(CO2data)[3:6] <- c('CO2.PPP', 'CO2.capita',
-                         'GNI.PPP', 'GNI.capita')
+CO2data <- WDI(indicator=c('EN.ATM.CO2E.PC', 'EN.ATM.CO2E.PP.GD',
+              'NY.GNP.MKTP.PP.CD', 'NY.GNP.PCAP.PP.CD'),
+          start=2000, end=2011,
+          country=c('BR', 'CN', 'DE', 'ES',
+              'FI', 'FR', 'GR', 'IN', 'NO', 'US'))
+
+names(CO2data) <- c('iso2c', 'Country.Name', 'Year',
+                    'CO2.capita', 'CO2.PPP',
+                    'GNI.PPP', 'GNI.capita')
 
 isNA <- apply(is.na(CO2data), 1, any)
 CO2data <- CO2data[!isNA, ]
 
-head(CO2data)
+CO2data$Country.Name <- factor(CO2data$Country.Name)
 
-save(CO2data, CO2, file='data/CO2.RData')
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\textwidth]{figs/mapaSIAR_crop}
-  \caption{Meteorological stations of the SIAR network. The color key
-    indicates the altitude (meters).}
-  \label{fig:SIAR_map}
-\end{figure}
+save(CO2data, file='data/CO2.RData')

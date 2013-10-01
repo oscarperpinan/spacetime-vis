@@ -1,7 +1,6 @@
-
 ##################################################################
 ## Source code for the book: "Displaying time series, spatial and
-## space-time data with R: stories of space and time"
+## space-time data with R"
 
 ## Copyright (C) 2013-2012 Oscar Perpiñán Lamigueiro
 
@@ -27,7 +26,6 @@
 ## Clone or download the repository and set the working directory
 ## with setwd to the folder where the repository is located.
 
-load('data/aranjuez.RData')
 
 library(lattice)
 library(ggplot2)
@@ -63,18 +61,20 @@ lattice.options(default.theme = myTheme,
 ##################################################################
 
 png(filename="figs/aranjuezSplom.png",res=600,height=4000,width=4000)
+load('data/aranjuez.RData')
+
 ## Red-Blue palette with black added (12 colors)
 colors <- c(brewer.pal(n=11, 'RdBu'), '#000000')
 ## Rearrange according to months (darkest for summer)
 colors <- colors[c(6:1, 12:7)]
 
 splom(~as.data.frame(aranjuez),
-      groups=format(index(aranjuez), '%m'),
+        groups=format(index(aranjuez), '%m'),
       auto.key=list(space='right', 
-        title='Month', cex.title=1),
+          title='Month', cex.title=1),
       pscale=0, varname.cex=0.7, xlab='',
-      par.settings=custom.theme(symbol=colors,
-        pch=19), cex=0.3, alpha=0.1)
+        par.settings=custom.theme(symbol=colors,
+            pch=19), cex=0.3, alpha=0.1)
 dev.off()
 
 trellis.focus('panel', 1, 1)
