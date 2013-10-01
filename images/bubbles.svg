@@ -1,28 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="504px" height="504px" viewBox="0 0 504 504" version="1.1">
-  <g transform="translate(0, 504) scale(1, -1)">
-    <g id="gridSVG" fill="none" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="1px" font-size="12px" font-family="Helvetica, Arial, FreeSans, Liberation Sans, Nimbus Sans L, sans-serif" opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity="1" fill-opacity="0" font-weight="normal" font-style="normal">
-      <g id="plot_01.background">
-        <rect id="plot_01.background.1" x="0" y="0" width="504" height="504" fill="none" stroke="none" stroke-opacity="0" fill-opacity="0"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="672px" height="672.12px" viewBox="0 0 672 672.12" version="1.1">
+  <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
+    <gridsvg:generator name="gridSVG" version="1.3-1" time="2013-09-24 12:08:49"/>
+    <gridsvg:argument name="name" value="figs/bubbles.svg"/>
+    <gridsvg:argument name="exportCoords" value="none"/>
+    <gridsvg:argument name="exportMappings" value="none"/>
+    <gridsvg:argument name="exportJS" value="none"/>
+    <gridsvg:argument name="res" value="96.11"/>
+    <gridsvg:argument name="prefix" value=""/>
+    <gridsvg:argument name="addClasses" value="FALSE"/>
+    <gridsvg:argument name="indent" value="TRUE"/>
+    <gridsvg:argument name="htmlWrapper" value="FALSE"/>
+    <gridsvg:argument name="usePaths" value="vpPaths"/>
+    <gridsvg:argument name="uniqueNames" value="TRUE"/>
+    <gridsvg:separator name="id.sep" value="."/>
+    <gridsvg:separator name="gPath.sep" value="::"/>
+    <gridsvg:separator name="vpPath.sep" value="::"/>
+  </metadata>
+  <g transform="translate(0, 672.12) scale(1, -1)">
+    <g id="gridSVG" fill="none" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="1" font-size="16.04" font-family="Helvetica, Arial, FreeSans, Liberation Sans, Nimbus Sans L, sans-serif" opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity="1" fill-opacity="0" font-weight="normal" font-style="normal">
+      <g id="plot_01.background.1">
+        <rect id="plot_01.background.1.1" x="0" y="0" width="672" height="672.12" fill="none" stroke="none" stroke-opacity="0" fill-opacity="0"/>
       </g>
-      <g id="plot_01.toplevel.vp.1" font-size="12px">
+      <g id="plot_01.toplevel.vp.1" font-size="16.02">
         <g id="plot_01.toplevel.vp::plot_01.xlab.vp.1">
-          <g id="plot_01.xlab">
-            <g transform="translate(278.71, 16.31)" stroke-width="0.1px" id="plot_01.xlab.1">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" opacity="1" stroke="rgb(0,0,0)" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="12px" font-weight="normal" font-style="normal">
-                  <tspan dy="4.31" x="0">CO2.capita</tspan>
+          <g id="plot_01.xlab.1">
+            <g id="plot_01.xlab.1.1" transform="translate(370.85, 22.02)" stroke-width="0.1">
+              <g id="plot_01.xlab.1.1.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.xlab.1.1.text" text-anchor="middle" opacity="1" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="16.02" font-weight="normal" font-style="normal">
+                  <tspan id="plot_01.xlab.1.1.tspan.1" dy="6" x="0">CO2.capita</tspan>
                 </text>
               </g>
             </g>
           </g>
         </g>
         <g id="plot_01.toplevel.vp::plot_01.ylab.vp.1">
-          <g id="plot_01.ylab">
-            <g transform="translate(10.31, 268.4)" stroke-width="0.1px" id="plot_01.ylab.1">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" transform="rotate(-90)" text-anchor="middle" opacity="1" stroke="rgb(0,0,0)" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="12px" font-weight="normal" font-style="normal">
-                  <tspan dy="4.31" x="0">GNI.capita</tspan>
+          <g id="plot_01.ylab.1">
+            <g id="plot_01.ylab.1.1" transform="translate(14.01, 357.91)" stroke-width="0.1">
+              <g id="plot_01.ylab.1.1.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.ylab.1.1.text" transform="rotate(-90)" text-anchor="middle" opacity="1" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="16.02" font-weight="normal" font-style="normal">
+                  <tspan id="plot_01.ylab.1.1.tspan.1" dy="6" x="0">GNI.capita</tspan>
                 </text>
               </g>
             </g>
@@ -31,106 +48,106 @@
         <g id="plot_01.toplevel.vp::plot_01.figure.vp.1"/>
         <defs>
           <clipPath id="plot_01.toplevel.vp::plot_01.panel.1.1.vp.1.clipPath">
-            <rect x="65.42" y="50.8" width="426.58" height="435.2" fill="none" stroke="none"/>
+            <rect x="85.72" y="67.74" width="570.26" height="580.36" fill="none" stroke="none"/>
           </clipPath>
         </defs>
         <g id="plot_01.toplevel.vp::plot_01.panel.1.1.vp.1" clip-path="url(#plot_01.toplevel.vp::plot_01.panel.1.1.vp.1.clipPath)"/>
         <g id="plot_01.toplevel.vp::plot_01.strip.1.1.off.vp.1"/>
         <g id="plot_01.toplevel.vp::plot_01.strip.left.1.1.off.vp.1">
-          <g id="plot_01.ticks.left.panel.1.1">
-            <polyline stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1px" stroke-opacity="1" fill="none" id="plot_01.ticks.left.panel.1.1.1" points="65.42,60.62 59.75,60.62"/>
-            <polyline stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1px" stroke-opacity="1" fill="none" id="plot_01.ticks.left.panel.1.1.2" points="65.42,127.05 59.75,127.05"/>
-            <polyline stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1px" stroke-opacity="1" fill="none" id="plot_01.ticks.left.panel.1.1.3" points="65.42,193.47 59.75,193.47"/>
-            <polyline stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1px" stroke-opacity="1" fill="none" id="plot_01.ticks.left.panel.1.1.4" points="65.42,259.9 59.75,259.9"/>
-            <polyline stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1px" stroke-opacity="1" fill="none" id="plot_01.ticks.left.panel.1.1.5" points="65.42,326.33 59.75,326.33"/>
-            <polyline stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1px" stroke-opacity="1" fill="none" id="plot_01.ticks.left.panel.1.1.6" points="65.42,392.75 59.75,392.75"/>
-            <polyline stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1px" stroke-opacity="1" fill="none" id="plot_01.ticks.left.panel.1.1.7" points="65.42,459.18 59.75,459.18"/>
+          <g id="plot_01.ticks.left.panel.1.1.1">
+            <polyline id="plot_01.ticks.left.panel.1.1.1.1" points="85.72,80.56 78.16,80.56" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1" stroke-opacity="1" fill="none"/>
+            <polyline id="plot_01.ticks.left.panel.1.1.1.2" points="85.72,169.18 78.16,169.18" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1" stroke-opacity="1" fill="none"/>
+            <polyline id="plot_01.ticks.left.panel.1.1.1.3" points="85.72,257.81 78.16,257.81" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1" stroke-opacity="1" fill="none"/>
+            <polyline id="plot_01.ticks.left.panel.1.1.1.4" points="85.72,346.44 78.16,346.44" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1" stroke-opacity="1" fill="none"/>
+            <polyline id="plot_01.ticks.left.panel.1.1.1.5" points="85.72,435.06 78.16,435.06" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1" stroke-opacity="1" fill="none"/>
+            <polyline id="plot_01.ticks.left.panel.1.1.1.6" points="85.72,523.69 78.16,523.69" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1" stroke-opacity="1" fill="none"/>
+            <polyline id="plot_01.ticks.left.panel.1.1.1.7" points="85.72,612.32 78.16,612.32" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1" stroke-opacity="1" fill="none"/>
           </g>
-          <g id="plot_01.ticklabels.left.panel.1.1">
-            <g transform="translate(54.09, 60.62)" stroke-width="0.1px" id="plot_01.ticklabels.left.panel.1.1.1">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6px" font-weight="normal" font-style="normal">
-                  <tspan dy="3.59" x="0">0</tspan>
+          <g id="plot_01.ticklabels.left.panel.1.1.1">
+            <g id="plot_01.ticklabels.left.panel.1.1.1.1" transform="translate(70.59, 80.56)" stroke-width="0.1">
+              <g id="plot_01.ticklabels.left.panel.1.1.1.1.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.ticklabels.left.panel.1.1.1.1.text" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="12.81" font-weight="normal" font-style="normal">
+                  <tspan id="plot_01.ticklabels.left.panel.1.1.1.1.tspan.1" dy="4.5" x="0">0</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(54.09, 127.05)" stroke-width="0.1px" id="plot_01.ticklabels.left.panel.1.1.2">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6px" font-weight="normal" font-style="normal">
-                  <tspan dy="3.59" x="0">10000</tspan>
+            <g id="plot_01.ticklabels.left.panel.1.1.1.2" transform="translate(70.59, 169.18)" stroke-width="0.1">
+              <g id="plot_01.ticklabels.left.panel.1.1.1.2.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.ticklabels.left.panel.1.1.1.2.text" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="12.81" font-weight="normal" font-style="normal">
+                  <tspan id="plot_01.ticklabels.left.panel.1.1.1.2.tspan.1" dy="4.5" x="0">10000</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(54.09, 193.47)" stroke-width="0.1px" id="plot_01.ticklabels.left.panel.1.1.3">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6px" font-weight="normal" font-style="normal">
-                  <tspan dy="3.59" x="0">20000</tspan>
+            <g id="plot_01.ticklabels.left.panel.1.1.1.3" transform="translate(70.59, 257.81)" stroke-width="0.1">
+              <g id="plot_01.ticklabels.left.panel.1.1.1.3.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.ticklabels.left.panel.1.1.1.3.text" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="12.81" font-weight="normal" font-style="normal">
+                  <tspan id="plot_01.ticklabels.left.panel.1.1.1.3.tspan.1" dy="4.5" x="0">20000</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(54.09, 259.9)" stroke-width="0.1px" id="plot_01.ticklabels.left.panel.1.1.4">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6px" font-weight="normal" font-style="normal">
-                  <tspan dy="3.59" x="0">30000</tspan>
+            <g id="plot_01.ticklabels.left.panel.1.1.1.4" transform="translate(70.59, 346.44)" stroke-width="0.1">
+              <g id="plot_01.ticklabels.left.panel.1.1.1.4.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.ticklabels.left.panel.1.1.1.4.text" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="12.81" font-weight="normal" font-style="normal">
+                  <tspan id="plot_01.ticklabels.left.panel.1.1.1.4.tspan.1" dy="4.5" x="0">30000</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(54.09, 326.33)" stroke-width="0.1px" id="plot_01.ticklabels.left.panel.1.1.5">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6px" font-weight="normal" font-style="normal">
-                  <tspan dy="3.59" x="0">40000</tspan>
+            <g id="plot_01.ticklabels.left.panel.1.1.1.5" transform="translate(70.59, 435.06)" stroke-width="0.1">
+              <g id="plot_01.ticklabels.left.panel.1.1.1.5.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.ticklabels.left.panel.1.1.1.5.text" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="12.81" font-weight="normal" font-style="normal">
+                  <tspan id="plot_01.ticklabels.left.panel.1.1.1.5.tspan.1" dy="4.5" x="0">40000</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(54.09, 392.75)" stroke-width="0.1px" id="plot_01.ticklabels.left.panel.1.1.6">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6px" font-weight="normal" font-style="normal">
-                  <tspan dy="3.59" x="0">50000</tspan>
+            <g id="plot_01.ticklabels.left.panel.1.1.1.6" transform="translate(70.59, 523.69)" stroke-width="0.1">
+              <g id="plot_01.ticklabels.left.panel.1.1.1.6.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.ticklabels.left.panel.1.1.1.6.text" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="12.81" font-weight="normal" font-style="normal">
+                  <tspan id="plot_01.ticklabels.left.panel.1.1.1.6.tspan.1" dy="4.5" x="0">50000</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(54.09, 459.18)" stroke-width="0.1px" id="plot_01.ticklabels.left.panel.1.1.7">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6px" font-weight="normal" font-style="normal">
-                  <tspan dy="3.59" x="0">60000</tspan>
+            <g id="plot_01.ticklabels.left.panel.1.1.1.7" transform="translate(70.59, 612.32)" stroke-width="0.1">
+              <g id="plot_01.ticklabels.left.panel.1.1.1.7.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.ticklabels.left.panel.1.1.1.7.text" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="12.81" font-weight="normal" font-style="normal">
+                  <tspan id="plot_01.ticklabels.left.panel.1.1.1.7.tspan.1" dy="4.5" x="0">60000</tspan>
                 </text>
               </g>
             </g>
           </g>
         </g>
         <g id="plot_01.toplevel.vp::plot_01.panel.1.1.off.vp.1">
-          <g id="plot_01.ticks.bottom.panel.1.1">
-            <polyline stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1px" stroke-opacity="1" fill="none" id="plot_01.ticks.bottom.panel.1.1.1" points="166.46,50.8 166.46,45.13"/>
-            <polyline stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1px" stroke-opacity="1" fill="none" id="plot_01.ticks.bottom.panel.1.1.2" points="271.76,50.8 271.76,45.13"/>
-            <polyline stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1px" stroke-opacity="1" fill="none" id="plot_01.ticks.bottom.panel.1.1.3" points="377.07,50.8 377.07,45.13"/>
-            <polyline stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1px" stroke-opacity="1" fill="none" id="plot_01.ticks.bottom.panel.1.1.4" points="482.38,50.8 482.38,45.13"/>
+          <g id="plot_01.ticks.bottom.panel.1.1.1">
+            <polyline id="plot_01.ticks.bottom.panel.1.1.1.1" points="216.45,67.74 216.45,60.17" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1" stroke-opacity="1" fill="none"/>
+            <polyline id="plot_01.ticks.bottom.panel.1.1.1.2" points="352.06,67.74 352.06,60.17" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1" stroke-opacity="1" fill="none"/>
+            <polyline id="plot_01.ticks.bottom.panel.1.1.1.3" points="487.68,67.74 487.68,60.17" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1" stroke-opacity="1" fill="none"/>
+            <polyline id="plot_01.ticks.bottom.panel.1.1.1.4" points="623.3,67.74 623.3,60.17" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="1" stroke-opacity="1" fill="none"/>
           </g>
-          <g id="plot_01.ticklabels.bottom.panel.1.1">
-            <g transform="translate(166.46, 39.47)" stroke-width="0.1px" id="plot_01.ticklabels.bottom.panel.1.1.1">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6px" font-weight="normal" font-style="normal">
-                  <tspan dy="7.18" x="0">5</tspan>
+          <g id="plot_01.ticklabels.bottom.panel.1.1.1">
+            <g id="plot_01.ticklabels.bottom.panel.1.1.1.1" transform="translate(216.45, 52.6)" stroke-width="0.1">
+              <g id="plot_01.ticklabels.bottom.panel.1.1.1.1.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.ticklabels.bottom.panel.1.1.1.1.text" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="12.81" font-weight="normal" font-style="normal">
+                  <tspan id="plot_01.ticklabels.bottom.panel.1.1.1.1.tspan.1" dy="9" x="0">5</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(271.76, 39.47)" stroke-width="0.1px" id="plot_01.ticklabels.bottom.panel.1.1.2">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6px" font-weight="normal" font-style="normal">
-                  <tspan dy="7.18" x="0">10</tspan>
+            <g id="plot_01.ticklabels.bottom.panel.1.1.1.2" transform="translate(352.06, 52.6)" stroke-width="0.1">
+              <g id="plot_01.ticklabels.bottom.panel.1.1.1.2.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.ticklabels.bottom.panel.1.1.1.2.text" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="12.81" font-weight="normal" font-style="normal">
+                  <tspan id="plot_01.ticklabels.bottom.panel.1.1.1.2.tspan.1" dy="9" x="0">10</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(377.07, 39.47)" stroke-width="0.1px" id="plot_01.ticklabels.bottom.panel.1.1.3">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6px" font-weight="normal" font-style="normal">
-                  <tspan dy="7.18" x="0">15</tspan>
+            <g id="plot_01.ticklabels.bottom.panel.1.1.1.3" transform="translate(487.68, 52.6)" stroke-width="0.1">
+              <g id="plot_01.ticklabels.bottom.panel.1.1.1.3.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.ticklabels.bottom.panel.1.1.1.3.text" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="12.81" font-weight="normal" font-style="normal">
+                  <tspan id="plot_01.ticklabels.bottom.panel.1.1.1.3.tspan.1" dy="9" x="0">15</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(482.38, 39.47)" stroke-width="0.1px" id="plot_01.ticklabels.bottom.panel.1.1.4">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" stroke-opacity="1" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6px" font-weight="normal" font-style="normal">
-                  <tspan dy="7.18" x="0">20</tspan>
+            <g id="plot_01.ticklabels.bottom.panel.1.1.1.4" transform="translate(623.3, 52.6)" stroke-width="0.1">
+              <g id="plot_01.ticklabels.bottom.panel.1.1.1.4.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.ticklabels.bottom.panel.1.1.1.4.text" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="12.81" font-weight="normal" font-style="normal">
+                  <tspan id="plot_01.ticklabels.bottom.panel.1.1.1.4.tspan.1" dy="9" x="0">20</tspan>
                 </text>
               </g>
             </g>
@@ -138,248 +155,252 @@
         </g>
         <defs>
           <clipPath id="plot_01.toplevel.vp::plot_01.panel.1.1.vp.2.clipPath">
-            <rect x="65.42" y="50.8" width="426.58" height="435.2" fill="none" stroke="none"/>
+            <rect x="85.72" y="67.74" width="570.26" height="580.36" fill="none" stroke="none"/>
           </clipPath>
         </defs>
         <g id="plot_01.toplevel.vp::plot_01.panel.1.1.vp.2" clip-path="url(#plot_01.toplevel.vp::plot_01.panel.1.1.vp.2.clipPath)">
-          <animate xlink:href="#plot_01.points.panel.1.1.1" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="273.3;290.21;308.5;339.47;330.94;280.37;325.41;315.71;285.15" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.2" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="187.86;193.92;191.13;192.5;192.4;192.14;188.07;184.65;184.85" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.3" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="274.32;280.01;273.3;274.4;272.62;267.91;268.72;262.69;262.93" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.4" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="237.89;241.58;240.7;244.06;246.12;248.31;244.94;245.96;244.48" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.5" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="243.15;252.89;234.86;257.81;256.84;254.14;261.14;262.07;281.97" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.6" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="215.17;215.19;221.49;222.15;228.6;232.69;228.26;229.27;213.38" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.7" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="472.61;459.51;459.33;458.39;461.35;459.93;450.41;451.4;439.38" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.8" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="117.95;118.9;121.92;135.12;147.08;154.69;164.2;169.69;172.95" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.9" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="84.86;84.81;84.88;85.56;86.4;87.22;88.53;90.07;91.97" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.10" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="101.01;101.62;100.52;98.81;100.23;100.78;100.65;102.03;104.39" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.1" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="229.87;236.58;243.82;242.7;260.5;265.55;282.82;300.95;314.9" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.2" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="231.07;239.97;245.48;243.49;250.07;259.57;272.99;284.48;291.39" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.3" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="229.94;235.99;240.44;247.34;259.43;269.66;288;300.88;310.32" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.4" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="182.31;192.74;203.3;209.35;218.18;219.98;234.79;239.51;250.6" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.5" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="297.43;307.13;307.53;316.36;343.26;379.13;418.59;430.35;466.22" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.6" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="201.11;208.22;218.05;223.1;230.67;239.91;258.77;269.8;274.78" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.7" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="297.7;302.81;306.86;315.7;330.84;347.38;364.06;371.49;374.95" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.8" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="76.17;77.63;79.42;81.75;84.47;87.79;92.17;97.69;102" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.9" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="70.59;71.18;71.58;72.58;73.71;75.17;76.83;78.69;79.69" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.10" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="105.92;106.52;107.85;108.98;112.63;115.56;119.14;124.19;128.11" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.1" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="7.06;7.38;7.68;8.61;7.72;6.1;6.81;6.02;5.03" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.2" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="4.29;4.27;4.02;4.12;3.98;3.79;3.45;3.19;3.1" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.3" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="7.07;7;6.61;6.43;6.09;5.68;5.29;4.84;4.65" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.4" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="8.28;7.81;7.17;6.95;6.63;6.57;5.86;5.7;5.3" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.5" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="4.3;4.42;4.01;4.39;3.94;3.46;3.17;3.08;3.08" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.6" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="6.17;5.83;5.69;5.56;5.52;5.36;4.71;4.46;3.92" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.7" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="10.02;9.48;9.24;8.88;8.48;8.01;7.44;7.18;6.88" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.8" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="20.53;18.99;18.14;19.77;20.41;19.43;18.5;16.66;15.4" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.9" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="13.41;12.64;12.22;11.53;10.88;10.09;9.53;9.04;9.11" repeatCount="indefinite" fill="freeze"/>
-          <animate xlink:href="#plot_01.points.panel.1.1.10" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="4.86;4.83;4.56;4.28;4.14;3.98;3.74;3.57;3.55" repeatCount="indefinite" fill="freeze"/>
-          <g id="plot_01.points.panel.1.1">
-            <a xlink:href="http://en.wikipedia.org/wiki/Finland">
-              <circle id="plot_01.points.panel.1.1.1" cx="273.3" cy="229.87" r="7.06" stroke="rgb(55,126,184)" fill="rgb(55,126,184)" stroke-width="2px" stroke-opacity="1" fill-opacity="0.5"/>
-            </a>
-            <a xlink:href="http://en.wikipedia.org/wiki/France">
-              <circle id="plot_01.points.panel.1.1.2" cx="187.86" cy="231.07" r="4.29" stroke="rgb(255,127,0)" fill="rgb(255,127,0)" stroke-width="2px" stroke-opacity="1" fill-opacity="0.5"/>
-            </a>
-            <a xlink:href="http://en.wikipedia.org/wiki/Germany">
-              <circle id="plot_01.points.panel.1.1.3" cx="274.32" cy="229.94" r="7.07" stroke="rgb(77,175,74)" fill="rgb(77,175,74)" stroke-width="2px" stroke-opacity="1" fill-opacity="0.5"/>
-            </a>
-            <a xlink:href="http://en.wikipedia.org/wiki/Greece">
-              <circle id="plot_01.points.panel.1.1.4" cx="237.89" cy="182.31" r="8.28" stroke="rgb(152,78,163)" fill="rgb(152,78,163)" stroke-width="2px" stroke-opacity="1" fill-opacity="0.5"/>
-            </a>
-            <a xlink:href="http://en.wikipedia.org/wiki/Norway">
-              <circle id="plot_01.points.panel.1.1.5" cx="243.15" cy="297.43" r="4.3" stroke="rgb(255,127,0)" fill="rgb(255,127,0)" stroke-width="2px" stroke-opacity="1" fill-opacity="0.5"/>
-            </a>
-            <a xlink:href="http://en.wikipedia.org/wiki/Spain">
-              <circle id="plot_01.points.panel.1.1.6" cx="215.17" cy="201.11" r="6.17" stroke="rgb(228,26,28)" fill="rgb(228,26,28)" stroke-width="2px" stroke-opacity="1" fill-opacity="0.5"/>
-            </a>
-            <a xlink:href="http://en.wikipedia.org/wiki/United States">
-              <circle id="plot_01.points.panel.1.1.7" cx="472.61" cy="297.7" r="10.02" stroke="rgb(228,26,28)" fill="rgb(228,26,28)" stroke-width="2px" stroke-opacity="1" fill-opacity="0.5"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.1" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="131.81;139.15;237.55;339.6;297.34;421.77;249.16;319.04;112.62;304.53;613.98" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.2" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="132.54;153.98;248.85;323.33;276.88;408.96;243.94;321.86;113.76;334.1;613.72" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.3" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="131.06;155.2;354.66;328.06;251.12;369.72;240.1;317.52;114.78;332.85;612.04" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.4" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="128.82;159.08;362;279.18;239.59;350.94;237.81;318.91;116.52;329.8;617.25" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.5" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="130.62;176.09;353.34;279.21;354.05;393.59;230.45;316.92;118.53;338.39;615.6" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.6" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="131.43;191.49;354.71;287.32;375.82;243.61;231.51;308.97;122.65;340.53;602.4" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.7" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="130.95;201.29;352.31;288.17;399.38;251.39;308.44;288.84;126;367.1;605.66" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.8" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="132.68;213.54;346.15;296.48;439.26;247.97;313.19;111.71;126.02;345.27;585.39" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.9" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="135.66;220.61;347.16;301.74;428.9;249.73;312.06;111.65;315.21;398.08;550.48" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.10" attributeName="cx" begin="0s" calcMode="linear" dur="20s" values="132.29;224.88;339.32;296.04;363.36;249.58;316.39;111.73;327.76;630.06;557.23" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.1" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="141;177.87;140.91;413.35;359.38;376.66;345.64;290.78;96.77;409.98;403.69" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.2" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="141.89;101.29;147.11;404.04;366.56;401.03;362.66;293.17;98.19;421.95;409.1" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.3" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="143.66;103.24;306.38;420.97;358.84;419.47;378.17;312.05;100.23;457.66;420.88" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.4" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="144.99;105.73;314.62;267.82;356.81;400.59;387.56;319.41;102.36;507.38;441.09" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.5" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="149.95;108.74;320.47;277.49;306.29;404.67;384.46;334.38;105.02;557.55;463.16" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.6" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="153.76;112.37;329.78;290.6;315.42;306.82;390.48;333.05;106.08;573.59;485.4" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.7" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="158.55;116.8;345.82;297.51;324.99;318.96;242.92;317.81;108.12;621.71;495.33" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.8" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="165.28;122.65;359.47;307.53;323.57;326.67;256.92;94.12;110.95;568.8;499.94" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.9" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="170.51;130.01;383.57;319.85;347.23;324.01;270.93;94.91;396.42;595.75;482.83" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.10" attributeName="cy" begin="0s" calcMode="linear" dur="20s" values="170.51;135.77;400.94;344.84;353.97;332.79;279.08;95.44;409.63;396.87;499.05" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.1" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="6.44;4.62;20.42;6.18;5.95;9.13;5.06;8.84;15.32;5.35;13.15" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.2" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="6.39;27.38;19.67;6.03;5.24;8.04;4.62;8.77;14.53;5.86;12.82" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.3" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="6.04;25.32;9.42;5.82;4.71;6.72;4.27;7.84;13.47;5.26;12.31" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.4" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="5.66;24.19;9.32;8.24;4.45;6.73;4.09;7.6;12.73;4.63;11.79" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.5" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="5.47;26.38;8.8;7.78;9.43;7.69;3.94;7.06;12.07;4.24;11.14" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.6" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="5.27;27.24;8.56;7.6;9.85;5.73;3.89;6.92;12.77;4.12;10.35" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.7" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="4.92;25.94;8.1;7.42;10.25;5.69;11.05;6.69;12.77;4.13;10.03" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.8" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="4.71;24.7;7.55;7.36;11.49;5.37;10.42;17.71;11.56;4.28;9.56" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.9" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="4.67;22.25;7.04;7.14;10.33;5.5;9.57;16.74;5.75;4.89;9.18" repeatCount="indefinite" fill="freeze"/>
+          <animate xlink:href="#plot_01.points.panel.1.1.1.10" attributeName="r" begin="0s" calcMode="linear" dur="20s" values="4.4;20.58;6.44;6.29;8.15;5.32;9.27;16.15;5.9;13.87;9.05" repeatCount="indefinite" fill="freeze"/>
+          <g id="plot_01.points.panel.1.1.1">
+            <a xlink:href="http://en.wikipedia.org/wiki/Brazil">
+              <circle id="plot_01.points.panel.1.1.1.1" cx="131.81" cy="141" r="6.44" stroke="rgb(55,126,184)" fill="rgb(55,126,184)" stroke-width="2" stroke-opacity="1" fill-opacity="0.5"/>
             </a>
             <a xlink:href="http://en.wikipedia.org/wiki/China">
-              <circle id="plot_01.points.panel.1.1.8" cx="117.95" cy="76.17" r="20.53" stroke="rgb(55,126,184)" fill="rgb(55,126,184)" stroke-width="2px" stroke-opacity="1" fill-opacity="0.5"/>
+              <circle id="plot_01.points.panel.1.1.1.2" cx="153.98" cy="101.29" r="27.38" stroke="rgb(152,78,163)" fill="rgb(152,78,163)" stroke-width="2" stroke-opacity="1" fill-opacity="0.5"/>
+            </a>
+            <a xlink:href="http://en.wikipedia.org/wiki/Germany">
+              <circle id="plot_01.points.panel.1.1.1.3" cx="354.66" cy="306.38" r="9.42" stroke="rgb(255,127,0)" fill="rgb(255,127,0)" stroke-width="2" stroke-opacity="1" fill-opacity="0.5"/>
+            </a>
+            <a xlink:href="http://en.wikipedia.org/wiki/Spain">
+              <circle id="plot_01.points.panel.1.1.1.4" cx="279.18" cy="267.82" r="8.24" stroke="rgb(55,126,184)" fill="rgb(55,126,184)" stroke-width="2" stroke-opacity="1" fill-opacity="0.5"/>
+            </a>
+            <a xlink:href="http://en.wikipedia.org/wiki/Finland">
+              <circle id="plot_01.points.panel.1.1.1.5" cx="354.05" cy="306.29" r="9.43" stroke="rgb(152,78,163)" fill="rgb(152,78,163)" stroke-width="2" stroke-opacity="1" fill-opacity="0.5"/>
+            </a>
+            <a xlink:href="http://en.wikipedia.org/wiki/France">
+              <circle id="plot_01.points.panel.1.1.1.6" cx="243.61" cy="306.82" r="5.73" stroke="rgb(255,127,0)" fill="rgb(255,127,0)" stroke-width="2" stroke-opacity="1" fill-opacity="0.5"/>
+            </a>
+            <a xlink:href="http://en.wikipedia.org/wiki/Greece">
+              <circle id="plot_01.points.panel.1.1.1.7" cx="308.44" cy="242.92" r="11.05" stroke="rgb(77,175,74)" fill="rgb(77,175,74)" stroke-width="2" stroke-opacity="1" fill-opacity="0.5"/>
             </a>
             <a xlink:href="http://en.wikipedia.org/wiki/India">
-              <circle id="plot_01.points.panel.1.1.9" cx="84.86" cy="70.59" r="13.41" stroke="rgb(77,175,74)" fill="rgb(77,175,74)" stroke-width="2px" stroke-opacity="1" fill-opacity="0.5"/>
+              <circle id="plot_01.points.panel.1.1.1.8" cx="111.71" cy="94.12" r="17.71" stroke="rgb(77,175,74)" fill="rgb(77,175,74)" stroke-width="2" stroke-opacity="1" fill-opacity="0.5"/>
             </a>
-            <a xlink:href="http://en.wikipedia.org/wiki/Brazil">
-              <circle id="plot_01.points.panel.1.1.10" cx="101.01" cy="105.92" r="4.86" stroke="rgb(152,78,163)" fill="rgb(152,78,163)" stroke-width="2px" stroke-opacity="1" fill-opacity="0.5"/>
+            <a xlink:href="http://en.wikipedia.org/wiki/Norway">
+              <circle id="plot_01.points.panel.1.1.1.9" cx="315.21" cy="396.42" r="5.75" stroke="rgb(228,26,28)" fill="rgb(228,26,28)" stroke-width="2" stroke-opacity="1" fill-opacity="0.5"/>
+            </a>
+            <a xlink:href="http://en.wikipedia.org/wiki/United States">
+              <circle id="plot_01.points.panel.1.1.1.10" cx="630.06" cy="396.87" r="13.87" stroke="rgb(228,26,28)" fill="rgb(228,26,28)" stroke-width="2" stroke-opacity="1" fill-opacity="0.5"/>
             </a>
           </g>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.1" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="273.3,240.47;290.21,247.65;308.5,255.34;339.47,255.62;330.94,272.08;280.37,274.7;325.41,293.04;315.71,309.97;285.15,322.44" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.2" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="187.86,237.51;193.92,246.37;191.13,251.51;192.5,249.67;192.4,256.04;192.14,265.25;188.07,278.17;184.65,289.26;184.85,296.03" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.3" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="274.32,240.55;280.01,246.49;273.3,250.35;274.4,256.99;272.62,268.57;267.91,278.18;268.72,295.93;262.69,308.15;262.93,317.29" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.4" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="237.89,194.73;241.58,204.46;240.7,214.06;244.06,219.77;246.12,228.12;248.31,229.83;244.94,243.58;245.96,248.06;244.48,258.55" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.5" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="243.15,303.89;252.89,313.76;234.86,313.54;257.81,322.95;256.84,349.17;254.14,384.33;261.14,423.35;262.07,434.96;281.97,470.83" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.6" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="215.17,210.37;215.19,216.96;221.49,226.59;222.15,231.44;228.6,238.94;232.69,247.94;228.26,265.83;229.27,276.48;213.38,280.66" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.7" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="472.61,312.73;459.51,317.03;459.33,320.73;458.39,329.02;461.35,343.56;459.93,359.39;450.41,375.22;451.4,382.26;439.38,385.26" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.8" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="117.95,106.96;118.9,106.11;121.92,106.63;135.12,111.4;147.08,115.08;154.69,116.93;164.2,119.92;169.69,122.68;172.95,125.11" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.9" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="84.86,90.7;84.81,90.14;84.88,89.9;85.56,89.87;86.4,90.02;87.22,90.3;88.53,91.13;90.07,92.25;91.97,93.35" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.10" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="101.01,113.21;101.62,113.77;100.52,114.7;98.81,115.4;100.23,118.84;100.78,121.53;100.65,124.75;102.03,129.55;104.39,133.44" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.1" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="273.3,240.47;290.21,247.65;308.5,255.34;339.47,255.62;330.94,272.08;280.37,274.7;325.41,293.04;315.71,309.97;285.15,322.44" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.2" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="187.86,237.51;193.92,246.37;191.13,251.51;192.5,249.67;192.4,256.04;192.14,265.25;188.07,278.17;184.65,289.26;184.85,296.03" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.3" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="274.32,240.55;280.01,246.49;273.3,250.35;274.4,256.99;272.62,268.57;267.91,278.18;268.72,295.93;262.69,308.15;262.93,317.29" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.4" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="237.89,194.73;241.58,204.46;240.7,214.06;244.06,219.77;246.12,228.12;248.31,229.83;244.94,243.58;245.96,248.06;244.48,258.55" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.5" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="243.15,303.89;252.89,313.76;234.86,313.54;257.81,322.95;256.84,349.17;254.14,384.33;261.14,423.35;262.07,434.96;281.97,470.83" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.6" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="215.17,210.37;215.19,216.96;221.49,226.59;222.15,231.44;228.6,238.94;232.69,247.94;228.26,265.83;229.27,276.48;213.38,280.66" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.7" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="472.61,312.73;459.51,317.03;459.33,320.73;458.39,329.02;461.35,343.56;459.93,359.39;450.41,375.22;451.4,382.26;439.38,385.26" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.8" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="117.95,106.96;118.9,106.11;121.92,106.63;135.12,111.4;147.08,115.08;154.69,116.93;164.2,119.92;169.69,122.68;172.95,125.11" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.9" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="84.86,90.7;84.81,90.14;84.88,89.9;85.56,89.87;86.4,90.02;87.22,90.3;88.53,91.13;90.07,92.25;91.97,93.35" repeatCount="indefinite" fill="freeze"/>
-          <animateTransform xlink:href="#plot_01.labels.panel.1.1.10" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="101.01,113.21;101.62,113.77;100.52,114.7;98.81,115.4;100.23,118.84;100.78,121.53;100.65,124.75;102.03,129.55;104.39,133.44" repeatCount="indefinite" fill="freeze"/>
-          <g id="plot_01.labels.panel.1.1">
-            <g transform="translate(273.3, 240.47)" stroke-width="0.1px" id="plot_01.labels.panel.1.1.1">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" stroke="rgb(55,126,184)" stroke-opacity="1" fill="rgb(55,126,184)" fill-opacity="1" font-size="8.27px">
-                  <tspan dy="2.87" x="0">Finland</tspan>
+          <animateTransform xlink:href="#plot_01.labels.panel.1.1.1.1" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="131.81,150.66;139.15,184.8;237.55,171.55;339.6,422.61;297.34,368.31;421.77,390.35;249.16,353.23;319.04,304.05;112.62,119.75;304.53,418;613.98,423.42" additive="replace" repeatCount="indefinite" fill="freeze"/>
+          <animateTransform xlink:href="#plot_01.labels.panel.1.1.1.2" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="132.54,151.48;153.98,142.37;248.85,176.61;323.33,413.09;276.88,374.41;408.96,413.09;243.94,369.59;321.86,306.33;113.76,119.99;334.1,430.74;613.72,428.33" additive="replace" repeatCount="indefinite" fill="freeze"/>
+          <animateTransform xlink:href="#plot_01.labels.panel.1.1.1.3" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="131.06,152.71;155.2,141.23;354.66,320.5;328.06,429.7;251.12,365.92;369.72,429.55;240.1,384.58;317.52,323.81;114.78,120.43;332.85,465.55;612.04,439.35" additive="replace" repeatCount="indefinite" fill="freeze"/>
+          <animateTransform xlink:href="#plot_01.labels.panel.1.1.1.4" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="128.82,153.47;159.08,142.01;362,328.61;279.18,280.19;239.59,363.49;350.94,410.69;237.81,393.69;318.91,330.81;116.52,121.45;329.8,514.33;617.25,458.78" additive="replace" repeatCount="indefinite" fill="freeze"/>
+          <animateTransform xlink:href="#plot_01.labels.panel.1.1.1.5" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="130.62,158.15;176.09,148.32;353.34,333.66;279.21,289.16;354.05,320.43;393.59,416.2;230.45,390.36;316.92,344.98;118.53,123.12;338.39,563.91;615.6,479.87" additive="replace" repeatCount="indefinite" fill="freeze"/>
+          <animateTransform xlink:href="#plot_01.labels.panel.1.1.1.6" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="131.43,161.67;191.49,153.23;354.71,342.61;287.32,302;375.82,330.19;243.61,315.42;231.51,396.33;308.97,343.44;122.65,125.24;340.53,579.77;602.4,500.94" additive="replace" repeatCount="indefinite" fill="freeze"/>
+          <animateTransform xlink:href="#plot_01.labels.panel.1.1.1.7" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="130.95,165.93;201.29,155.71;352.31,357.97;288.17,308.64;399.38,340.36;251.39,327.5;308.44,259.5;288.84,327.85;126,127.28;367.1,627.91;605.66,510.38" additive="replace" repeatCount="indefinite" fill="freeze"/>
+          <animateTransform xlink:href="#plot_01.labels.panel.1.1.1.8" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="132.68,172.34;213.54,159.7;346.15,370.8;296.48,318.57;439.26,340.81;247.97,334.72;313.19,272.56;111.71,120.68;126.02,128.29;345.27,575.22;585.39,514.28" additive="replace" repeatCount="indefinite" fill="freeze"/>
+          <animateTransform xlink:href="#plot_01.labels.panel.1.1.1.9" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="135.66,177.52;220.61,163.39;347.16,394.13;301.74,330.57;428.9,362.72;249.73,332.26;312.06,285.28;111.65,120.02;315.21,405.04;398.08,603.08;550.48,496.61" additive="replace" repeatCount="indefinite" fill="freeze"/>
+          <animateTransform xlink:href="#plot_01.labels.panel.1.1.1.10" attributeName="transform" type="translate" begin="0s" calcMode="linear" dur="20s" values="132.29,177.12;224.88,166.64;339.32,410.61;296.04,354.27;363.36,366.2;249.58,340.77;316.39,292.99;111.73,119.68;327.76,418.47;630.06,417.67;557.23,512.63" additive="replace" repeatCount="indefinite" fill="freeze"/>
+          <g id="plot_01.labels.panel.1.1.1">
+            <g id="plot_01.labels.panel.1.1.1.1" transform="translate(131.81, 150.66)" stroke-width="0.1">
+              <g id="plot_01.labels.panel.1.1.1.1.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.labels.panel.1.1.1.1.text" text-anchor="middle" stroke="rgb(55,126,184)" fill="rgb(55,126,184)" stroke-opacity="1" fill-opacity="1" font-size="9.12">
+                  <tspan id="plot_01.labels.panel.1.1.1.1.tspan.1" dy="3.5" x="0">Brazil</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(187.86, 237.51)" stroke-width="0.1px" id="plot_01.labels.panel.1.1.2">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" stroke="rgb(255,127,0)" stroke-opacity="1" fill="rgb(255,127,0)" fill-opacity="1" font-size="6.45px">
-                  <tspan dy="2.15" x="0">France</tspan>
+            <g id="plot_01.labels.panel.1.1.1.2" transform="translate(153.98, 142.37)" stroke-width="0.1">
+              <g id="plot_01.labels.panel.1.1.1.2.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.labels.panel.1.1.1.2.text" text-anchor="middle" stroke="rgb(152,78,163)" fill="rgb(152,78,163)" stroke-opacity="1" fill-opacity="1" font-size="18.81">
+                  <tspan id="plot_01.labels.panel.1.1.1.2.tspan.1" dy="7" x="0">China</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(274.32, 240.55)" stroke-width="0.1px" id="plot_01.labels.panel.1.1.3">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" stroke="rgb(77,175,74)" stroke-opacity="1" fill="rgb(77,175,74)" fill-opacity="1" font-size="8.27px">
-                  <tspan dy="2.87" x="0">Germany</tspan>
+            <g id="plot_01.labels.panel.1.1.1.3" transform="translate(354.66, 320.5)" stroke-width="0.1">
+              <g id="plot_01.labels.panel.1.1.1.3.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.labels.panel.1.1.1.3.text" text-anchor="middle" stroke="rgb(255,127,0)" fill="rgb(255,127,0)" stroke-opacity="1" fill-opacity="1" font-size="11.03">
+                  <tspan id="plot_01.labels.panel.1.1.1.3.tspan.1" dy="4" x="0">Germany</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(237.89, 194.73)" stroke-width="0.1px" id="plot_01.labels.panel.1.1.4">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" stroke="rgb(152,78,163)" stroke-opacity="1" fill="rgb(152,78,163)" fill-opacity="1" font-size="8.95px">
-                  <tspan dy="3.23" x="0">Greece</tspan>
+            <g id="plot_01.labels.panel.1.1.1.4" transform="translate(279.18, 280.19)" stroke-width="0.1">
+              <g id="plot_01.labels.panel.1.1.1.4.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.labels.panel.1.1.1.4.text" text-anchor="middle" stroke="rgb(55,126,184)" fill="rgb(55,126,184)" stroke-opacity="1" fill-opacity="1" font-size="10.32">
+                  <tspan id="plot_01.labels.panel.1.1.1.4.tspan.1" dy="4" x="0">Spain</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(243.15, 303.89)" stroke-width="0.1px" id="plot_01.labels.panel.1.1.5">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" stroke="rgb(255,127,0)" stroke-opacity="1" fill="rgb(255,127,0)" fill-opacity="1" font-size="6.45px">
-                  <tspan dy="2.15" x="0">Norway</tspan>
+            <g id="plot_01.labels.panel.1.1.1.5" transform="translate(354.05, 320.43)" stroke-width="0.1">
+              <g id="plot_01.labels.panel.1.1.1.5.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.labels.panel.1.1.1.5.text" text-anchor="middle" stroke="rgb(152,78,163)" fill="rgb(152,78,163)" stroke-opacity="1" fill-opacity="1" font-size="11.04">
+                  <tspan id="plot_01.labels.panel.1.1.1.5.tspan.1" dy="4" x="0">Finland</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(215.17, 210.37)" stroke-width="0.1px" id="plot_01.labels.panel.1.1.6">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" stroke="rgb(228,26,28)" stroke-opacity="1" fill="rgb(228,26,28)" fill-opacity="1" font-size="7.73px">
-                  <tspan dy="2.87" x="0">Spain</tspan>
+            <g id="plot_01.labels.panel.1.1.1.6" transform="translate(243.61, 315.42)" stroke-width="0.1">
+              <g id="plot_01.labels.panel.1.1.1.6.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.labels.panel.1.1.1.6.text" text-anchor="middle" stroke="rgb(255,127,0)" fill="rgb(255,127,0)" stroke-opacity="1" fill-opacity="1" font-size="8.6">
+                  <tspan id="plot_01.labels.panel.1.1.1.6.tspan.1" dy="3" x="0">France</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(472.61, 312.73)" stroke-width="0.1px" id="plot_01.labels.panel.1.1.7">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" stroke="rgb(228,26,28)" stroke-opacity="1" fill="rgb(228,26,28)" fill-opacity="1" font-size="9.85px">
-                  <tspan dy="3.59" x="0">United States</tspan>
+            <g id="plot_01.labels.panel.1.1.1.7" transform="translate(308.44, 259.5)" stroke-width="0.1">
+              <g id="plot_01.labels.panel.1.1.1.7.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.labels.panel.1.1.1.7.text" text-anchor="middle" stroke="rgb(77,175,74)" fill="rgb(77,175,74)" stroke-opacity="1" fill-opacity="1" font-size="11.95">
+                  <tspan id="plot_01.labels.panel.1.1.1.7.tspan.1" dy="4.5" x="0">Greece</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(117.95, 106.96)" stroke-width="0.1px" id="plot_01.labels.panel.1.1.8">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" stroke="rgb(55,126,184)" stroke-opacity="1" fill="rgb(55,126,184)" fill-opacity="1" font-size="14.1px">
-                  <tspan dy="5.03" x="0">China</tspan>
+            <g id="plot_01.labels.panel.1.1.1.8" transform="translate(111.71, 120.68)" stroke-width="0.1">
+              <g id="plot_01.labels.panel.1.1.1.8.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.labels.panel.1.1.1.8.text" text-anchor="middle" stroke="rgb(77,175,74)" fill="rgb(77,175,74)" stroke-opacity="1" fill-opacity="1" font-size="15.13">
+                  <tspan id="plot_01.labels.panel.1.1.1.8.tspan.1" dy="5.5" x="0">India</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(84.86, 90.7)" stroke-width="0.1px" id="plot_01.labels.panel.1.1.9">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" stroke="rgb(77,175,74)" stroke-opacity="1" fill="rgb(77,175,74)" fill-opacity="1" font-size="11.39px">
-                  <tspan dy="3.95" x="0">India</tspan>
+            <g id="plot_01.labels.panel.1.1.1.9" transform="translate(315.21, 405.04)" stroke-width="0.1">
+              <g id="plot_01.labels.panel.1.1.1.9.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.labels.panel.1.1.1.9.text" text-anchor="middle" stroke="rgb(228,26,28)" fill="rgb(228,26,28)" stroke-opacity="1" fill-opacity="1" font-size="8.62">
+                  <tspan id="plot_01.labels.panel.1.1.1.9.tspan.1" dy="3" x="0">Norway</tspan>
                 </text>
               </g>
             </g>
-            <g transform="translate(101.01, 113.21)" stroke-width="0.1px" id="plot_01.labels.panel.1.1.10">
-              <g transform="scale(1, -1)">
-                <text x="0" y="0" text-anchor="middle" stroke="rgb(152,78,163)" stroke-opacity="1" fill="rgb(152,78,163)" fill-opacity="1" font-size="6.86px">
-                  <tspan dy="2.51" x="0">Brazil</tspan>
+            <g id="plot_01.labels.panel.1.1.1.10" transform="translate(630.06, 417.67)" stroke-width="0.1">
+              <g id="plot_01.labels.panel.1.1.1.10.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="plot_01.labels.panel.1.1.1.10.text" text-anchor="middle" stroke="rgb(228,26,28)" fill="rgb(228,26,28)" stroke-opacity="1" fill-opacity="1" font-size="13.39">
+                  <tspan id="plot_01.labels.panel.1.1.1.10.tspan.1" dy="5" x="0">United States</tspan>
                 </text>
               </g>
             </g>
           </g>
         </g>
         <g id="plot_01.toplevel.vp::plot_01.panel.1.1.off.vp.2">
-          <g id="plot_01.border.panel.1.1">
-            <rect id="plot_01.border.panel.1.1.1" x="65.42" y="50.8" width="426.58" height="435.2" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="1px" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0"/>
+          <g id="plot_01.border.panel.1.1.1">
+            <rect id="plot_01.border.panel.1.1.1.1" x="85.72" y="67.74" width="570.26" height="580.36" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="1" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0"/>
           </g>
         </g>
         <g id="plot_01.toplevel.vp::plot_01..1"/>
       </g>
-      <animate xlink:href="#year.1" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
-      <animate xlink:href="#year.2" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
-      <animate xlink:href="#year.3" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
-      <animate xlink:href="#year.4" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
-      <animate xlink:href="#year.5" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
-      <animate xlink:href="#year.6" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
-      <animate xlink:href="#year.7" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
-      <animate xlink:href="#year.8" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden" repeatCount="indefinite" fill="freeze"/>
-      <animate xlink:href="#year.9" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible" repeatCount="indefinite" fill="freeze"/>
-      <g id="year" visibility="hidden">
-        <g transform="translate(453.6, 75.6)" stroke-width="0.1px" id="year.1">
-          <g transform="scale(1, -1)">
-            <text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="24px">
-              <tspan dy="8.62" x="0">2000</tspan>
+      <animate xlink:href="#year.1.1.text" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
+      <animate xlink:href="#year.1.2.text" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
+      <animate xlink:href="#year.1.3.text" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
+      <animate xlink:href="#year.1.4.text" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
+      <animate xlink:href="#year.1.5.text" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
+      <animate xlink:href="#year.1.6.text" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
+      <animate xlink:href="#year.1.7.text" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
+      <animate xlink:href="#year.1.8.text" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
+      <animate xlink:href="#year.1.9.text" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden" repeatCount="indefinite" fill="freeze"/>
+      <animate xlink:href="#year.1.10.text" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden" repeatCount="indefinite" fill="freeze"/>
+      <animate xlink:href="#year.1.11.text" attributeName="visibility" begin="0s" calcMode="linear" dur="20s" values="hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible" repeatCount="indefinite" fill="freeze"/>
+      <g id="year.1" visibility="hidden">
+        <g id="year.1.1" transform="translate(604.8, 100.82)" stroke-width="0.1">
+          <g id="year.1.1.scale" transform="scale(1, -1)">
+            <text x="0" y="0" id="year.1.1.text" text-anchor="middle" stroke="rgb(190,190,190)" fill="rgb(190,190,190)" stroke-opacity="1" fill-opacity="1" font-size="32.07">
+              <tspan id="year.1.1.tspan.1" dy="11.5" x="0">2000</tspan>
             </text>
           </g>
         </g>
-        <g transform="translate(453.6, 75.6)" stroke-width="0.1px" id="year.2">
-          <g transform="scale(1, -1)">
-            <text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="24px">
-              <tspan dy="8.62" x="0">2001</tspan>
+        <g id="year.1.2" transform="translate(604.8, 100.82)" stroke-width="0.1">
+          <g id="year.1.2.scale" transform="scale(1, -1)">
+            <text x="0" y="0" id="year.1.2.text" text-anchor="middle" stroke="rgb(190,190,190)" fill="rgb(190,190,190)" stroke-opacity="1" fill-opacity="1" font-size="32.07">
+              <tspan id="year.1.2.tspan.1" dy="11.5" x="0">2001</tspan>
             </text>
           </g>
         </g>
-        <g transform="translate(453.6, 75.6)" stroke-width="0.1px" id="year.3">
-          <g transform="scale(1, -1)">
-            <text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="24px">
-              <tspan dy="8.62" x="0">2002</tspan>
+        <g id="year.1.3" transform="translate(604.8, 100.82)" stroke-width="0.1">
+          <g id="year.1.3.scale" transform="scale(1, -1)">
+            <text x="0" y="0" id="year.1.3.text" text-anchor="middle" stroke="rgb(190,190,190)" fill="rgb(190,190,190)" stroke-opacity="1" fill-opacity="1" font-size="32.07">
+              <tspan id="year.1.3.tspan.1" dy="11.5" x="0">2002</tspan>
             </text>
           </g>
         </g>
-        <g transform="translate(453.6, 75.6)" stroke-width="0.1px" id="year.4">
-          <g transform="scale(1, -1)">
-            <text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="24px">
-              <tspan dy="8.62" x="0">2003</tspan>
+        <g id="year.1.4" transform="translate(604.8, 100.82)" stroke-width="0.1">
+          <g id="year.1.4.scale" transform="scale(1, -1)">
+            <text x="0" y="0" id="year.1.4.text" text-anchor="middle" stroke="rgb(190,190,190)" fill="rgb(190,190,190)" stroke-opacity="1" fill-opacity="1" font-size="32.07">
+              <tspan id="year.1.4.tspan.1" dy="11.5" x="0">2003</tspan>
             </text>
           </g>
         </g>
-        <g transform="translate(453.6, 75.6)" stroke-width="0.1px" id="year.5">
-          <g transform="scale(1, -1)">
-            <text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="24px">
-              <tspan dy="8.62" x="0">2004</tspan>
+        <g id="year.1.5" transform="translate(604.8, 100.82)" stroke-width="0.1">
+          <g id="year.1.5.scale" transform="scale(1, -1)">
+            <text x="0" y="0" id="year.1.5.text" text-anchor="middle" stroke="rgb(190,190,190)" fill="rgb(190,190,190)" stroke-opacity="1" fill-opacity="1" font-size="32.07">
+              <tspan id="year.1.5.tspan.1" dy="11.5" x="0">2004</tspan>
             </text>
           </g>
         </g>
-        <g transform="translate(453.6, 75.6)" stroke-width="0.1px" id="year.6">
-          <g transform="scale(1, -1)">
-            <text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="24px">
-              <tspan dy="8.62" x="0">2005</tspan>
+        <g id="year.1.6" transform="translate(604.8, 100.82)" stroke-width="0.1">
+          <g id="year.1.6.scale" transform="scale(1, -1)">
+            <text x="0" y="0" id="year.1.6.text" text-anchor="middle" stroke="rgb(190,190,190)" fill="rgb(190,190,190)" stroke-opacity="1" fill-opacity="1" font-size="32.07">
+              <tspan id="year.1.6.tspan.1" dy="11.5" x="0">2005</tspan>
             </text>
           </g>
         </g>
-        <g transform="translate(453.6, 75.6)" stroke-width="0.1px" id="year.7">
-          <g transform="scale(1, -1)">
-            <text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="24px">
-              <tspan dy="8.62" x="0">2006</tspan>
+        <g id="year.1.7" transform="translate(604.8, 100.82)" stroke-width="0.1">
+          <g id="year.1.7.scale" transform="scale(1, -1)">
+            <text x="0" y="0" id="year.1.7.text" text-anchor="middle" stroke="rgb(190,190,190)" fill="rgb(190,190,190)" stroke-opacity="1" fill-opacity="1" font-size="32.07">
+              <tspan id="year.1.7.tspan.1" dy="11.5" x="0">2006</tspan>
             </text>
           </g>
         </g>
-        <g transform="translate(453.6, 75.6)" stroke-width="0.1px" id="year.8">
-          <g transform="scale(1, -1)">
-            <text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="24px">
-              <tspan dy="8.62" x="0">2007</tspan>
+        <g id="year.1.8" transform="translate(604.8, 100.82)" stroke-width="0.1">
+          <g id="year.1.8.scale" transform="scale(1, -1)">
+            <text x="0" y="0" id="year.1.8.text" text-anchor="middle" stroke="rgb(190,190,190)" fill="rgb(190,190,190)" stroke-opacity="1" fill-opacity="1" font-size="32.07">
+              <tspan id="year.1.8.tspan.1" dy="11.5" x="0">2007</tspan>
             </text>
           </g>
         </g>
-        <g transform="translate(453.6, 75.6)" stroke-width="0.1px" id="year.9">
-          <g transform="scale(1, -1)">
-            <text x="0" y="0" text-anchor="middle" stroke="rgb(190,190,190)" stroke-opacity="1" fill="rgb(190,190,190)" fill-opacity="1" font-size="24px">
-              <tspan dy="8.62" x="0">2008</tspan>
+        <g id="year.1.9" transform="translate(604.8, 100.82)" stroke-width="0.1">
+          <g id="year.1.9.scale" transform="scale(1, -1)">
+            <text x="0" y="0" id="year.1.9.text" text-anchor="middle" stroke="rgb(190,190,190)" fill="rgb(190,190,190)" stroke-opacity="1" fill-opacity="1" font-size="32.07">
+              <tspan id="year.1.9.tspan.1" dy="11.5" x="0">2008</tspan>
+            </text>
+          </g>
+        </g>
+        <g id="year.1.10" transform="translate(604.8, 100.82)" stroke-width="0.1">
+          <g id="year.1.10.scale" transform="scale(1, -1)">
+            <text x="0" y="0" id="year.1.10.text" text-anchor="middle" stroke="rgb(190,190,190)" fill="rgb(190,190,190)" stroke-opacity="1" fill-opacity="1" font-size="32.07">
+              <tspan id="year.1.10.tspan.1" dy="11.5" x="0">2009</tspan>
+            </text>
+          </g>
+        </g>
+        <g id="year.1.11" transform="translate(604.8, 100.82)" stroke-width="0.1">
+          <g id="year.1.11.scale" transform="scale(1, -1)">
+            <text x="0" y="0" id="year.1.11.text" text-anchor="middle" stroke="rgb(190,190,190)" fill="rgb(190,190,190)" stroke-opacity="1" fill-opacity="1" font-size="32.07">
+              <tspan id="year.1.11.tspan.1" dy="11.5" x="0">2010</tspan>
             </text>
           </g>
         </g>
       </g>
     </g>
   </g>
-  <script type="application/ecmascript" xlink:href="figs/bubbles.svg.coords.js"/>
-  <script type="application/ecmascript" xlink:href="figs/bubbles.svg.convert.js"/>
 </svg>
