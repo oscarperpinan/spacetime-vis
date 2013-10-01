@@ -1,14 +1,29 @@
 Displaying time series, spatial and space-time data with R
 ----
-This is the repository of the code and data from the book Displaying time series, spatial and space-time data with R to be published with [Chapman&Hall/CRC](http://www.taylorandfrancis.com/books/series/CRCTHERSER/). This book provides methods to display time series, spatial and space-time data using R. 
 
-The repository can be download as a [ZIP file](https://github.com/oscarperpinan/spacetime-vis/archive/master.zip) or using `git`:
+This is the repository of the code and data from the book Displaying
+time series, spatial and space-time data with R to be published with
+[Chapman&Hall/CRC](). This book provides methods to display time
+series, spatial and space-time data using R.
+
+The repository can be downloaded as a
+[ZIP file](https://github.com/oscarperpinan/spacetime-vis/archive/master.zip)
+or using `git`:
     
-    git clone git://github.com/oscarperpinan/spacetime-vis.git
+    git clone https://github.com/oscarperpinan/spacetime-vis.git
+
+To run the code files you must first set the working directory to the
+folder where the repository has been downloaded:
+
+    setwd('/path/to/my/repository/folder/')
+
+---
 
 The main graphics are displayed at the accompanying website:
 
-### http://oscarperpinan.github.com/spacetime-vis/
+http://oscarperpinan.github.com/spacetime-vis/
+
+---
 
 GNU Licence ![GPL3](http://www.gnu.org/graphics/gplv3-127x51.png)
 ----
