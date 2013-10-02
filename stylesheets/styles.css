@@ -101,21 +101,22 @@ hr {
 
 .outline-text-2 {
     overflow: hidden;
-    margin: 10px;
+    margin: 1px;
 }
 
 .outline-text-2 p{
     float: left;
     position: relative;
     width: 40%;
-    padding-bottom: 40%;
+    height: 100%;
+    padding-bottom: 30%;
 }
 
 .outline-text-2 img{
     border: 0.1px solid #D0D0D0;/* #08298A; */
     border-radius:5%;
     position: absolute;
-    width: 100%;
+    width: 70%;
     margin:auto;
     overflow: hidden;
     /* Mouse out*/

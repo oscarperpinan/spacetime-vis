@@ -14,26 +14,26 @@
 * Time on the horizontal axis 
 
 #+ATTR_HTML: :id timeHorizontal
-[[file:images/navarraHorizonplot.png][file:images/aranjuezXblocks.png]] 
+[[file:images/aranjuezXblocks.png][file:images/thumbs/aranjuezXblocks.png]] 
 #+ATTR_HTML: :id timeHorizontal
-[[file:images/aranjuezXblocks.png][file:images/navarraHorizonplot.png]] 
+[[file:images/navarraHorizonplot.png][file:images/thumbs/navarraHorizonplot.png]] 
 #+ATTR_HTML: :id timeHorizontal :class svg
 [[file:images/navarraRadiation.svg.html][file:images/navarraSVG_captura.png]] 
 #+ATTR_HTML: :id timeHorizontal
-[[file:images/aranjuezXblocks.png][file:images/unemployUSAThemeRiver.png]] 
+[[file:images/unemployUSAThemeRiver.png][file:images/thumbs/unemployUSAThemeRiver.png]] 
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeHorizontalAxis.R][Code]]
 
 
 * Time as a conditioning or grouping variable
 #+ATTR_HTML: :id timeConditional
-[[file:images/aranjuezSplom.pdf][file:images/aranjuezSplom.png]] 
+[[file:images/aranjuezSplom.png][file:images/thumbs/aranjuezSplom.png]] 
 #+ATTR_HTML: :id timeConditional
-[[file:images/aranjuezSplomHexbin.pdf][file:images/aranjuezSplomHexbin.png]] 
+[[file:images/aranjuezSplomHexbin.png][file:images/thumbs/aranjuezSplomHexbin.png]] 
 #+ATTR_HTML: :id timeConditional
-[[file:images/aranjuezHexbinplot.pdf][file:images/aranjuezHexbinplot.png]] 
+[[file:images/aranjuezHexbinplot.png][file:images/thumbs/aranjuezHexbinplot.png]] 
 #+ATTR_HTML: :id timeConditional
-[[file:images/aranjuezOuterStrips.pdf][file:images/aranjuezOuterStrips.png]]
+[[file:images/aranjuezOuterStrips.png][file:images/thumbs/aranjuezOuterStrips.png]]
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeGroupFactor.R][Code]]
 
@@ -43,9 +43,9 @@
 #+ATTR_HTML: :id timeComplementary
 [[file:images/googleVis.html][file:images/googleVis.png]]
 #+ATTR_HTML: :id timeComplementary
-[[file:images/CO2_capitaDL.pdf][file:images/CO2_capitaDL.png]] 
+[[file:images/CO2_capitaDL.png][file:images/thumbs/CO2_capitaDL.png]] 
 #+ATTR_HTML: :id timeComplementary
-[[file:images/CO2points.pdf][file:images/CO2points.png]] 
+[[file:images/CO2points.png][file:images/thumbs/CO2points.png]] 
 #+ATTR_HTML: :id timeComplementary
 [[file:images/bubbles.svg][file:images/bubbles.png]] 
 

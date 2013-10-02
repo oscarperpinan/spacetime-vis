@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Spatio-temporal data - Displaying time series, spatial and space-time data with R</title>
-<!-- 2013-09-20 vie 10:46 -->
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-<meta name="generator" content="Org-mode"/>
-<meta name="author" content="Oscar Perpiñán Lamigueiro"/>
+<!-- 2013-10-02 mié 19:49 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Oscar Perpiñán Lamigueiro" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center; }
@@ -86,6 +87,10 @@
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/colorbox.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<script src="js/colorbox.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -150,41 +155,59 @@ for the JavaScript code in this tag.
 <div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1">Raster data</h2>
 <div class="outline-text-2" id="text-1">
-<p>
-<a href="images/SISdm.pdf"><img src="images/SISdm.png"  alt="SISdm.png"/></a> 
-</p>
 
-<p>
-<a href="images/SISdm_splom.pdf"><img src="images/SISdm_splom.png"  alt="SISdm_splom.png"/></a>     
+<div class="figure">
+<p><a href="images/SISdm.pdf"><img src="images/SISdm.png" alt="SISdm.png" /></a> 
 </p>
+</div>
 
-<p>
-<a href="images/SISdm_den.pdf"><img src="images/SISdm_den.png"  alt="SISdm_den.png"/></a>       
-</p>
 
-<p>
-<a href="images/SISdm_histogram.pdf"><img src="images/SISdm_histogram.png"  alt="SISdm_histogram.png"/></a> 
+<div class="figure">
+<p><a href="images/SISdm_splom.pdf"><img src="images/SISdm_splom.png" alt="SISdm_splom.png" /></a>     
 </p>
+</div>
 
-<p>
-<a href="images/SISdm_hovmoller_lat.pdf"><img src="images/SISdm_hovmoller_lat.png"  alt="SISdm_hovmoller_lat.png"/></a> 
-</p>
 
-<p>
-<a href="images/SISdm_horizonplot.pdf"><img src="images/SISdm_horizonplot.png"  alt="SISdm_horizonplot.png"/></a> 
+<div class="figure">
+<p><a href="images/SISdm_den.pdf"><img src="images/SISdm_den.png" alt="SISdm_den.png" /></a>       
 </p>
+</div>
 
-<p>
-<a href="images/diffTa_levelplot.pdf"><img src="images/diffTa_levelplot.png"  alt="diffTa_levelplot.png"/></a> 
-</p>
 
-<p>
-<a href="images/diffTa_xyplot.pdf"><img src="images/diffTa_xyplot.png"  alt="diffTa_xyplot.png"/></a>   
+<div class="figure">
+<p><a href="images/SISdm_histogram.pdf"><img src="images/SISdm_histogram.png" alt="SISdm_histogram.png" /></a> 
 </p>
+</div>
 
-<p>
-<a href="images/cft.pdf"><img src="images/cft.png"  alt="cft.png"/></a>                
+
+<div class="figure">
+<p><a href="images/SISdm_hovmoller_lat.pdf"><img src="images/SISdm_hovmoller_lat.png" alt="SISdm_hovmoller_lat.png" /></a> 
 </p>
+</div>
+
+
+<div class="figure">
+<p><a href="images/SISdm_horizonplot.pdf"><img src="images/SISdm_horizonplot.png" alt="SISdm_horizonplot.png" /></a> 
+</p>
+</div>
+
+
+<div class="figure">
+<p><a href="images/diffTa_levelplot.pdf"><img src="images/diffTa_levelplot.png" alt="diffTa_levelplot.png" /></a> 
+</p>
+</div>
+
+
+<div class="figure">
+<p><a href="images/diffTa_xyplot.pdf"><img src="images/diffTa_xyplot.png" alt="diffTa_xyplot.png" /></a>   
+</p>
+</div>
+
+
+<div class="figure">
+<p><a href="images/cft.pdf"><img src="images/cft.png" alt="cft.png" /></a>                
+</p>
+</div>
 
 <iframe src="http://player.vimeo.com/video/65227780" width="400" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><a href="http://vimeo.com/65227780"></a>
 </div>
@@ -197,21 +220,29 @@ for the JavaScript code in this tag.
 <div id="outline-container-sec-2" class="outline-2">
 <h2 id="sec-2">Spatial point data</h2>
 <div class="outline-text-2" id="text-2">
-<p>
-<a href="images/NO2STxy.pdf"><img src="images/NO2STxy.png"  alt="NO2STxy.png"/></a> 
-</p>
 
-<p>
-<a href="images/NO2hovmoller.pdf"><img src="images/NO2hovmoller.png"  alt="NO2hovmoller.png"/></a> 
+<div class="figure">
+<p><a href="images/NO2STxy.pdf"><img src="images/NO2STxy.png" alt="NO2STxy.png" /></a> 
 </p>
+</div>
 
-<p>
-<a href="images/vLine.svg"><img src="images/vLine.png"  alt="vLine.png"/></a> 
-</p>
 
-<p>
-<a href="images/NO2pb.svg"><img src="images/NO2pb.png"  alt="NO2pb.png"/></a>   
+<div class="figure">
+<p><a href="images/NO2hovmoller.pdf"><img src="images/NO2hovmoller.png" alt="NO2hovmoller.png" /></a> 
 </p>
+</div>
+
+
+<div class="figure">
+<p><a href="images/vLine.svg"><img src="images/vLine.png" alt="vLine.png" /></a> 
+</p>
+</div>
+
+
+<div class="figure">
+<p><a href="images/NO2pb.svg"><img src="images/NO2pb.png" alt="NO2pb.png" /></a>   
+</p>
+</div>
 </div>
 
 
@@ -221,10 +252,7 @@ for the JavaScript code in this tag.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: Oscar Perpiñán Lamigueiro</p>
-<p class="date">Created: 2013-09-20 vie 10:46</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.50.1 (<a href="http://orgmode.org">Org</a> mode 8.0.7)</p>
-<p class="xhtml-validation"><a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a></p>
+<p><a href="http://oscarperpinan.github.io/spacetime-vis">HOME</a> <p><a href="https://github.com/oscarperpinan/spacetime-vis">View the Project on GitHub</a></p><p>Maintained by <a href="http://oscarperpinan.github.io/">Oscar Perpiñán</a>.</p>
 </div>
 </body>
 </html>
