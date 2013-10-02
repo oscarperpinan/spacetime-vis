@@ -119,23 +119,23 @@ hr {
     margin:auto;
     overflow: hidden;
     /* Mouse out*/
-    transform:scale(1);
-    -webkit-transform:scale(1);
-    -moz-transform:scale(1);
-    transition: transform 0.8s;
-    -webkit-transition: -webkit-transform 0.8s;
-    -moz-transition: -moz-transform 0.8s;
+    /* transform:scale(1); */
+    /* -webkit-transform:scale(1); */
+    /* -moz-transform:scale(1); */
+    /* transition: transform 0.8s; */
+    /* -webkit-transition: -webkit-transform 0.8s; */
+    /* -moz-transition: -moz-transform 0.8s; */
 }
 
 .outline-text-2 img:hover {
     border:1px solid #610B0B;
-    transform:scale(1.05);
-    -webkit-transform:scale(1.05);
-    -moz-transform:scale(1.05);
-    z-index:1;
-    transition: transform 0.8s;
-    -webkit-transition: -webkit-transform 0.8s;
-    -moz-transition: -moz-transform 0.8s;
+    /* transform:scale(1.05); */
+    /* -webkit-transform:scale(1.05); */
+    /* -moz-transform:scale(1.05); */
+    /* z-index:1; */
+    /* transition: transform 0.8s; */
+    /* -webkit-transition: -webkit-transform 0.8s; */
+    /* -moz-transition: -moz-transform 0.8s; */
 }
 
 iframe {

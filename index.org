@@ -7,7 +7,7 @@
 #+LINK_UP:
 #+LINK_HOME:
 #+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/stylesMain.css" />
-#+BIND: org-export-html-postamble "<div style=\"text-align: center\">This page has been generated with <a href=\"http://orgmode.org/\">org-mode</a>.</div>"
+#+BIND: org-html-postamble "<div style=\"text-align: center\">This page has been generated with <a href=\"http://orgmode.org/\">org-mode</a>.</div>"
 
 #+BEGIN_CENTER
 [[https://github.com/oscarperpinan/spacetime-vis][View the Project on GitHub]]
