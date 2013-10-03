@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Spatial Data - Displaying time series, spatial and space-time data with R</title>
-<!-- 2013-09-20 vie 19:28 -->
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-<meta name="generator" content="Org-mode"/>
-<meta name="author" content="Oscar Perpiñán Lamigueiro"/>
+<!-- 2013-10-03 jue 12:11 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Oscar Perpiñán Lamigueiro" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center; }
@@ -86,6 +87,10 @@
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/colorbox.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<script src="js/colorbox.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -151,15 +156,13 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
+
 <div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1">Choropleth maps</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-<a href="images/whichMax.pdf"><img src="images/whichMax.png"  alt="whichMax.png"/></a>  
-</p>
-
-<p>
-<a href="images/mapLegends.pdf"><img src="images/mapLegends.png"  alt="mapLegends.png"/></a>
+<a href="images/whichMax.png"><img src="images/thumbs/whichMax.png" alt="whichMax.png" /></a>  
+<a href="images/mapLegends.png"><img src="images/thumbs/mapLegends.png" alt="mapLegends.png" /></a>
 </p>
 </div>
 
@@ -167,31 +170,23 @@ for the JavaScript code in this tag.
 <h3 id="sec-1-1"><a href="https://github.com/oscarperpinan/spacetime-vis/tree/master/code/choropleth.R">Code</a></h3>
 </div>
 </div>
+
 <div id="outline-container-sec-2" class="outline-2">
 <h2 id="sec-2">Raster maps</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-<a href="images/populationNASA.pdf"><img src="images/populationNASA.png"  alt="populationNASA.png"/></a> 
+<a href="images/populationNASA.png"><img src="images/thumbs/populationNASA.png" alt="populationNASA.png" /></a> 
+<a href="images/hillShading.png"><img src="images/thumbs/hillShading.png" alt="hillShading.png" /></a> 
 </p>
 
 <p>
-<a href="images/hillShading.png"><img src="images/hillShading_small.png"  alt="hillShading_small.png"/></a> 
+<a href="images/divPalSISav_classInt.png"><img src="images/thumbs/divPalSISav_classInt.png" alt="divPalSISav_classInt.png" /></a>
+<a href="images/landClass.png"><img src="images/thumbs/landClass.png" alt="landClass.png" /></a> 
 </p>
 
 <p>
-<a href="images/divPalSISav_classInt.pdf"><img src="images/divPalSISav_classInt.png"  alt="divPalSISav_classInt.png"/></a>
-</p>
-
-<p>
-<a href="images/landClass.pdf"><img src="images/landClass.png"  alt="landClass.png"/></a> 
-</p>
-
-<p>
-<a href="images/populationNASA.pdf"><img src="images/populationNASA.png"  alt="populationNASA.png"/></a>    
-</p>
-
-<p>
-<a href="images/popLandClass.png"><img src="images/popLandClass_small.png"  alt="popLandClass_small.png"/></a> 
+<a href="images/populationNASA.png"><img src="images/thumbs/populationNASA.png" alt="populationNASA.png" /></a>    
+<a href="images/popLandClass.png"><img src="images/thumbs/popLandClass.png" alt="popLandClass.png" /></a> 
 </p>
 </div>
 
@@ -203,19 +198,18 @@ for the JavaScript code in this tag.
 <div id="outline-container-sec-3" class="outline-2">
 <h2 id="sec-3">Proportional symbol mapping</h2>
 <div class="outline-text-2" id="text-3">
-<script src="https://embed.github.com/view/geojson/oscarperpinan/spacetime-vis/master/data/NO2.geojson"></script>
+<script src="https://embed.github.com/view/geojson/oscarperpinan/spacetime-vis/master/data/NO2.geojson?width=400"></script>
 
 <p>
-<a href="images/airMadrid_krige.png"><img src="images/airMadrid_krige_small.png"  alt="airMadrid_krige_small.png"/></a>
+<a href="images/airMadrid_stamen.png"><img src="images/thumbs/airMadrid_stamen.png" alt="airMadrid_stamen.png" /></a> 
+<a href="airMadrid.html"><img src="images/thumbs/airMadrid.png" alt="airMadrid.png" /></a>
 </p>
 
-<p>
-<a href="images/airMadrid_stamen.pdf"><img src="images/airMadrid_stamen.png"  alt="airMadrid_stamen.png"/></a> 
-</p>
 
-<p>
-<a href="airMadrid.html"><img src="images/airMadrid_small.png"  alt="airMadrid_small.png"/></a>
+<div class="figure">
+<p><a href="images/airMadrid_krige.png"><img src="images/thumbs/airMadrid_krige.png" alt="airMadrid_krige.png" /></a>
 </p>
+</div>
 </div>
 
 <div id="outline-container-sec-3-1" class="outline-3">
@@ -227,11 +221,8 @@ for the JavaScript code in this tag.
 <h2 id="sec-4">Vector fields</h2>
 <div class="outline-text-2" id="text-4">
 <p>
-<a href="images/vectorplot.pdf"><img src="images/vectorplot.png"  alt="vectorplot.png"/></a> 
-</p>
-
-<p>
-<a href="images/streamplot.pdf"><img src="images/streamplot.png"  alt="streamplot.png"/></a> 
+<a href="images/vectorplot.png"><img src="images/thumbs/vectorplot.png" alt="vectorplot.png" /></a> 
+<a href="images/streamplot.png"><img src="images/thumbs/streamplot.png" alt="streamplot.png" /></a> 
 </p>
 </div>
 
@@ -244,9 +235,11 @@ for the JavaScript code in this tag.
 <div id="outline-container-sec-5" class="outline-2">
 <h2 id="sec-5">Reference maps</h2>
 <div class="outline-text-2" id="text-5">
-<p>
-<a href="images/cedeiraOsmar.pdf"><img src="images/cedeiraOsmar.png"  alt="cedeiraOsmar.png"/></a> 
+
+<div class="figure">
+<p><a href="images/cedeiraOsmar.png"><img src="images/thumbs/cedeiraOsmar.png" alt="cedeiraOsmar.png" /></a> 
 </p>
+</div>
 </div>
 
 <div id="outline-container-sec-5-1" class="outline-3">
@@ -257,14 +250,17 @@ for the JavaScript code in this tag.
 <div id="outline-container-sec-6" class="outline-2">
 <h2 id="sec-6">Physical maps</h2>
 <div class="outline-text-2" id="text-6">
-<p>
-<a href="images/brazil.pdf"><img src="images/brazil.png"  alt="brazil.png"/></a>  
+
+<div class="figure">
+<p><a href="images/brazil.png"><img src="images/thumbs/brazil.png" alt="brazil.png" /></a>  
 </p>
 </div>
+</div>
+
 <div id="outline-container-sec-6-1" class="outline-3">
 <h3 id="sec-6-1"><a href="https://github.com/oscarperpinan/spacetime-vis/tree/master/code/physical.R">Code</a></h3>
 <div class="outline-text-3" id="text-6-1">
-<hr/>
+<hr  />
 </div>
 </div>
 </div>
@@ -275,16 +271,13 @@ for the JavaScript code in this tag.
 </div><div id="outline-container-sec-7-1" class="outline-3">
 <h3 id="sec-7-1"><a href="https://github.com/oscarperpinan/spacetime-vis/tree/master/code/dataSpatial.R">Code</a></h3>
 <div class="outline-text-3" id="text-7-1">
-<hr/>
+<hr  />
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: Oscar Perpiñán Lamigueiro</p>
-<p class="date">Created: 2013-09-20 vie 19:28</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.50.1 (<a href="http://orgmode.org">Org</a> mode 8.0.7)</p>
-<p class="xhtml-validation"><a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a></p>
+<p><a href="http://oscarperpinan.github.io/spacetime-vis">HOME</a> <p><a href="https://github.com/oscarperpinan/spacetime-vis">View the Project on GitHub</a></p><p>Maintained by <a href="http://oscarperpinan.github.io/">Oscar Perpiñán</a>.</p>
 </div>
 </body>
 </html>

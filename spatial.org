@@ -5,52 +5,52 @@
 #+OPTIONS:   H:3 num:nil toc:1 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
-#+BIND: org-export-html-postamble "<p><a href=\"http://oscarperpinan.github.io/spacetime-vis\">HOME</a> <p><a href=\"https://github.com/oscarperpinan/spacetime-vis\">View the Project on GitHub</a></p><p>Maintained by <a href=\"http://oscarperpinan.github.io/\">Oscar Perpiñán</a>.</p>"
+#+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/colorbox.css" />
+#+HTML_HEAD:    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+#+HTML_HEAD:    <script src="js/jquery.colorbox.js"></script>
+#+HTML_HEAD:    <script src="js/colorbox.js"></script>
+#+BIND: org-html-postamble "<p><a href=\"http://oscarperpinan.github.io/spacetime-vis\">HOME</a> <p><a href=\"https://github.com/oscarperpinan/spacetime-vis\">View the Project on GitHub</a></p><p>Maintained by <a href=\"http://oscarperpinan.github.io/\">Oscar Perpiñán</a>.</p>"
+
 
 * Choropleth maps
 
-[[file:images/whichMax.pdf][file:images/whichMax.png]]  
-
-[[file:images/mapLegends.pdf][file:images/mapLegends.png]]
+[[file:images/whichMax.png][file:images/thumbs/whichMax.png]]  
+[[file:images/mapLegends.png][file:images/thumbs/mapLegends.png]]
 
 **  [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/choropleth.R][Code]]
 
+
 * Raster maps
 
-[[file:images/populationNASA.pdf][file:images/populationNASA.png]] 
+[[file:images/populationNASA.png][file:images/thumbs/populationNASA.png]] 
+[[file:images/hillShading.png][file:images/thumbs/hillShading.png]] 
 
-[[file:images/hillShading.png][file:images/hillShading_small.png]] 
+[[file:images/divPalSISav_classInt.png][file:images/thumbs/divPalSISav_classInt.png]]
+[[file:images/landClass.png][file:images/thumbs/landClass.png]] 
 
-[[file:images/divPalSISav_classInt.pdf][file:images/divPalSISav_classInt.png]]
-
-[[file:images/landClass.pdf][file:images/landClass.png]] 
-
-[[file:images/populationNASA.pdf][file:images/populationNASA.png]]    
-
-[[file:images/popLandClass.png][file:images/popLandClass_small.png]] 
+[[file:images/populationNASA.png][file:images/thumbs/populationNASA.png]]    
+[[file:images/popLandClass.png][file:images/thumbs/popLandClass.png]] 
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/raster.R][Code]] 
 
 
 * Proportional symbol mapping
 #+BEGIN_HTML
-<script src="https://embed.github.com/view/geojson/oscarperpinan/spacetime-vis/master/data/NO2.geojson"></script>
+<script src="https://embed.github.com/view/geojson/oscarperpinan/spacetime-vis/master/data/NO2.geojson?width=400"></script>
 #+END_HTML
 
-[[file:images/airMadrid_krige.png][file:images/airMadrid_krige_small.png]]
+[[file:images/airMadrid_stamen.png][file:images/thumbs/airMadrid_stamen.png]] 
+[[file:airMadrid.html][file:images/thumbs/airMadrid.png]]
 
-[[file:images/airMadrid_stamen.pdf][file:images/airMadrid_stamen.png]] 
-
-[[file:airMadrid.html][file:images/airMadrid_small.png]]
+[[file:images/airMadrid_krige.png][file:images/thumbs/airMadrid_krige.png]]
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/bubble.R][Code]]
 
 
 * Vector fields
 
-[[file:images/vectorplot.pdf][file:images/vectorplot.png]] 
-
-[[file:images/streamplot.pdf][file:images/streamplot.png]] 
+[[file:images/vectorplot.png][file:images/thumbs/vectorplot.png]] 
+[[file:images/streamplot.png][file:images/thumbs/streamplot.png]] 
 
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/vector.R][Code]]
@@ -58,14 +58,15 @@
 
 * Reference maps
 
-[[file:images/cedeiraOsmar.pdf][file:images/cedeiraOsmar.png]] 
+[[file:images/cedeiraOsmar.png][file:images/thumbs/cedeiraOsmar.png]] 
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/osmar.R][Code]]            
 
 
 * Physical maps
 
-[[file:images/brazil.pdf][file:images/brazil.png]]  
+[[file:images/brazil.png][file:images/thumbs/brazil.png]]  
+
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/physical.R][Code]]
 
 -----
