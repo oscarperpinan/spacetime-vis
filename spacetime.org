@@ -13,40 +13,37 @@
 
 * Raster data
 
-[[file:images/SISdm.pdf][file:images/SISdm.png]] 
+[[file:images/SISdm.png][file:images/thumbs/SISdm.png]] 
+[[file:images/SISdm_splom.png][file:images/thumbs/SISdm_splom.png]]     
 
-[[file:images/SISdm_splom.pdf][file:images/SISdm_splom.png]]     
+[[file:images/SISdm_den.png][file:images/thumbs/SISdm_den.png]]       
+[[file:images/SISdm_histogram.png][file:images/thumbs/SISdm_histogram.png]] 
 
-[[file:images/SISdm_den.pdf][file:images/SISdm_den.png]]       
+[[file:images/SISdm_hovmoller_lat.png][file:images/thumbs/SISdm_hovmoller_lat.png]] 
+[[file:images/SISdm_horizonplot.png][file:images/thumbs/SISdm_horizonplot.png]] 
 
-[[file:images/SISdm_histogram.pdf][file:images/SISdm_histogram.png]] 
+[[file:images/diffTa_levelplot.png][file:images/thumbs/diffTa_levelplot.png]] 
+[[file:images/diffTa_xyplot.png][file:images/thumbs/diffTa_xyplot.png]]   
 
-[[file:images/SISdm_hovmoller_lat.pdf][file:images/SISdm_hovmoller_lat.png]] 
+#+ATTR_HTML: :class vimeo
+[[http://player.vimeo.com/video/65227780][file:images/thumbs/cftVideo.png]]                
+[[file:images/cft.png][file:images/thumbs/cft.png]]                
 
-[[file:images/SISdm_horizonplot.pdf][file:images/SISdm_horizonplot.png]] 
+# #+BEGIN_HTML
+#   <iframe src="http://player.vimeo.com/video/65227780" width="400" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><a href="http://vimeo.com/65227780"></a>
+# #+END_HTML
 
-[[file:images/diffTa_levelplot.pdf][file:images/diffTa_levelplot.png]] 
-
-[[file:images/diffTa_xyplot.pdf][file:images/diffTa_xyplot.png]]   
-
-[[file:images/cft.pdf][file:images/cft.png]]                
-
-#+BEGIN_HTML
-  <iframe src="http://player.vimeo.com/video/65227780" width="400" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><a href="http://vimeo.com/65227780"></a>
-#+END_HTML
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/rasterST.R][Code]]
 
 
 * Spatial point data
 
-[[file:images/NO2STxy.pdf][file:images/NO2STxy.png]] 
+[[file:images/NO2STxy.png][file:images/thumbs/NO2STxy.png]] 
+[[file:images/NO2hovmoller.png][file:images/thumbs/NO2hovmoller.png]] 
 
-[[file:images/NO2hovmoller.pdf][file:images/NO2hovmoller.png]] 
-
-[[file:images/vLine.svg][file:images/vLine.png]] 
-
-[[file:images/NO2pb.svg][file:images/NO2pb.png]]   
+[[file:images/vLine.svg][file:images/thumbs/vLine.png]] 
+[[file:images/NO2pb.svg][file:images/thumbs/NO2pb.png]]   
 
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/pointsST.R][Code]]
