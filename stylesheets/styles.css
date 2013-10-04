@@ -121,6 +121,7 @@ hr {
     display: table-cell;
     margin:auto;
     overflow: hidden;
+    vertical-align: middle;
     /* Mouse out*/
     /* transform:scale(1); */
     /* -webkit-transform:scale(1); */
