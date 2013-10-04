@@ -39,8 +39,9 @@
 <script src="https://embed.github.com/view/geojson/oscarperpinan/spacetime-vis/master/data/NO2.geojson?width=400"></script>
 #+END_HTML
 
-[[file:images/airMadrid_stamen.png][file:images/thumbs/airMadrid_stamen.png]] 
+#+ATTR_HTML: :class svg
 [[file:airMadrid.html][file:images/thumbs/airMadrid.png]]
+[[file:images/airMadrid_stamen.png][file:images/thumbs/airMadrid_stamen.png]] 
 
 [[file:images/airMadrid_krige.png][file:images/thumbs/airMadrid_krige.png]]
 

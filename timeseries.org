@@ -16,6 +16,7 @@
 [[file:images/aranjuezXblocks.png][file:images/thumbs/aranjuezXblocks.png]] 
 [[file:images/navarraHorizonplot.png][file:images/thumbs/navarraHorizonplot.png]] 
 
+#+ATTR_HTML: :class svg
 [[file:images/navarraRadiation.svg.html][file:images/thumbs/navarraSVG.png]] 
 [[file:images/unemployUSAThemeRiver.png][file:images/thumbs/unemployUSAThemeRiver.png]] 
 
@@ -35,11 +36,14 @@
 
 * Time as a complementary variable
 
+#+ATTR_HTML: :class svg
 [[file:images/googleVis.html][file:images/thumbs/googleVis.png]]
 [[file:images/CO2_capitaDL.png][file:images/thumbs/CO2_capitaDL.png]] 
 
-[[file:images/CO2points.png][file:images/thumbs/CO2points.png]] 
+#+ATTR_HTML: :class svg
 [[file:images/bubbles.svg][file:images/thumbs/bubbles.png]] 
+[[file:images/CO2points.png][file:images/thumbs/CO2points.png]] 
+
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeComplementary.R][Code]]
 

@@ -39,11 +39,11 @@
 
 * Spatial point data
 
-[[file:images/NO2STxy.png][file:images/thumbs/NO2STxy.png]] 
-[[file:images/NO2hovmoller.png][file:images/thumbs/NO2hovmoller.png]] 
-
+#+ATTR_HTML: :class svg
 [[file:images/vLine.svg][file:images/thumbs/vLine.png]] 
+[[file:images/NO2STxy.png][file:images/thumbs/NO2STxy.png]] 
+#+ATTR_HTML: :class svg
 [[file:images/NO2pb.svg][file:images/thumbs/NO2pb.png]]   
-
+[[file:images/NO2hovmoller.png][file:images/thumbs/NO2hovmoller.png]] 
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/pointsST.R][Code]]
