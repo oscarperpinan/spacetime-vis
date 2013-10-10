@@ -291,16 +291,16 @@ nYears <- length(years)
 
 ## Intermediate positions of the bubbles
 x_points <- animUnit(unit(CO2data$CO2.capita, 'native'),
-                     id=rep(seq_len(nCountries), nYears))
+                     id=rep(seq_len(nCountries), each=nYears))
 y_points <- animUnit(unit(CO2data$GNI.capita, 'native'),
-                     id=rep(seq_len(nCountries), nYears))
+                     id=rep(seq_len(nCountries), each=nYears))
 ## Intermediate positions of the labels
 y_labels <- animUnit(unit(CO2data$GNI.capita, 'native') +
                      1.5 * CO2data$CO2.PPP * unit(.25, 'inch'),
-                     id=rep(seq_len(nCountries), nYears))
+                     id=rep(seq_len(nCountries), each=nYears))
 ## Intermediate sizes of the bubbles
 size <- animUnit(CO2data$CO2.PPP * unit(.25, 'inch'),
-                     id=rep(seq_len(nCountries), nYears))
+                     id=rep(seq_len(nCountries), each=nYears))
 
 grid.animate(trellis.grobname("points", type="panel", row=1, col=1),
              duration=duration,
