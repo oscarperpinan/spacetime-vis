@@ -279,6 +279,12 @@ dev.off()
 library(rgdal)
 writeOGR(NO2sp, 'data/NO2.geojson', 'NO2sp', driver='GeoJSON')
 
+library(rgdal)
+writeOGR(NO2sp, dsn='NO2_mean.kml', layer='mean', driver='KML')
+
+library(plotKML)
+plotKML(NO2sp["mean"], points_names=NO2sp$codEst)
+
 ##################################################################
 ## Additional information with tooltips and hyperlinks
 ##################################################################

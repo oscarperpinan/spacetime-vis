@@ -116,7 +116,7 @@ library(sp)
 airStations <- read.csv2('data/airStations.csv')
 coordinates(airStations) <- ~ long + lat
 ## Geographical projection
-proj4string(airStations) <- CRS("+proj=longlat +ellps=WGS84")
+proj4string(airStations) <- CRS("+proj=longlat +ellps=WGS84 +datum=WGS84")
 
 ## Measurements data
 airQuality <- read.csv2('data/airQuality.csv')
