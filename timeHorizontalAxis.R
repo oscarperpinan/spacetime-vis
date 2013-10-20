@@ -75,8 +75,10 @@ autoplot(aranjuez) + facet_free()
 dev.off()
 
 ##################################################################
-## Defining a new panel to enhance the time graph
+## Annotations to enhance the time graph
 ##################################################################
+
+## lattice version
 
 pdf(file="figs/aranjuezXblocks.pdf")
 library(grid)
@@ -112,6 +114,63 @@ xyplot(aranjuez, layout=c(1, ncol(aranjuez)), strip=FALSE,
                       col='black', fill='lightblue', pch=25)
        })
 dev.off()
+
+## ggplot2 version
+
+timeIdx <- index(aranjuez)
+
+long <- fortify(aranjuez, melt=TRUE)
+
+## Values below mean are negative after being centered
+scaled <- fortify(scale(aranjuez, scale=FALSE), melt=TRUE)
+## The 'scaled' column is the result of the centering. The new 'Value'
+## column store the original values.
+scaled <- transform(scaled, scaled=Value, Value=long$Value)
+underIdx <- which(scaled$scaled <= 0)
+## 'under' is the subset of values below the average
+under <- scaled[underIdx,]
+
+library(xts)
+ep <- endpoints(timeIdx, on='years')
+N <- length(ep[-1])
+## 'tsp' is start and 'tep' is the end of each band
+tep <- timeIdx[ep]
+tsp <- timeIdx[ep[-(N+1)]+1]
+## 'cols' is a vector with the color of each band
+cols <- rep_len(c('gray', 'white'), N)
+
+minIdx <- timeIdx[apply(aranjuez, 2, which.min)]
+minVals <- apply(aranjuez, 2, min, na.rm=TRUE)
+mins <- data.frame(Index=minIdx,
+                   Value=minVals,
+                   Series=names(aranjuez))
+
+maxIdx <- timeIdx[apply(aranjuez, 2, which.max)]
+maxVals <- apply(aranjuez, 2, max, na.rm=TRUE)
+maxs <- data.frame(Index=maxIdx,
+                   Value=maxVals,
+                   Series=names(aranjuez))
+
+ggplot(data=long, aes(Index, Value)) +
+    ## Time series of each variable
+    geom_line(colour = "royalblue4", lwd = 0.5) +
+    ## Year bands
+    annotate(geom='rect', ymin = -Inf, ymax = Inf,
+              xmin=tsp, xmax=tep,
+              fill = cols, alpha = 0.4) +
+    ## Values below average
+    geom_rug(data=under,
+             sides='b', col='indianred1') +
+    ## Minima
+    geom_point(data=mins, pch=25) +
+    ## Maxima
+    geom_point(data=maxs, pch=24) +
+    ## Axis labels and theme definition
+    labs(x='Time', y=NULL) +
+    theme_bw() +
+    ## Each series is displayed in a different panel with an
+    ## independent y scale
+    facet_free()
 
 ##################################################################
 ## Time series of variables with the same scale
