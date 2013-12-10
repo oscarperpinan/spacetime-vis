@@ -31,7 +31,7 @@
 [[file:images/populationNASA.png][file:images/thumbs/populationNASA.png]]    
 [[file:images/popLandClass.png][file:images/thumbs/popLandClass.png]] 
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/raster.R][Code]] 
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/raster.R][Code]] 
 
 
 * Proportional symbol mapping
@@ -68,7 +68,7 @@
 
 [[file:images/brazil.png][file:images/thumbs/brazil.png]]  
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/physical.R][Code]]
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/physical.R][Code]]
 
 -----
 

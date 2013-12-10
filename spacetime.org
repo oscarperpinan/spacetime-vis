@@ -34,7 +34,7 @@
 # #+END_HTML
 
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/rasterST.R][Code]]
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/rasterST.R][Code]]
 
 
 * Spatial point data
@@ -46,4 +46,4 @@
 [[file:images/NO2pb.svg][file:images/thumbs/NO2pb.png]]   
 [[file:images/NO2hovmoller.png][file:images/thumbs/NO2hovmoller.png]] 
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/pointsST.R][Code]]
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/pointsST.R][Code]]

@@ -20,7 +20,7 @@
 [[file:images/navarraRadiation.svg.html][file:images/thumbs/navarraSVG.png]] 
 [[file:images/unemployUSAThemeRiver.png][file:images/thumbs/unemployUSAThemeRiver.png]] 
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeHorizontalAxis.R][Code]]
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/timeHorizontalAxis.R][Code]]
 
 
 * Time as a conditioning or grouping variable
@@ -31,7 +31,7 @@
 [[file:images/aranjuezHexbinplot.png][file:images/thumbs/aranjuezHexbinplot.png]] 
 [[file:images/aranjuezOuterStrips.png][file:images/thumbs/aranjuezOuterStrips.png]]
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeGroupFactor.R][Code]]
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/timeGroupFactor.R][Code]]
 
 
 * Time as a complementary variable
@@ -45,13 +45,13 @@
 [[file:images/CO2points.png][file:images/thumbs/CO2points.png]] 
 
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/timeComplementary.R][Code]]
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/timeComplementary.R][Code]]
 
 -----
 
 
 * Data 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/dataTime.R][Code]]
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/dataTime.R][Code]]
 
 
 -----
