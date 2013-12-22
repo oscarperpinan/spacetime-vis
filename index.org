@@ -15,11 +15,12 @@
 This project is maintained by [[http://oscarperpinan.github.io/][Oscar Perpiñán]].
 #+END_CENTER
 
-This is the accompanying website of the book "Displaying time
-series, spatial and space-time data with R" to be published with [[http://www.taylorandfrancis.com/books/series/CRCTHERSER/][Chapman&Hall/CRC]]. 
+This is the accompanying website of the book "Displaying time series,
+spatial and space-time data with R" to be published with
+[[http://www.taylorandfrancis.com/books/details/9781466565203/][Chapman&Hall/CRC]].
 
-This book will provide methods to display time series, spatial and space-time
-data using R. The code of each method will be detailed and
+This book will provide methods to display time series, spatial and
+space-time data using R. The code of each method will be detailed and
 commented through practical examples with real data. This website
 publishes the code and main graphics of each chapter.
 
