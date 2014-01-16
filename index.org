@@ -1,0 +1,44 @@
+#+AUTHOR:    Oscar Perpiñán Lamigueiro
+#+EMAIL:     oscar.perpinan@gmail.com
+#+TITLE:     Displaying time series, spatial and space-time data with R
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_UP:
+#+LINK_HOME:
+#+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/stylesMain.css" />
+#+BIND: org-html-postamble "<div style=\"text-align: center\">This page has been generated with <a href=\"http://orgmode.org/\">org-mode</a>.</div>"
+
+#+BEGIN_CENTER
+[[https://github.com/oscarperpinan/spacetime-vis][View the Project on GitHub]]
+
+This project is maintained by [[http://oscarperpinan.github.io/][Oscar Perpiñán]].
+#+END_CENTER
+
+This is the accompanying website of the book "Displaying time series,
+spatial and space-time data with R" to be published with
+[[http://www.taylorandfrancis.com/books/details/9781466565203/][Chapman&Hall/CRC]].
+
+This book will provide methods to display time series, spatial and
+space-time data using R. The code of each method will be detailed and
+commented through practical examples with real data. This website
+publishes the code and main graphics of each chapter.
+
+#+BEGIN_HTML
+<div class="wrapper">
+#+END_HTML
+
+* Time Series
+[[file:timeseries.org][file:images/aranjuezXblocks.png]] 
+
+* Spatial Data 
+[[file:spatial.org][file:images/popLandClass_small.png]]
+
+* Space-time Data
+[[file:spacetime.org][file:images/cft.png]]
+
+
+#+BEGIN_HTML
+</div>
+#+END_HTML
+
