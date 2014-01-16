@@ -138,7 +138,7 @@ footer {
     width: 90%;
     border: 0.1px solid #D0D0D0;/* #08298A; */
     border-radius:5%;
-    position: absolute;
+    /* position: absolute; */
     margin:auto;
     overflow: hidden;
 }
