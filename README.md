@@ -7,6 +7,8 @@ time series, spatial and space-time data with R to be published with
 book provides methods to display time series, spatial and space-time
 data using R.
 
+![cover](http://images.tandf.co.uk/common/jackets/crclarge/978146656/9781466565203.jpg)
+
 The repository can be downloaded as a
 [ZIP file](https://github.com/oscarperpinan/spacetime-vis/archive/master.zip)
 or using `git`:
