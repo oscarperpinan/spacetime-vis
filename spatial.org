@@ -17,7 +17,7 @@
 [[file:images/whichMax.png][file:images/thumbs/whichMax.png]]  
 [[file:images/mapLegends.png][file:images/thumbs/mapLegends.png]]
 
-**  [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/choropleth.R][Code]]
+**  [[https://github.com/oscarperpinan/spacetime-vis/tree/master/choropleth.R][Code]]
 
 
 * Raster maps
@@ -45,7 +45,7 @@
 
 [[file:images/airMadrid_krige.png][file:images/thumbs/airMadrid_krige.png]]
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/bubble.R][Code]]
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/bubble.R][Code]]
 
 
 * Vector fields
@@ -54,14 +54,14 @@
 [[file:images/streamplot.png][file:images/thumbs/streamplot.png]] 
 
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/vector.R][Code]]
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/vector.R][Code]]
 
 
 * Reference maps
 
 [[file:images/cedeiraOsmar.png][file:images/thumbs/cedeiraOsmar.png]] 
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/osmar.R][Code]]            
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/osmar.R][Code]]            
 
 
 * Physical maps
@@ -74,6 +74,6 @@
 
 
 * Data
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/code/dataSpatial.R][Code]]
+** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/dataSpatial.R][Code]]
 
 -----
