@@ -8,12 +8,12 @@
 ## it under the terms of the GNU General Public License as published
 ## by the Free Software Foundation; either version 2 of the License,
 ## or (at your option) any later version.
-## 
+##
 ## This program is distributed in the hope that it will be useful, but
 ## WITHOUT ANY WARRANTY; without even the implied warranty of
 ## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 ## General Public License for more details.
-## 
+##
 ## You should have received a copy of the GNU General Public License
 ## along with this program; if not, write to the Free Software
 ## Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
@@ -46,19 +46,21 @@ proj <- CRS(' +proj=longlat +ellps=WGS84')
 
 old <- setwd(tempdir())
 
-download.file('http://www.gadm.org/data/shp/BRA_adm.zip', 'BRA_adm.zip')
+download.file('http://biogeo.ucdavis.edu/data/gadm2/shp/BRA_adm.zip',
+              'BRA_adm.zip')
 unzip('BRA_adm.zip')
 brazilAdm <- readShapePoly('BRA_adm1.shp', proj4string=proj)
 Encoding(levels(brazilAdm$NAME_1)) <- 'latin1'
 
-download.file('http://www.diva-gis.org/data/alt/BRA_alt.zip', 'BRA_alt.zip')
+download.file('http://biogeo.ucdavis.edu/data/diva/alt/BRA_alt.zip',
+              'BRA_alt.zip')
 unzip('BRA_alt.zip')
 brazilDEM <- raster('BRA_alt')
 
 ## World Water lines (Natural Earth)
 download.file('http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_rivers_lake_centerlines.zip', 'neRivers.zip')
 unzip('neRivers.zip')
-worldlRiv <- readShapeLines('ne_10m_rivers_lake_centerlines', proj4string = proj)
+worldRiv <- readShapeLines('ne_10m_rivers_lake_centerlines', proj4string = proj)
 
 download.file('http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/raster/OB_LR.zip', 'neSea.zip')
 unzip('neSea.zip')
@@ -71,7 +73,7 @@ setwd(old)
 ##################################################################
 
 ## only those features labelled as "River" are needed
-worlRiv<- worlRiv[worlRiv$featurecla=='River',]
+worldRiv<- worldRiv[worldRiv$featurecla=='River',]
 
 ## Define the extent of Brazil as an SpatialPolygons
 extBrazil <- as(extent(brazilDEM), 'SpatialPolygons')
@@ -128,7 +130,7 @@ seaPlot + altPlot + layer({
     ## Rivers
     sp.lines(brazilRiv, col='darkblue', lwd=0.2)
     ## Amazonas
-    sp.lineLabel(amazonas, amazonasLab, 
+    sp.lineLabel(amazonas, amazonasLab,
                  lwd=1, col='darkblue', col.line='darkblue',
                  cex=0.5, fontfamily='Palatino')
     ## Administrative boundaries
