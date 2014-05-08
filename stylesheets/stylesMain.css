@@ -43,6 +43,11 @@ h4, h5, h6 {
   color:#494949;
 }
 
+img {
+  float:left;
+  margin:5px 15px 5px 5px;
+}
+
 a:link {
     color:#08298A;
     text-decoration:none;
@@ -100,10 +105,11 @@ small {
 
 hr {
   border:0;
-  background:#e5e5e5;
+  background:#990000;
   height:1px;
-  margin:0 0 20px;
+  margin:20px 70px 20px 70px;
 }
+
 
 footer {
   width:270px;

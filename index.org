@@ -10,23 +10,44 @@
 #+BIND: org-html-postamble "<div style=\"text-align: center\">This page has been generated with <a href=\"http://orgmode.org/\">org-mode</a>.</div>"
 
 #+BEGIN_CENTER
+This is the accompanying website of the book published with
+[[http://www.taylorandfrancis.com/books/details/9781466565203/][Chapman&Hall/CRC]], a project created and maintained by [[http://oscarperpinan.github.io/][Oscar Perpiñán
+Lamigueiro]].
+
 [[https://github.com/oscarperpinan/spacetime-vis][View the Project on GitHub]]
 
-This project is maintained by [[http://oscarperpinan.github.io/][Oscar Perpiñán]].
 #+END_CENTER
+-----
 
-This is the accompanying website of the book "Displaying time series,
-spatial and space-time data with R" to be published with
-[[http://www.taylorandfrancis.com/books/details/9781466565203/][Chapman&Hall/CRC]].
+#+ATTR_HTML: :height 220
+[[http://goo.gl/6iN5KR][http://images.tandf.co.uk/common/jackets/weblarge/978146656/9781466565203.jpg]]
+A data graphic is not only a static image, but it also tells a story
+about the data. It activates cognitive processes that are able to
+detect patterns and discover information not readily available with
+the raw data. This is particularly true for time series, spatial, and
+space-time datasets.
 
-This book will provide methods to display time series, spatial and
-space-time data using R. The code of each method will be detailed and
-commented through practical examples with real data. This website
-publishes the code and main graphics of each chapter.
+Focusing on the exploration of data with visual methods, *Displaying
+Time Series, Spatial, and Space-Time Data with R* presents methods and
+R code for producing high-quality graphics of time series, spatial,
+and space-time data. Practical examples using real-world datasets help
+you understand how to apply the methods and code.  The book
+illustrates how to display a dataset starting with an easy and direct
+approach and progressively adding improvements that involve more
+complexity. Each of the book’s three parts is devoted to different
+types of data. In each part, the chapters are grouped according to the
+various visualization methods or data characteristics.
+  
+Along with the [[https://github.com/oscarperpinan/spacetime-vis/tree/gh-pages/images][main graphics]] from the text, this website offers access
+to the [[https://github.com/oscarperpinan/spacetime-vis/tree/master/data][datasets]] used in the examples as well as the [[https://github.com/oscarperpinan/spacetime-vis][full R code]]. This
+combination of freely available code and data enables you to practice
+with the methods and modify the code to suit your own needs.
 
 #+BEGIN_HTML
 <div class="wrapper">
 #+END_HTML
+
+-----
 
 * Time Series
 [[file:timeseries.org][file:images/aranjuezXblocks.png]] 
@@ -37,8 +58,8 @@ publishes the code and main graphics of each chapter.
 * Space-time Data
 [[file:spacetime.org][file:images/cft.png]]
 
-
 #+BEGIN_HTML
 </div>
 #+END_HTML
+
 
