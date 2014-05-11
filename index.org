@@ -7,6 +7,7 @@
 #+LINK_UP:
 #+LINK_HOME:
 #+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/stylesMain.css" />
+#+HTML_HEAD: <link rel="icon" type="image/ico" href="favicon.ico">
 #+BIND: org-html-postamble "<div style=\"text-align: center\">This page has been generated with <a href=\"http://orgmode.org/\">org-mode</a>.</div>"
 
 #+BEGIN_CENTER
