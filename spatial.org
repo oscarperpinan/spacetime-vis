@@ -22,27 +22,26 @@
 
 * Raster maps
 
-[[file:images/populationNASA.png][file:images/thumbs/populationNASA.png]] 
 [[file:images/hillShading.png][file:images/thumbs/hillShading.png]] 
+[[file:images/divPalSISav_classInt.png][file:images/thumbs/divPalSISav_classInt.png]] 
 
-[[file:images/divPalSISav_classInt.png][file:images/thumbs/divPalSISav_classInt.png]]
 [[file:images/landClass.png][file:images/thumbs/landClass.png]] 
-
 [[file:images/populationNASA.png][file:images/thumbs/populationNASA.png]]    
+
+#+ATTR_HTML: :class vimeo
+[[file:images/stl.html][file:images/thumbs/DEM_STL_GitHub.png]]
 [[file:images/popLandClass.png][file:images/thumbs/popLandClass.png]] 
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/raster.R][Code]] 
 
 
 * Proportional symbol mapping
-#+BEGIN_HTML
-<script src="https://embed.github.com/view/geojson/oscarperpinan/spacetime-vis/master/data/NO2.geojson?width=400"></script>
-#+END_HTML
-
 #+ATTR_HTML: :class svg
 [[file:airMadrid.html][file:images/thumbs/airMadrid.png]]
 [[file:images/airMadrid_stamen.png][file:images/thumbs/airMadrid_stamen.png]] 
 
+#+ATTR_HTML: :class vimeo
+[[file:images/geojson.html][file:images/thumbs/geojson.png]]
 [[file:images/airMadrid_krige.png][file:images/thumbs/airMadrid_krige.png]]
 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/bubble.R][Code]]
