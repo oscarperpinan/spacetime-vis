@@ -1,0 +1,27 @@
+[general] 
+creator=R package 'raster' 
+created= 2013-05-26 15:05:46 
+[georeference] 
+nrows= 99 
+ncols= 99 
+xmin= 858 
+ymin= -6 
+xmax= 2046 
+ymax= 1182 
+projection= +proj=lcc +lon_0=-14.1 +lat_0=34.823 +lat_1=43 +lat_2=43 +x_0=536402.3 +y_0=-18558.61 +units=km +ellps=WGS84 
+[data] 
+datatype= FLT4S 
+byteorder= little 
+nbands= 1 
+bandorder= BIL 
+categorical= FALSE 
+minvalue= 0.0264329761266708 
+maxvalue= 16.1347980499268 
+nodatavalue= -3.4e+38 
+[legend] 
+legendtype=  
+values=  
+color=  
+[description] 
+layername= D2013.05.26_H01 
+history=  
