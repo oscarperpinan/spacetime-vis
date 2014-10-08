@@ -61,7 +61,7 @@ dev.off()
 ##################################################################
 
 old <- setwd(tempdir())
-download.file('http://www.diva-gis.org/data/msk_alt/ESP_msk_alt.zip', 'ESP_msk_alt.zip')
+download.file('http://biogeo.ucdavis.edu/data/diva/msk_alt/ESP_msk_alt.zip', 'ESP_msk_alt.zip')
 unzip('ESP_msk_alt.zip', exdir='.')
 
 DEM <- raster('ESP_msk_alt')
