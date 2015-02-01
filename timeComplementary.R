@@ -232,27 +232,35 @@ pdf(file="figs/CO2pointsGG.pdf")
 dev.off()
 
 pdf(file="figs/CO2points.pdf")
-  op <- options(digits=2)
-  tab <- print(intervals)
-  options(op)
+op <- options(digits=2)
+tab <- print(intervals)
+options(op)
   
-  key <- list(space='right',
-              title=expression(CO[2]/GNI.PPP),
-              cex.title=1,
-              ## Labels of the key are the intervals strings
-              text=list(labels=names(tab), cex=0.85),
-              ## Points sizes are defined with cex.key
-              points=list(col='black', pch=19,
+key <- list(space='right',
+            title=expression(CO[2]/GNI.PPP),
+            cex.title=1,
+            ## Labels of the key are the intervals strings
+            text=list(labels=names(tab), cex=0.85),
+            ## Points sizes are defined with cex.key
+            points=list(col='black', pch=19,
                 cex=cex.key, alpha=0.7))
+
   
-  
-  xyplot(GNI.capita ~ CO2.capita|factor(Year), data=CO2data,
-         xlab="Carbon dioxide emissions (metric tons per capita)",
-         ylab="GNI per capita, PPP (current international $)",
-         groups=Country.Name, key=key, alpha=0.7,
-         col=palOrdered, cex=CO2data$cexPoints) +
-      glayer(panel.pointLabel(x, y, labels=group.value,
-                              col=palOrdered[group.number], cex=0.7))
+xyplot(GNI.capita ~ CO2.capita|factor(Year), data=CO2data,
+       xlab="Carbon dioxide emissions (metric tons per capita)",
+       ylab="GNI per capita, PPP (current international $)",
+       groups=Country.Name, key=key, alpha=0.7,
+       panel = panel.superpose,
+       panel.groups = function(x, y,
+           subscripts, group.number, group.value, ...){
+           panel.xyplot(x, y,
+                        col = palOrdered[group.number],
+                        cex = CO2data$cexPoints[subscripts])
+           panel.pointLabel(x, y, labels=group.value,
+                            col=palOrdered[group.number],
+                            cex=0.7)
+       }
+       ) 
 dev.off()
 
   ##################################################################
