@@ -88,25 +88,14 @@
 ##################################################################
 
   library(raster)
-  ## Galicia DEM
-  ## http://ide.unex.es/geonetwork/srv/es/main.search?any=MDE_Galicia
-  ## http://ide.unex.es:8180/geonetwork/srv/es/resources.get?id=21&fname=dem_gal.7z&access=private
-  
-  old <- tempdir()
-  download.file('http://ide.unex.es:8180/geonetwork/srv/es/resources.get?id=21&fname=dem_gal.7z&access=private', 'dem_gal.7z')
-  unzip('dem_gal.7z')
-  demGalicia <- raster('dem_gal.asc')
-  setwd(old)
 
   cedeiraSP <- as_sp(cedeira, 'points')
   projCedeira <- projection(cedeiraSP)
-  ##extCedeira <- bbox(cedeiraSP) 
-  ## or summary(cedeira$nodes)$bbox
-  extCedeira <- extent(-8.15, -7.95, 43.6, 43.75)
-  demCedeira <- crop(demGalicia, extCedeira)
+
+  demCedeira <- raster('data/demCedeira')
   projection(demCedeira) <- projCedeira
   demCedeira[demCedeira <= 0] <- NA
-  
+
   slope <- terrain(demCedeira, 'slope')
   aspect <- terrain(demCedeira, 'aspect')
   hsCedeira <- hillShade(slope=slope, aspect=aspect,
