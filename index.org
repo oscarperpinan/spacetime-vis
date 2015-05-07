@@ -6,22 +6,44 @@
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+LINK_UP:
 #+LINK_HOME:
-#+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/stylesMain.css" />
-#+HTML_HEAD: <link rel="icon" type="image/ico" href="favicon.ico">
-#+BIND: org-html-postamble "<div style=\"text-align: center\">This page has been generated with <a href=\"http://orgmode.org/\">org-mode</a>.</div>"
 
-#+BEGIN_CENTER
+#+OPTIONS: html-style:nil
+
+
+#+HTML_HEAD:    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+#+HTML_HEAD:    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/readable/bootstrap.min.css">
+#+HTML_HEAD:    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <link rel="icon" type="image/ico" href="favicon.ico">
+#+BIND: org-html-postamble nil
+
+* 
+  :PROPERTIES:
+  :HTML_CONTAINER_CLASS: container jumbotron
+  :END:
+*** 
+    :PROPERTIES:
+    :HTML_CONTAINER_CLASS: col-md-3
+    :END:
+
+[[http://goo.gl/6iN5KR][http://images.tandf.co.uk/common/jackets/weblarge/978146656/9781466565203.jpg]]
+
+*** 
+    :PROPERTIES:
+    :HTML_CONTAINER_CLASS: col-md-9
+    :END:
 This is the accompanying website of the book published with
 [[http://www.taylorandfrancis.com/books/details/9781466565203/][Chapman&Hall/CRC]], a project created and maintained by [[http://oscarperpinan.github.io/][Oscar Perpiñán
 Lamigueiro]].
 
+#+BEGIN_CENTER
 [[https://github.com/oscarperpinan/spacetime-vis][View the Project on GitHub]]
-
 #+END_CENTER
------
 
-#+ATTR_HTML: :height 220
-[[http://goo.gl/6iN5KR][http://images.tandf.co.uk/common/jackets/weblarge/978146656/9781466565203.jpg]]
+* 
+  :PROPERTIES:
+  :HTML_CONTAINER_CLASS: container jumbotron
+  :END:
+
 A data graphic is not only a static image, but it also tells a story
 about the data. It activates cognitive processes that are able to
 detect patterns and discover information not readily available with
@@ -44,23 +66,26 @@ to the [[https://github.com/oscarperpinan/spacetime-vis/tree/master/data][datase
 combination of freely available code and data enables you to practice
 with the methods and modify the code to suit your own needs.
 
-#+BEGIN_HTML
-<div class="wrapper">
-#+END_HTML
-
------
-
 * Time Series
-[[file:timeseries.org][file:images/aranjuezXblocks.png]] 
+    :PROPERTIES:
+    :HTML_CONTAINER_CLASS: col-md-4
+    :END:
+
+[[file:timeseries.org][file:images/aranjuezXblocks_small.png]] 
 
 * Spatial Data 
+    :PROPERTIES:
+    :HTML_CONTAINER_CLASS: col-md-4
+    :END:
+
 [[file:spatial.org][file:images/popLandClass_small.png]]
 
 * Space-time Data
-[[file:spacetime.org][file:images/cft.png]]
+    :PROPERTIES:
+    :HTML_CONTAINER_CLASS: col-md-4
+    :END:
 
-#+BEGIN_HTML
-</div>
-#+END_HTML
+[[file:spacetime.org][file:images/cft_small.png]]
+
 
 
