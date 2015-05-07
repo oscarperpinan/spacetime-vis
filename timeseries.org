@@ -2,53 +2,72 @@
 #+EMAIL:     oscar.perpinan@gmail.com
 #+TITLE:     Time Series - Displaying time series, spatial and space-time data with R
 #+LANGUAGE:  en
-#+OPTIONS:   H:3 num:nil toc:1 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+#+OPTIONS:   H:3 num:nil toc:2 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
-#+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+
+#+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="http://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+
 #+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/colorbox.css" />
-#+HTML_HEAD:    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 #+HTML_HEAD:    <script src="js/jquery.colorbox.js"></script>
 #+HTML_HEAD:    <script src="js/colorbox.js"></script>
 #+BIND: org-html-postamble "<p><a href=\"http://oscarperpinan.github.io/spacetime-vis\">HOME</a> <p><a href=\"https://github.com/oscarperpinan/spacetime-vis\">View the Project on GitHub</a></p><p>Maintained by <a href=\"http://oscarperpinan.github.io/\">Oscar Perpiñán</a>.</p>"
 
 * Time on the horizontal axis 
 
+The code of this section is available [[https://github.com/oscarperpinan/spacetime-vis/tree/master/timeHorizontalAxis.R][here]].
+
+** Time Graph of Different Meteorological Variables
 [[file:images/aranjuezXblocks.png][file:images/thumbs/aranjuezXblocks.png]] 
+
+** The Horizon Graph
 [[file:images/navarraHorizonplot.png][file:images/thumbs/navarraHorizonplot.png]] 
 
+** Time Series of Variables with the Same Scale
 #+ATTR_HTML: :class svg
 [[file:images/navarraRadiation.svg.html][file:images/thumbs/navarraSVG.png]] 
+** Stacked Graphs
 [[file:images/unemployUSAThemeRiver.png][file:images/thumbs/unemployUSAThemeRiver.png]] 
-
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/timeHorizontalAxis.R][Code]]
 
 
 * Time as a conditioning or grouping variable
+The code of this section is available [[https://github.com/oscarperpinan/spacetime-vis/tree/master/timeGroupFactor.R][here]].
+
+**  Scatterplot Matrix: Time as a Grouping Variable
 
 [[file:images/aranjuezSplom.png][file:images/thumbs/aranjuezSplom.png]] 
+
 [[file:images/aranjuezSplomHexbin.png][file:images/thumbs/aranjuezSplomHexbin.png]] 
 
-[[file:images/aranjuezHexbinplot.png][file:images/thumbs/aranjuezHexbinplot.png]] 
-[[file:images/aranjuezOuterStrips.png][file:images/thumbs/aranjuezOuterStrips.png]]
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/timeGroupFactor.R][Code]]
+[[file:images/aranjuezHexbinplot.png][file:images/thumbs/aranjuezHexbinplot.png]] 
+
+** Scatterplot with Time as a Conditioning Variable
+[[file:images/aranjuezOuterStrips.png][file:images/thumbs/aranjuezOuterStrips.png]]
 
 
 * Time as a complementary variable
 
+The code of this section is available [[https://github.com/oscarperpinan/spacetime-vis/tree/master/timeComplementary.R][here]].
+
+** Polylines
 #+ATTR_HTML: :class svg
 [[file:images/googleVis.html][file:images/thumbs/googleVis.png]]
+
+** Labels to Show Time Information
 [[file:images/CO2_capitaDL.png][file:images/thumbs/CO2_capitaDL.png]] 
 
-#+ATTR_HTML: :class svg
-[[file:images/bubbles.svg][file:images/thumbs/bubbles.png]] 
+** Using Variable Size to Encode an Additional Variable
 [[file:images/CO2points.png][file:images/thumbs/CO2points.png]] 
 
-
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/timeComplementary.R][Code]]
-
------
-
+** Traveling Bubbles
+#+ATTR_HTML: :class svg
+[[file:images/bubbles.svg][file:images/thumbs/bubbles.png]] 
 
 * Data 
 ** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/dataTime.R][Code]]
