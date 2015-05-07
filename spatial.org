@@ -4,75 +4,79 @@
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:nil toc:1 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
-#+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+
+#+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="http://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+
 #+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/colorbox.css" />
-#+HTML_HEAD:    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 #+HTML_HEAD:    <script src="js/jquery.colorbox.js"></script>
 #+HTML_HEAD:    <script src="js/colorbox.js"></script>
 #+BIND: org-html-postamble "<p><a href=\"http://oscarperpinan.github.io/spacetime-vis\">HOME</a> <p><a href=\"https://github.com/oscarperpinan/spacetime-vis\">View the Project on GitHub</a></p><p>Maintained by <a href=\"http://oscarperpinan.github.io/\">Oscar Perpiñán</a>.</p>"
 
 
 * Choropleth maps
+The code of this section is available [[https://github.com/oscarperpinan/spacetime-vis/tree/master/choropleth.R][here]].
 
 [[file:images/whichMax.png][file:images/thumbs/whichMax.png]]  
-[[file:images/mapLegends.png][file:images/thumbs/mapLegends.png]]
 
-**  [[https://github.com/oscarperpinan/spacetime-vis/tree/master/choropleth.R][Code]]
+[[file:images/mapLegends.png][file:images/thumbs/mapLegends.png]]
 
 
 * Raster maps
+The code of this section is available [[https://github.com/oscarperpinan/spacetime-vis/tree/master/raster.R][here]]. 
 
 [[file:images/hillShading.png][file:images/thumbs/hillShading.png]] 
+
 [[file:images/divPalSISav_classInt.png][file:images/thumbs/divPalSISav_classInt.png]] 
 
 [[file:images/landClass.png][file:images/thumbs/landClass.png]] 
+
 [[file:images/populationNASA.png][file:images/thumbs/populationNASA.png]]    
 
 #+ATTR_HTML: :class vimeo
 [[file:images/stl.html][file:images/thumbs/DEM_STL_GitHub.png]]
-[[file:images/popLandClass.png][file:images/thumbs/popLandClass.png]] 
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/raster.R][Code]] 
+[[file:images/popLandClass.png][file:images/thumbs/popLandClass.png]] 
 
 
 * Proportional symbol mapping
+The code of this section is available [[https://github.com/oscarperpinan/spacetime-vis/tree/master/bubble.R][here]].
+
 #+ATTR_HTML: :class svg
 [[file:airMadrid.html][file:images/thumbs/airMadrid.png]]
+
 [[file:images/airMadrid_stamen.png][file:images/thumbs/airMadrid_stamen.png]] 
 
 #+ATTR_HTML: :class vimeo
 [[file:images/geojson.html][file:images/thumbs/geojson.png]]
-[[file:images/airMadrid_krige.png][file:images/thumbs/airMadrid_krige.png]]
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/bubble.R][Code]]
+[[file:images/airMadrid_krige.png][file:images/thumbs/airMadrid_krige.png]]
 
 
 * Vector fields
+The code of this section is available [[https://github.com/oscarperpinan/spacetime-vis/tree/master/vector.R][here]].
 
 [[file:images/vectorplot.png][file:images/thumbs/vectorplot.png]] 
+
 [[file:images/streamplot.png][file:images/thumbs/streamplot.png]] 
 
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/vector.R][Code]]
-
-
 * Reference maps
+The code of this section is available [[https://github.com/oscarperpinan/spacetime-vis/tree/master/osmar.R][here]].
 
 [[file:images/cedeiraOsmar.png][file:images/thumbs/cedeiraOsmar.png]] 
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/osmar.R][Code]]            
-
-
 * Physical maps
+The code of this section is available [[https://github.com/oscarperpinan/spacetime-vis/tree/master/physical.R][here]].
 
 [[file:images/brazil.png][file:images/thumbs/brazil.png]]  
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/physical.R][Code]]
-
 -----
-
 
 * Data
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/dataSpatial.R][Code]]
+The code to access the data is available [[https://github.com/oscarperpinan/spacetime-vis/tree/master/dataSpatial.R][here]].
 
------

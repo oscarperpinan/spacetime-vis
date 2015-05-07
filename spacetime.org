@@ -2,10 +2,17 @@
 #+EMAIL:     oscar.perpinan@gmail.com
 #+TITLE:     Spatio-temporal data - Displaying time series, spatial and space-time data with R
 #+LANGUAGE:  en
-#+OPTIONS:   H:3 num:nil toc:1 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
-#+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+#+OPTIONS:   H:3 num:nil toc:2 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+
+#+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="http://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+
 #+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/colorbox.css" />
-#+HTML_HEAD:    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 #+HTML_HEAD:    <script src="js/jquery.colorbox.js"></script>
 #+HTML_HEAD:    <script src="js/colorbox.js"></script>
 #+BIND: org-html-postamble "<p><a href=\"http://oscarperpinan.github.io/spacetime-vis\">HOME</a> <p><a href=\"https://github.com/oscarperpinan/spacetime-vis\">View the Project on GitHub</a></p><p>Maintained by <a href=\"http://oscarperpinan.github.io/\">Oscar Perpiñán</a>.</p>"
@@ -13,20 +20,32 @@
 
 * Raster data
 
+The code of this section is available [[https://github.com/oscarperpinan/spacetime-vis/tree/master/rasterST.R][here]].
+** Level plots
+
 [[file:images/SISdm.png][file:images/thumbs/SISdm.png]] 
+
+** Graphical Exploratory Data Analysis
 [[file:images/SISdm_splom.png][file:images/thumbs/SISdm_splom.png]]     
 
 [[file:images/SISdm_den.png][file:images/thumbs/SISdm_den.png]]       
+
+
 [[file:images/SISdm_histogram.png][file:images/thumbs/SISdm_histogram.png]] 
 
+** Space-Time and Time Series Plots
 [[file:images/SISdm_hovmoller_lat.png][file:images/thumbs/SISdm_hovmoller_lat.png]] 
+
 [[file:images/SISdm_horizonplot.png][file:images/thumbs/SISdm_horizonplot.png]] 
 
 [[file:images/diffTa_levelplot.png][file:images/thumbs/diffTa_levelplot.png]] 
+
 [[file:images/diffTa_xyplot.png][file:images/thumbs/diffTa_xyplot.png]]   
 
+** Animation
 #+ATTR_HTML: :class vimeo
 [[http://player.vimeo.com/video/65227780][file:images/thumbs/cftVideo.png]]                
+
 [[file:images/cft.png][file:images/thumbs/cft.png]]                
 
 # #+BEGIN_HTML
@@ -34,16 +53,20 @@
 # #+END_HTML
 
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/rasterST.R][Code]]
-
-
 * Spatial point data
 
-#+ATTR_HTML: :class svg
-[[file:images/vLine.svg][file:images/thumbs/vLine.png]] 
+The code of this section is available [[https://github.com/oscarperpinan/spacetime-vis/tree/master/pointsST.R][here]].
+
+** Graphics with =spacetime=
+
 [[file:images/NO2STxy.png][file:images/thumbs/NO2STxy.png]] 
-#+ATTR_HTML: :class svg
-[[file:images/NO2pb.svg][file:images/thumbs/NO2pb.png]]   
+
 [[file:images/NO2hovmoller.png][file:images/thumbs/NO2hovmoller.png]] 
 
-** [[https://github.com/oscarperpinan/spacetime-vis/tree/master/pointsST.R][Code]]
+** Animation
+#+ATTR_HTML: :class svg
+[[file:images/vLine.svg][file:images/thumbs/vLine.png]] 
+
+#+ATTR_HTML: :class svg
+[[file:images/NO2pb.svg][file:images/thumbs/NO2pb.png]]   
+
