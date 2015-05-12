@@ -4,6 +4,8 @@
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:nil toc:2 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:t tags:not-in-toc
 
+#+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="stylesheets/colorbox.css" />
+
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
 

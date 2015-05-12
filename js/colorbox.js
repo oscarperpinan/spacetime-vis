@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".outline-text-2 a").colorbox({height:"100%"});
+    $(".figure a").colorbox({height:"100%"});
     $(".svg").colorbox({
 	iframe:true, 
 	height:"125%", 
