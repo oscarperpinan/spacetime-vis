@@ -22,7 +22,7 @@
   :END:
 
 This is the accompanying website of the book published with
-[[http://www.taylorandfrancis.com/books/details/9781466565203/][Chapman&Hall/CRC]], a project created and maintained by [[http://oscarperpinan.github.io/][Oscar Perpiñán
+[[https://www.crcpress.com/Displaying-Time-Series-Spatial-and-Space-Time-Data-with-R/Lamigueiro/9781466565203][Chapman&Hall/CRC]], a project created and maintained by [[http://oscarperpinan.github.io/][Oscar Perpiñán
 Lamigueiro]]. [[https://github.com/oscarperpinan/spacetime-vis][View the Project on GitHub]].
 
 
