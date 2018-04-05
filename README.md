@@ -1,8 +1,10 @@
-Displaying time series, spatial and space-time data with R
+**Forthcoming 2nd Edition: http://oscarperpinan.github.io/bookvis/**
+
+Displaying time series, spatial and space-time data with R (1st Edition)
 ----
 
-This is the repository of the code and data from the book Displaying
-time series, spatial and space-time data with R to be published with
+This is the repository of the code and data from the 1st Edition of the book Displaying
+time series, spatial and space-time data with R published with
 [Chapman&Hall/CRC](http://www.crcpress.com/product/isbn/9781466565203). This
 book provides methods to display time series, spatial and space-time
 data using R.
