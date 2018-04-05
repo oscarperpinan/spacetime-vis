@@ -21,9 +21,11 @@
   :HTML_CONTAINER_CLASS: container jumbotron
   :END:
 
-This is the accompanying website of the book published with
+This is the accompanying website of the 1st Edition of the book published with
 [[https://www.crcpress.com/Displaying-Time-Series-Spatial-and-Space-Time-Data-with-R/Lamigueiro/9781466565203][Chapman&Hall/CRC]], a project created and maintained by [[http://oscarperpinan.github.io/][Oscar Perpiñán
 Lamigueiro]]. [[https://github.com/oscarperpinan/spacetime-vis][View the Project on GitHub]].
+
+*Forthcoming 2nd Edition has its own webpage: http://oscarperpinan.github.io/bookvis/*
 
 
 *** 
